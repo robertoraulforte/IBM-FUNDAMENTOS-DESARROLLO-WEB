@@ -1,0 +1,1118 @@
+
+
+
+
+Prueba y despliegue de sitios web
+
+
+En este curso, explorará cómo los desarrolladores prueban exhaustivamente los sitios web para garantizar una experiencia de usuario eficaz, fiable y reactiva. Descubrirá cómo gestionar los cambios de los sitios web con sistemas de control de versiones, publicar un sitio web, utilizar el despliegue continuo y la entrega continua, y aplicar el método de operaciones de desarrollo (DevOps). También conocerá los servicios y las herramientas que utilizan los desarrolladores web para probar y automatizar el despliegue de los sitios web en los servidores o en la nube.
+
+
+
+
+Módulo 1
+
+Prueba de un sitio web
+
+
+Introducción a la prueba de un sitio web
+
+
+¿Cómo prueban los desarrolladores web los sitios para garantizar una buena experiencia a los usuarios?
+
+
+Búsqueda de errores (bugs)
+
+
+Los desarrolladores web dedican mucho tiempo a tratar de encontrar defectos relacionados con el software, como los errores. Los errores son defectos en el código que pueden hacer que un sitio o sus características se cuelguen o no funcionen de la forma prevista. Requieren soluciones alternativas o cambios en el código. Una parte importante del rol del desarrollador web es encontrar errores en su código y eliminarlos. Las pruebas les ayudan en esta tarea.
+
+
+Tipos de pruebas de sitios web 
+
+Hay muchos tipos distintos de pruebas de sitios web que realizan los desarrolladores y probadores web, cada una con sus objetivos y estrategias específicos. Explore cada uno de estos tipos y conozca sus similitudes y diferencias.
+
+
+Pruebas de aceptación
+Estas pruebas comprueban si todo el sitio web, cliente y servidor, funciona según lo previsto. Usuarios individuales o equipos de usuarios de un sitio web suelen realizar este tipo de prueba al finalizar un proyecto justo antes del lanzamiento.
+
+
+Pruebas de integración
+Estas pruebas garantizan que los componentes y las funciones del sitio web funcionan juntos como se espera. Por ejemplo, un desarrollador podría ejecutar una serie de pruebas para garantizar que el cliente puede realizar llamadas de interfaz de programación de aplicaciones (API) al servidor y que el servidor devuelve la respuesta adecuada.
+
+
+Pruebas de unidad
+Estas pruebas validan que el funcionamiento de una característica o un comportamiento específicos del sitio web son los esperados. Una unidad es el elemento más pequeño de un sitio web que se puede probar. Por ejemplo, los desarrolladores pueden ejecutar pruebas en un menú desplegable en su formulario web para asegurarse de que se abre y cierra correctamente y que contiene los datos correctos.
+
+
+Pruebas funcionales
+Estas pruebas comprueban el comportamiento del sitio web simulando escenarios reales según los requisitos iniciales del sitio. Una forma habitual de verificar comportamientos son las pruebas en caja cerrada. El objetivo de estas pruebas es ver cómo se comporta el sitio web cuando se simula que usuarios reales lo están utilizando en escenarios personales y empresariales reales.  
+
+
+Pruebas de rendimiento
+Estas pruebas muestran cómo se comporta el sitio web bajo distintos niveles de estrés. Las pruebas de carga, por ejemplo, evalúan el rendimiento en condiciones de carga reales. Un ejemplo de una condición de carga es el número de solicitudes que un sitio web puede realizar en cualquier momento dado. Cuantas más solicitudes reciba el sitio, mayor será la carga.
+
+
+Pruebas de regresión
+Son pruebas que comprueban si las nuevas características interrumpen o degradan la funcionalidad. Las pruebas de regresión son importantes cuando los desarrolladores modifican, cambian o añaden características. Cuando una característica nueva o actualizada hace que el sitio web deje de funcionar, esto se denomina error de regresión.
+
+
+Pruebas de estrés
+Estas pruebas son similares a las pruebas de rendimiento, con la excepción de que utilizan condiciones de carga extremas para determinar cuánto es capaz de manejar un sitio web antes de que falle.
+
+
+Pruebas de usabilidad
+Estas pruebas verifican con qué facilidad un usuario puede completar una tarea utilizando el sitio web probado. Las pruebas de usabilidad normalmente tendrán una serie de tareas que los probadores deberán completar. Los probadores evaluarán cómo el sitio les permite completar las tareas.
+
+
+
+
+
+Un desarrollador web ha añadido una nueva característica a su sitio web que implicaba escribir software. Ha probado el nuevo software para asegurarse de que la nueva característica no daña ninguna funcionalidad existente.    
+
+¿Qué tipo de prueba ha realizado el desarrollador web?  
+
+Prueba de regresión
+
+Prueba de rendimiento   
+
+Prueba de integración
+
+Prueba de estrés
+
+
+**La respuesta correcta es:**
+
+**Prueba de regresión**
+
+### Explicación:
+La **prueba de regresión** se realiza después de agregar nuevas características o realizar cambios en un sistema para asegurarse de que estos no hayan afectado negativamente las funcionalidades existentes. El desarrollador está probando la nueva característica para asegurarse de que no dañe ninguna funcionalidad previa, lo cual es el objetivo de la prueba de regresión.
+
+### Por qué las otras opciones no son correctas:
+- **Prueba de rendimiento:** Esta prueba se enfoca en evaluar cómo el sistema se comporta bajo carga, como el número de usuarios simultáneos o el volumen de datos. No está relacionada con verificar si las funcionalidades existentes siguen funcionando después de cambios.
+- **Prueba de integración:** Se utiliza para verificar que los distintos módulos del software trabajen juntos correctamente, pero no se enfoca específicamente en asegurar que las funcionalidades anteriores no se vean afectadas por nuevas adiciones.
+- **Prueba de estrés:** Se realiza para evaluar el comportamiento del sistema bajo condiciones extremas o de alta carga, no está orientada a verificar si las funcionalidades existentes siguen operando correctamente después de agregar nuevas características.
+
+En resumen, el desarrollador web ha realizado una **prueba de regresión**.
+
+
+
+
+Áreas que probar
+
+Hay algunas áreas que los desarrolladores web deben considerar para probar un sitio web. Los tipos de pruebas que acaba de conocer son aplicables a cada una de las áreas que un desarrollador debe probar. Incluyen:  
+
+Interfaz de usuario (UI)
+Diseño reactivo 
+Código 
+Interfaz de programación de aplicaciones (API)
+Bases de datos
+
+
+
+Interfaz de usuario 
+
+Los desarrolladores web deben asegurarse que la interfaz de usuario (UI) que están desarrollando se comporte de acuerdo con el diseño y los requisitos del sitio. Los desarrolladores web se aseguran de que un sitio tenga un diseño general, que incluya: 
+
+•
+Dónde aparecen los elementos en una página 
+
+•
+Cómo interactúan los elementos entre sí
+
+•
+Los colores y las fuentes del sitio 
+
+•
+Cómo cambian los colores y las fuentes cuando los usuarios interactúan con los elementos
+
+
+
+Diseño reactivo 
+
+El diseño reactivo está relacionado con la interfaz de usuario, pero aborda un aspecto específico e importante de la experiencia del usuario. 
+
+•
+Un diseño es reactivo si la experiencia del usuario se adapta a distintos tamaños de pantalla sin perder usabilidad.
+
+•
+Un sitio es utilizable si cualquier usuario en cualquier dispositivo puede acceder a su contenido e interactuar con él. 
+
+
+Un diseño reactivo es el estándar para los sitios web actuales.  
+
+
+Los desarrolladores web prueban cómo responde la interfaz de usuario en distintas orientaciones: los ángulos de rotación alfa, beta y gamma de un dispositivo.
+
+
+
+
+Código
+
+Los desarrolladores web deberían probar todo el código que utilicen en su sitio web. Los desarrolladores web escriben una gran parte de su propio código, y también integran código fuente abierto. El código fuente abierto también puede contener errores. Una estrategia de pruebas exhaustiva y metódica puede identificar los problemas y errores. Es importante probar minuciosamente todo el código del sitio web para garantizar que no contiene errores, que es seguro y que funciona bien. 
+
+
+
+API
+
+Cuando el código del lado del cliente de un sitio web llama a una interfaz de programación de aplicaciones (API) en el lado del servidor, muchos elementos técnicos deben trabajar juntos para que la interacción se realice con éxito. Los desarrolladores web prueban esta interacción entre el cliente y el servidor. Al utilizar una API, el cliente envía datos al servidor. A continuación, el servidor realiza su trabajo y devuelve los datos al cliente. Los desarrolladores web prueban si la transferencia de datos se realiza de forma segura y precisa. 
+
+
+
+Base de datos
+
+Muchos sitios web dependen en gran medida de los datos, por lo que el diseño y el rendimiento de la base de datos subyacente son importantes para una buena experiencia del usuario. Aunque los desarrolladores web pueden no diseñar, crear ni estructurar la base de datos (quien suele realizar estas tareas es un administrador de base de datos), es responsabilidad del desarrollador web garantizar que la base de datos funcione correctamente con el sitio web. 
+
+
+
+
+
+Prueba del sitio web en la práctica
+
+
+ Cuanto antes un equipo de desarrollo web encuentre los problemas, antes podrá resolver problemas comunes como:
+
+•
+Defectos con el diseño del sitio 
+
+•
+Defectos en la arquitectura del sitio web 
+
+•
+Funcionalidad inoperativa o propensa a errores 
+
+•
+Vulnerabilidades de seguridad
+
+•
+Problemas de escalabilidad
+
+
+
+
+PASO 1
+
+Definir el entorno de pruebas
+
+El entorno de pruebas de un sitio web es una versión separada de un sitio web para fines de pruebas.  
+Suele ser una réplica del sitio web activo, pero solo es accesible a un número limitado de usuarios, como los desarrolladores y los probadores de control de calidad del sitio web.  
+Este entorno permite probar y depurar el sitio web sin afectar al sitio web activo ni a sus usuarios.  
+El entorno de pruebas de un sitio web es una herramienta importante para garantizar que un sitio web funciona correctamente antes de que esté disponible para los usuarios. 
+
+
+
+PASO 2
+
+Desarrollar casos de prueba
+
+Un caso de prueba es una serie de pasos que siguen los desarrolladores web para verificar que un sitio web funciona correctamente.  
+
+El objetivo del caso de prueba de un sitio web es identificar cualquier problema o error con un área o función específica del sitio web.
+
+Por lo general, esto implica verificar las distintas características y funciones del sitio web para garantizar que funcionan según lo previsto y que la experiencia del usuario es positiva. 
+
+Un caso de prueba podría incluir lo siguiente y mucho más. 
+
+Comprobar la distribución y el diseño del sitio web
+
+Verificar que funcionan todos los enlaces del sitio
+
+Probar la característica de búsqueda del sitio web
+
+
+
+PASO 3
+
+Escribir y ejecutar scripts
+
+Un script de automatización es código de software que ejecuta una herramientas de software.  
+
+Un script consta de una serie de instrucciones para automatizar las pruebas de un sitio web.  
+
+Pueden incluir tareas como:
+
+Comprobar la funcionalidad de la aplicación 
+
+Verificar que funciona correctamente  
+
+Identificar los errores o defectos
+
+Los desarrolladores web suelen escribir scripts de automatización en un lenguaje de programación y a continuación ejecutarlos utilizando una herramienta de pruebas especializada como IBM UrbanCode o una herramienta de código abierto como Jenkins.
+
+
+
+
+PASO 4
+
+Analizar los resultados de las pruebas
+
+Después de que los desarrolladores web hayan ejecutado los scripts de automatización y realizado las pruebas manuales, analizan los resultados de esas pruebas.  
+
+El análisis podría incluir: 
+
+Revisar los casos de prueba y los resultados esperados  
+
+Comparar estos resultados con los resultados reales que han encontrado los desarrolladores web y las herramientas
+
+Identificar las discrepancias
+
+Los desarrolladores también pueden utilizar herramientas y software especializados para analizar los resultados de las pruebas y resaltar las áreas del sitio web que requieren una mayor atención. Por ejemplo, los scripts pueden generar datos que los desarrolladores pueden abrir en una hoja de cálculo. La hoja de cálculo puede mostrarles las áreas problemáticas, lo que les ayudará a comprender mejor qué necesitan resolver.
+
+
+
+
+PASO 5
+
+Enviar informes de error
+
+Cuando los desarrolladores web encuentran un error o problema al probar un sitio web, suelen crear un informe de error para documentar el problema y proporcionar detalles acerca de cómo se puede reproducir.  
+
+Un informe de error suele incluir información como: 
+
+Los pasos que han seguido los desarrolladores para reproducir el problema 
+
+El comportamiento esperado del sitio web 
+
+El comportamiento real que ha revelado la prueba
+
+También podría incluir detalles como capturas de pantalla o vídeos para ilustrar el problema.  
+
+Después de las pruebas, el desarrollador web envía el informe de error al equipo o la persona adecuados, como un director del proyecto o un desarrollador sénior, quien revisará el informe y determinará la mejor acción a realizar para resolver el problema. 
+
+
+
+¿Cómo puede ayudar la automatización? 
+
+Si bien los desarrolladores web pueden probar manualmente sitios pequeños, utilizan herramientas para automatizar el proceso de pruebas para los sistemas más grandes. Los equipos utilizan la automatización para realizar tareas de pruebas repetitivas o que llevan mucho tiempo y que serían difíciles o imposibles de realizar manualmente para un probador humano. Esto puede ahorrar tiempo y mejorar la precisión y la fiabilidad del proceso de pruebas. 
+
+
+
+
+
+//////////////////
+
+
+
+
+Módulo 2
+
+Seguimiento y gestión de cambios del código
+
+
+
+Introducción a los sistemas de control de versiones
+
+
+¿Qué sistema utilizan los desarrolladores web para el seguimiento y la gestión de los cambios del código? ¿Qué pasos realizan? En este módulo encontrará las respuestas a estas preguntas. 
+
+
+Su equipo ha desarrollado su propio método de control de versiones. Los desarrolladores web también utilizan el control de versiones para el seguimiento y la gestión de los cambios del código de software. Uno de los primeros sistemas de control de versiones que crearon los desarrolladores fue el Sistema de control de códigos fuente (SCCS). Sus características principales son: 
+
+•
+Almacenar todas las versiones del código juntas en un único archivo. 
+
+•
+Marcar todo el contenido con la información básica, como el número de versión, la fecha y el autor. 
+
+•
+Utilizar un registro delta (o de cambios) para crear un registro de los detalles de cada modificación. 
+
+
+Los desarrolladores web utilizan un sistema de control de versiones porque necesitan realizar el seguimiento de los cambios en el código y gestionarlos para documentar quién ha realizado el cambio así como qué, dónde, cuándo y por qué un desarrollador ha hecho el cambio.
+
+
+
+
+Características de los sistemas de control de versiones
+
+
+Estas son algunas de las características de los sistemas de control de versiones
+
+
+Repositorio de código
+
+
+Imagine que toda su familia escribe libros juntos. Cuando uno de ustedes tiene una nueva idea para un libro, crea la primera versión y la pone en la biblioteca familiar. Pone la versión actualizada en la biblioteca cada vez que alguien realiza algún cambio o adición en el libro. A lo largo de los años, la biblioteca contiene todas las versiones de todos los libros que ha escrito su familia.   
+
+Los sistemas de software de control de versiones actuales incluyen repositorios de código similares a estas bibliotecas ficticias. Un repositorio de código es una tecnología de software que utilizan las empresas para almacenar las versiones de sus archivos de código. Además de almacenar el código de un sitio web en un servidor web, los desarrolladores suelen utilizar un repositorio de código.
+
+
+
+
+Herramientas de colaboración
+
+
+Los equipos de desarrollo trabajan en diversos proyectos y necesitan colaborar y comunicarse entre sí mientras escriben el código. Los sistemas de control de versiones fomentan la colaboración, ya que facilitan que los miembros del equipo trabajen en los mismos archivos simultáneamente. Los sistemas de control de versiones actuales cuentan con herramientas de colaboración integradas adicionales. 
+
+Los sistemas de control de versiones permiten a los desarrolladores comentar su trabajo y cargar documentación adicional, como archivos readme, al repositorio. Un archivo readme es un archivo de texto que describe el código. También puede contener información adicional, como las instrucciones de instalación y la documentación de la ayuda.  
+
+Algunos sistemas de control de versiones también ofrecen herramientas de gestión de proyectos para ayudar a los equipos a colaborar entre sí. Además, algunos sistemas de control de versiones incluso tienen características para chatear o comentar en grupo que los desarrolladores pueden utilizar para comentar nuevos proyectos, desafíos o ideas.
+
+
+
+
+Despliegue del código
+
+Los equipos de desarrollo despliegan código cuando lo publican en el entorno activo. Los usuarios interactúan con un sitio web en un entorno activo.  
+
+Sin embargo, antes de despliegue, los equipos de desarrollo web se preparan publicando por primera vez el sitio web y todo su código en un entorno de transferencia. Como puede ver en la siguiente imagen, un entorno de transferencia replica o refleja todas las características del sitio web activo. Sin embargo, sólo es accesible para el equipo de desarrollo web. Un entorno de transferencia ayuda a preparar un sitio ayudando a los desarrolladores web a identificar cualquier problema final que no hubieran detectado durante las pruebas. Si el sitio web funciona como se espera en el entorno de transferencia, los desarrolladores web desplegarán el sitio web en el entorno activo. 
+
+Los sistemas de control de versiones más modernos incluyen herramientas de despliegue continuo. El despliegue continuo permite a los desarrolladores web automatizar algunas de las pruebas que deben realizar en los sitios web. Una vez que se han pasado con éxito esas pruebas, las herramientas publican automáticamente el sitio para que los usuarios lo puedan ver. El despliegue continuo reduce el tiempo y el esfuerzo necesarios para ofrecer las nuevas características a los usuarios. 
+
+
+
+
+¿Cómo funciona un sistema de control de versiones?
+
+
+Los sistemas de control de versiones permiten a los miembros de los equipos trabajar de forma individual y colaborativa en las adiciones y los cambios del documento y, una vez que se han completado los cambios, el equipo crea un documento principal.
+
+
+Con los sistemas de control de versiones, los desarrolladores pueden crear un archivo principal de código fuente y a continuación colaborar trabajando en adiciones y cambios individuales a esa base de código a lo largo del tiempo. Almacenan el archivo principal y todas las versiones posteriores en el repositorio de código de la organización, que se suele conocer como repositorio remoto. Recibe este nombre porque no se almacena en los ordenadores locales sino en los servidores de la organización o en la nube. 
+
+
+
+PASO 1 
+
+El primer paso del proceso de control de versiones es que cada desarrollador clona el repositorio de la organización en su propio ordenador. La clonación de un repositorio es el proceso de poner una copia de un repositorio completo en una máquina local para que pueda funcionar localmente con los archivos en el repositorio. Los desarrolladores clonan un repositorio para poder añadir, suprimir o modificar código sin modificar los archivos principales originales. 
+
+
+PASO 2
+
+Una vez que cada desarrollador ha clonado el repositorio en su máquina local, puede realizar una captación desde el repositorio de la organización. Una captación lleva todos los nuevos cambios de los archivos principales a los archivos que se encuentran en el ordenador del desarrollador.  
+
+
+PASO 3
+
+
+Cuando el desarrollador tiene el archivo más reciente, puede empezar su trabajo. Cuando un desarrollador complete una sección aislada de cambios de código, ejecutará un mandato de confirmación. Una confirmación registra todos los cambios que ha realizado un desarrollador desde que empezó a trabajar o realizó la última confirmación.  
+
+Una confirmación es similar a guardar un documento en el que está trabajando para poder volver a él más tarde para ver lo que cambió y deshacer cualquier cambio que pueda presentar problemas. Las confirmaciones le permiten mantener los registros de lo que ha cambiado y cuándo. Por lo general, contienen un mensaje de confirmación que es una breve descripción de lo que ha cambiado el desarrollador.  
+
+
+
+PASO 4
+
+Después de una confirmación, los desarrolladores pueden fusionar sus cambios emitiendo una solicitud de extracción. Una solicitud de extracción ofrece a los desarrolladores una forma de proponer cambios a un archivo o un conjunto de archivos en un repositorio y recibir comentarios de su equipo sobre los cambios propuestos.   
+
+El repositorio de código informa a otros miembros del equipo de la solicitud de extracción. Pueden revisar los cambios propuestos y a continuación aceptar, rechazar o solicitar actualizaciones adicionales de los cambios. Si el equipo acepta los cambios, el sistema fusionará los cambios en el archivo o archivos principales en el repositorio.   
+
+
+PASO 5
+
+Por último, los desarrolladores enviarán por push su archivo al repositorio de código de la organización. Un envío por push es un mandato que carga la copia del archivo de código que se encuentra en una máquina local al repositorio de código remoto
+
+
+
+
+
+
+
+///////////////////
+
+
+
+
+Módulo 3
+
+Entrega de un sitio web a los usuarios
+
+
+En este módulo, conocerá los pasos para publicar un sitio web. También conocerá las diferencias entre el despliegue continuo y la entrega continua. También explorará las ventajas de DevOps, los flujos de trabajo en el ciclo de vida de desarrollo y el método de desplazamiento hacia la izquierda en DevOps. 
+
+
+
+
+Introducción a la publicación de un sitio web
+
+
+Básicamente, la publicación de un sitio web consiste en moverlo del desarrollo a que lo puedan utilizar las personas que lo necesiten. Una vez que los desarrolladores han completado el trabajo para crear un sitio web, deben entregar el sitio a los usuarios.  
+
+
+Publicar un sitio web
+
+
+Para publicar un sitio web, los desarrolladores web necesitan:  
+
+Contenido y los elementos que el sitio requiere, como texto, imágenes, vídeos o juegos 
+Usuarios que visiten el sitio 
+Tecnología para entregar y alojar el sitio web, como por ejemplo un servidor web
+
+
+
+El proceso de publicación de un sitio web 
+
+Para que un desarrollador pueda publicar su sitio web, primero debe reunir todo el contenido, listo en una única ubicación para que los usuarios accedan a él en el sitio. 
+
+
+
+PASO 1
+
+
+Preparación
+
+La primera fase de la publicación de un sitio web es la preparación. Los desarrolladores web necesitan encontrar una ubicación donde alojar el sitio, ya sea en los servidores de su propia empresa o en los servidores de un proveedor de nube. 
+
+Si el sitio web va a utilizar un nombre de dominio, como ibm.com, los desarrolladores web deben reservar el nombre de dominio y configurarlo en sus servidores o su proveedor de alojamiento.  
+
+Algunos sitios web también necesitan aplicar medidas de seguridad muy específicas, como un certificado de sitio para habilitar el comercio electrónico. El comercio electrónico es la actividad de compra y venta en un sitio web. La implementación de estas medidas de seguridad también forma parte de la fase de preparación.
+
+
+PASO 2
+
+Configuración
+
+A continuación, los desarrolladores web recopilan todos los archivos necesarios para el sitio web antes de alojarlos en el destino. Muchos desarrolladores utilizan un entorno de transferencia para probar su sitio web y asegurarse de que esté listo para los usuarios. Puesto que un entorno de transferencia es exactamente igual a la ubicación real del sitio web público, los desarrolladores pueden utilizarlo para identificar cualquier problema de última hora.
+
+
+PASO 3
+
+Entrega
+
+Después de toda la preparación y configuración, los desarrolladores están listos para entregar el sitio web a los usuarios. Esto implica copiar los archivos y algunos valores de configuración desde el entorno de transferencia a la ubicación final. Muchos desarrolladores utilizan herramientas para asegurarse de que esto funcione sin problemas. 
+
+Si un equipo de desarrollo web está entregando su sitio web por primera vez, es posible que necesite habilitar características como su nuevo nombre de dominio o algunas características de comercio electrónico. Los desarrolladores habilitan las características poniéndolas a disposición de los usuarios del sitio web para que las puedan utilizar, por ejemplo, habilitando el nombre de dominio para que apunte al nuevo sitio.
+
+
+
+
+
+Introducción al despliegue
+
+
+En los últimos años, los ingenieros de sitios web han mejorado este método para publicar los sitios web para los usuarios con mayor regularidad y rapidez. Esto se denomina despliegue, y tiene algunas diferencias, mejoras y desafíos específicos con respecto a la publicación en un sitio web completado. 
+
+
+
+Entrega continua y despliegue continuo
+
+
+Hoy en día, los desarrolladores web utilizan el despliegue continuo para los sitios web. Un colección de cambios de un sitio web que están listos para el usuario se denomina una compilación. En un entorno de despliegue continuo, las nuevas compilaciones se envían a los usuarios con frecuencia, a veces en unos días o incluso horas en lugar de meses. 
+
+Para la prueba de los sitios web, se aplica un concepto similar. Los equipos de desarrollo entregarán continuamente las actualizaciones al entorno de pruebas para que estas puedan probarse automáticamente. Este método se denomina entrega continua.  
+
+
+
+Entrega continua
+
+Conclusión: Este método acelera el desarrollo porque se prueba una parte del código al mismo tiempo que se escribe otra parte.
+
+
+Despliegue continuo
+
+Conclusión: Este método de actualización de un sitio web permite que los usuarios se puedan beneficiar antes de los cambios. Elimina el retardo entre el momento en que se realizan los cambios de código y el momento en que los usuarios los ven.
+
+
+
+
+¿Qué es DevOps?
+
+
+Puesto que implica tantas tareas, los equipos de desarrollo web asignan un rol específico para gestionar el despliegue web. Los desarrolladores web que gestionan el proceso de publicación se denominan operaciones de desarrollo (DevOps). 
+
+Nota: DevOps incluye trabajo de despliegue más allá del despliegue de un sitio web
+
+
+DevOps es un método de despliegue que promueve una colaboración más estrecha entre la empresa que utiliza el sitio web, el equipo de desarrollo del sitio web y el equipo de operaciones de tecnologías de la información (TI).
+
+
+El ciclo de vida de DevOps 
+
+El ciclo de vida de DevOps consiste en una serie de procesos de desarrollo iterativos y automatizados, o flujos de trabajo, dentro de un trabajo de desarrollo más amplio y automatizado. Dedique un momento a revisar el siguiente diagrama. Tenga en cuenta que es un ciclo repetible con seis flujos de trabajo generales: planificación, desarrollo, integración, despliegue, operaciones y aprendizaje. El diagrama también ilustra el proceso continuo de pruebas, seguridad y conformidad a lo largo del ciclo de vida de DevOps.
+
+
+
+El ciclo de vida está diseñado para permitir a los desarrolladores web publicar sitios web de calidad con rapidez. Estos son los seis flujos de trabajo generales que siguen los desarrolladores web en un ciclo de vida típico de DevOps. 
+
+Planificación (o ideación)
+En este flujo de trabajo, los equipos planifican qué nuevas características y funciones debe tener un sitio web para su próxima versión. Desarrollan estas características y funciones basándose en los comentarios de los usuarios y analizando cómo los usuarios interactúan con las versiones anteriores del sitio web. El objetivo en la etapa de planificación es determinar cómo priorizar qué características deberían incluirse en las nuevas versiones del sitio web mediante la creación de un backlog. Un backlog es una lista de características y funciones que el equipo de desarrollo web debe crear.
+
+Desarrollo
+Este es el paso de programación, donde los desarrolladores prueban, codifican y crean características nuevas y mejoradas según los elementos del backlog. Los desarrolladores web a menudo utilizan sus ordenadores individuales para escribir y probar el código del sitio web antes de enviarlo al sistema de entrega continua.
+
+Integración
+En este flujo de trabajo, el nuevo código se integra con el código existente y se prueba antes de su despliegue en el sitio web activo. Las actividades de automatización más comunes incluyen fusionar los cambios de código en un archivo de código primario, extraer el código de un repositorio de código fuente, probarlo y prepararlo para su uso.
+
+Despliegue
+Este flujo de trabajo implica enviar por push el código nuevo o actualizado a un entorno de transferencia para las pruebas. Los ingenieros DevOps probarán la calidad y la conformidad legal. Si los desarrolladores encuentran errores o defectos, tienen la oportunidad de corregir los problemas antes de que los usuarios los vean. A veces, los ingenieros DevOps despliegan un sitio web actualizado primero para un pequeño grupo de usuarios y luego gradualmente para todos los usuarios cuando los ingenieros están seguros de que no presenta problemas graves.
+
+Operaciones
+En este flujo de trabajo, los ingenieros DevOps supervisan el rendimiento y el comportamiento del sitio web actualizado para asegurarse de que todos los usuarios objetivo puedan acceder a él. Esto se denomina disponibilidad. El equipo de operaciones garantiza que las características funcionen sin problemas y que los usuarios no sufran interrupciones. Se asegura de que todas las funciones de red, almacenamiento, servidor web y seguridad estén en buen estado. Si algo falla, el equipo de operaciones identifica los problemas y lo notifica a las personas correspondientes para que lo solucionen.
+
+Aprendizaje (o comentarios continuos)
+Este flujo de trabajo es cuando los miembros del equipo reciben comentarios de los usuarios y clientes acerca del funcionamiento del sitio web. Llevan los comentarios al equipo de desarrollo del sitio web para que apliquen las mejoras y características que deberían considerar añadir en la siguiente versión. ¡Este flujo de trabajo devuelve al equipo al flujo de trabajo de planificación, donde realizan "mejoras continuas"! 
+
+Pruebas, seguridad, conformidad
+A lo largo de cada fase del ciclo de vida, los miembros del equipo deben probar continuamente sus cambios. También deben adherirse a las pautas y los requisitos de seguridad, y asegurarse de que su código cumpla con los requisitos de conformidad de su organización.
+
+Estos son flujos de trabajo generales que implementan los equipos de desarrollo web. Los equipos pueden modificar el ciclo de vida añadiendo o eliminando flujos de trabajo. Este ciclo de vida ha demostrado ser un modelo que funciona bien y ha ayudado a muchos equipos de desarrollo a crear sitios web de calidad para sus usuarios. 
+
+
+
+
+DevOps y el método de desplazamiento hacia la izquierda
+
+
+Los ingenieros DevOps están adoptando un método de desplazamiento hacia la izquierda para las pruebas y otras operaciones críticas. El término "desplazamiento hacia la izquierda" surge de la idea de que ciertos flujos de trabajo de DevOps se deben realizar antes en el flujo de trabajo (a la izquierda en un diagrama de flujo de trabajo que se mueve de izquierda a derecha) y más a menudo. El desplazamiento de estos elementos hacia la izquierda garantiza que el trabajo importante se considera primero y que las pruebas se realizan con más frecuencia en lugar de dejarlas para casi el final cuando ya se haya completado todo el trabajo de desarrollo.
+
+
+
+A continuación se muestran algunas áreas cuyas pruebas DevOps ha elegido desplazar hacia la izquierda o mover más arriba en el flujo de trabajo, para que las operaciones críticas puedan recibir más atención.
+
+
+Pruebas continuas
+
+En lugar de tener una única fase de pruebas para un sitio web, los desarrolladores prueban el código continuamente. Un desarrollador podría realizar una pruebas unitarias en la que probara el código mientras se esté escribiendo. Una revisión de un homólogo podría implicar que otro desarrollador examinara el código en busca de errores. Las pruebas de integración comprueban cómo se integra el código con otras partes del sitio web. Todas estas pruebas se realizan muchas veces, ya que el código se despliega continuamente. 
+
+
+Seguridad 
+
+
+DevOps se esfuerza por incorporar seguridad desde el principio, cuando los problemas de seguridad son más fáciles y menos costosos de resolver. A continuación, los desarrolladores DevOps examinan continuamente la seguridad del sitio web durante el resto del ciclo de vida de desarrollo. 
+
+
+
+Cumplimiento 
+
+
+Los ingenieros DevOps abordan la conformidad con la normativa en una etapa temprana y durante todo el ciclo de vida de desarrollo. La conformidad con la normativa garantiza que los sitios web cumplen con todas las leyes aplicables. Los sectores muy regulados como la asistencia médica y las finanzas son ejemplos en los que los desarrolladores de sitios web deben garantizar que su sitio satisface ciertos requisitos legales. Esto requiere planificación, desarrollo, pruebas y obligatoriedad de políticas cuando los desarrolladores web trabajan en el sitio web. 
+
+
+
+
+
+
+////////////////
+
+
+
+Módulo 4
+
+Entrega de sitios web a todos los dispositivos
+
+
+En este módulo, descubrirá cómo un explorador web se comunica con un servidor web para recibir contenido del sitio web. También conocerá el diseño reactivo y las consideraciones para entregar contenido a distintos tipos de dispositivos. También verá una descripción general de la entrega de contenido web como una aplicación web
+
+
+
+Entrega de contenido web como un sitio web
+
+
+Una vez que un desarrollador web ha creado e implementado un sitio web, este está disponible para que los usuarios accedan a él. Pero ¿cómo se entregan los archivos HTML, CSS y JavaScript? Los usuarios pueden acceder al contenido web mediante un sitio web o aplicaciones web. En primer lugar, examine el proceso de entrega de contenido web mediante un sitio web.
+
+
+Etapa 1
+
+Los servidores web entregan el contenido web de un sitio web al explorador a través de Internet. Los exploradores web se comunican con los servidores mediante el protocolo de transferencia de hipertexto (HTTP). HTTP facilita las solicitudes entre el explorador y el servidor para cargar las páginas web utilizando enlaces de hipertexto. Cada vez que un usuario accede a una página web o realiza alguna acción en una página web, el explorador envía una solicitud al servidor. Puesto que todo el código necesario para ejecutar el sitio web reside en el servidor, este procesa la solicitud y luego entrega una respuesta al explorador.
+
+Una solicitud de un explorador podría incluir:
+
+El URL que identifica el servidor y el recurso correctos. Un recurso puede ser el contenido web, datos específicos de una base de datos o una herramienta back-end necesaria para la ejecución.
+El método que define qué acción debe realizar el servidor. Las acciones pueden ser, entre otras, obtener un archivo o añadir o eliminar datos.
+
+
+
+Etapa 2
+
+Cuando el explorador envía una solicitud HTTP, el explorador y el servidor inician una sesión. Una sesión es el conjunto de interacciones de usuario en un sitio web en cada período de tiempo. Un explorador web interactúa con un servidor web durante una sesión para enviar y recibir datos acerca de las interacciones de usuario. Para realizar el seguimiento de las actividades de un usuario, el servidor crea un ID de sesión web y lo envía con la respuesta HTTP. Para cada solicitud subsiguiente, el explorador incluye el id de sesión con la solicitud. Durante la sesión, la información que el explorador envía al servidor se guarda en el lado del servidor para facilitar una nueva llamada más adelante durante la sesión.
+
+
+Etapa 3
+
+Los servidores web esperan a que el explorador envíe la solicitud, procesan la solicitud cuando llega y a continuación responden al explorador con una respuesta HTTP.
+
+Si la respuesta contiene una página HTML, el explorador representa la página para el usuario.
+Si la página incluye archivos CSS o JavaScript, o incluso archivos de imágenes, el explorador repite el proceso y envía una solicitud al servidor para descargar esos archivos.
+
+
+
+Es necesario clasificar las interacciones como sesiones porque las solicitudes HTTP son sin estado, lo que significa que cada solicitud que el explorador envía al servidor es independiente de las demás. El servidor no mantiene un registro de las interacciones anteriores con un explorador específico, y cada vez que el explorador envía una solicitud, el servidor sólo puede manejar la solicitud de acuerdo con la información que incluye el explorador. Cuando un servidor crea un id de sesión, es como el número de pedido en el ejemplo de la pizza. El id de sesión permite al explorador y al servidor recordar quién es el usuario, qué acciones ha realizado ya y qué datos el explorador y el servidor han enviado y recibido durante una sesión específica.
+
+
+
+
+Entrega de contenido web a distintos tipos de dispositivos
+
+
+Diseño reactivo
+
+La creación de un sitio web reactivo no cambia cómo se entrega el sitio. Pero sí modifica cómo este se desarrolla. Los desarrolladores web deben considerar cada tipo de dispositivo que los usuarios puedan utilizar para visualizar el sitio.
+
+
+Consideraciones acerca de las pruebas
+
+Cuando los desarrolladores creen sitios web reactivos, es importante que prueben continuamente la reactividad del sitio. Esto no se puede dejar para el final del proceso de desarrollo, ya que el diseño reactivo se debe incorporar desde el principio. 
+
+Los exploradores web tienen herramientas para desarrolladores integradas que permiten a un desarrollador visualizar el sitio en distintos tamaños de pantalla mediante la emulación. La emulación permite a un desarrollador que trabaja en un portátil o un ordenador de escritorio utilizar herramientas que imitan el aspecto y el comportamiento del sitio web en una tableta o un teléfono móvil. Los desarrolladores web utilizan estas herramientas de emulación para visualizar los sitios web y probar su funcionamiento en todos los dispositivos.
+
+
+Utilización de marcos para el diseño reactivo
+
+
+Un marco popular para el desarrollo de sitios web reactivos es Bootstrap. Bootstrap(opens in a new tab), originalmente diseñado y mantenido por Twitter, es un marco de código abierto gratuito para crear sitios web reactivos utilizando CSS y JavaScript. Los desarrolladores web se pueden beneficiar de un completo conjunto de herramientas que pueden utilizar para garantizar el correcto funcionamiento del sitio web en diversos tamaños de pantalla. 
+
+
+
+
+
+Entrega de contenido web como una aplicación web
+
+
+Los sitios reactivos funcionan bien en la mayoría de los exploradores modernos. Pero el diseño reactivo también permite a los desarrolladores entregar contenido web en otra tecnología denominada aplicaciones web. Las aplicaciones web son sitios web que se comportan como una aplicación y son tan eficaces y tienen tantas funciones como las aplicaciones de escritorio.
+
+
+Revise las siguientes consideraciones especiales acerca de las aplicaciones web
+
+
+Consideraciones acerca de los datos
+Los usuarios pueden abrir las aplicaciones web a las que acceden a través de una tienda de aplicaciones, o bien descargarlas de un sitio web para cuando no estén conectados a Internet. Por ello, es posible que los desarrolladores necesiten incluir datos con la aplicación que estaría disponible en un sitio web. Por ejemplo, los desarrolladores deberían empaquetar el texto y las imágenes que componen la interfaz de usuario con la aplicación para que el usuario tenga una buena experiencia incluso cuando trabaje fuera de línea.
+
+ 
+
+Los desarrolladores web también deben considerar qué puede hacer la aplicación si no hay datos disponibles. Por ejemplo, supongamos que un desarrollador web está creando una aplicación web que visualiza datos financieros. El desarrollador podría decidir almacenar los datos que el usuario ha visualizado por última vez y mostrar esos datos si el usuario no está conectado. Cuando el usuario vuelve a conectar su dispositivo a Internet, la aplicación actualiza los datos a los valores actuales.
+
+
+
+Consideraciones acerca de los datos
+
+Los usuarios pueden abrir las aplicaciones web a las que acceden a través de una tienda de aplicaciones, o bien descargarlas de un sitio web para cuando no estén conectados a Internet. Por ello, es posible que los desarrolladores necesiten incluir datos con la aplicación que estaría disponible en un sitio web. Por ejemplo, los desarrolladores deberían empaquetar el texto y las imágenes que componen la interfaz de usuario con la aplicación para que el usuario tenga una buena experiencia incluso cuando trabaje fuera de línea.
+
+ 
+Los desarrolladores web también deben considerar qué puede hacer la aplicación si no hay datos disponibles. Por ejemplo, supongamos que un desarrollador web está creando una aplicación web que visualiza datos financieros. El desarrollador podría decidir almacenar los datos que el usuario ha visualizado por última vez y mostrar esos datos si el usuario no está conectado. Cuando el usuario vuelve a conectar su dispositivo a Internet, la aplicación actualiza los datos a los valores actuales.
+
+
+Consideraciones acerca de la plataforma
+
+Aunque las plataformas como Android (Google), iOS y iPadOS (Apple) admiten las aplicaciones web, los wrappers para estas distintas plataformas pueden diferir. Una plataforma podría admitir la capacidad de guardar y leer archivos desde el dispositivo, mientras que otra podría limitar esta capacidad.
+
+
+Los desarrolladores tienen en cuenta las características de las aplicaciones web para las distintas plataformas y planifican las características de sus aplicaciones web y su estrategia de pruebas en consecuencia. Aunque se puede crear un sitio web reactivo para todos los dispositivos, el empaquetado de ese sitio en una aplicación web descargable requiere cierto trabajo adicional.
+
+
+Consideraciones acerca del soporte y el mantenimiento
+
+Un objetivo de diseño del desarrollo de sitios web reactivos es crear un sitio único que cualquier usuario en cualquier dispositivo pueda utilizar. Esto no solo proporciona una experiencia coherente para los usuarios. También puede reducir la cantidad de mantenimiento y soporte que el equipo de desarrollo web deba proporcionar. Suele ser más sencillo gestionar un solo sitio web y su código asociado que gestionar varios sitios web.
+
+Al desarrollar características para aplicaciones web que se entregan a través de wrappers de aplicaciones, los desarrolladores web deberían considerar realizar el mínimo número posible de personalizaciones. Si un desarrollador añade una característica a una plataforma que no es compatible con otras plataformas, se alejará del modelo de "sitio único". Si hace esto varias veces en distintas plataformas, aumenta el número de sitios que debe admitir y mantener.
+
+
+
+
+PREGUNTA 1 
+
+Seleccione todas las que correspondan.  CORRECTO 1 Y 4.
+
+¿Los menús responden a los distintos tamaños de pantalla?  CORRECTO
+
+Correctamente seleccionado
+¿La experiencia con la pantalla de un ordenador de escritorio es igual que la experiencia con la pantalla de un dispositivo móvil? 
+
+Incorrectamente seleccionado
+¿Las imágenes y los vídeos se adaptan a los distintos tamaños de pantalla? CORRECTO
+
+¿El sitio se ejecuta como una aplicación compilada?  NO SELECCIONAR
+
+
+
+
+PREGUNTA 2
+
+
+reacción 
+Correctamente descartado
+
+
+HTTP 
+Correctamente descartado
+
+
+emulación 
+Correctamente seleccionado
+
+
+estado
+NO SELECCIONAR
+
+
+
+
+PREGUNTA 3  :  CORRECTO SOLO 2.
+
+Una aplicación web entrega contenido web compilándolo como una aplicación de escritorio. 
+
+Correctamente descartado
+Una aplicación web entrega contenido web en un wrapper que empaqueta el texto y las imágenes que componen la interfaz de usuario. 
+
+Correctamente seleccionado
+Una aplicación web entrega contenido web como una aplicación nativa.   
+
+Correctamente descartado
+Una aplicación web entrega contenido web sin utilizar HTML. 
+
+
+
+
+PREGUNTA 4 : CORRECTAS 2, 3 Y 4.
+
+
+El servidor mantiene un registro de las interacciones anteriores con un explorador web específico. 
+Incorrectamente seleccionado
+
+
+Los servidores web le entregan el contenido web a través de un explorador web. 
+Correctamente seleccionado
+
+
+
+Cuando el explorador web envía una solicitud HTTP, el explorador y el servidor inician una sesión. 
+
+
+Incorrectamente descartado
+
+HTTP facilita las solicitudes entre el explorador web y los servidores web para cargar las páginas web utilizando enlaces de hipertexto. 
+
+
+
+
+PREGUNTA 5 : CORRECTAS 1 Y 4.
+
+Qué plataformas admiten las características y la personalización de aplicaciones? 
+
+Correctamente seleccionado
+¿Qué parte de la aplicación requiere un teclado y un ratón en lugar de poder utilizarlo complemente de forma táctil?   
+
+Incorrectamente seleccionado
+¿Qué marco permite a cualquier dispositivo acceder a la wifi y utilizarla? 
+
+Correctamente descartado
+¿Qué textos e imágenes componen la interfaz de la aplicación para que los usuarios tengan una buena experiencia al trabajar en línea o fuera de línea? 
+
+
+
+
+
+PREGUNTA  : CORRECTO 2 Y 3.
+
+
+Al diseñar una aplicación web, ¿cuáles de las siguientes opciones son consideraciones que los desarrolladores web deberían tener en cuenta? 
+
+ 
+
+Seleccione todas las que correspondan.
+
+¿Qué parte de la aplicación requiere un teclado y un ratón en lugar de poder utilizarlo complemente de forma táctil?   
+
+Incorrectamente seleccionado
+¿Qué plataformas admiten las características y la personalización de aplicaciones? 
+
+Correctamente seleccionado
+¿Qué textos e imágenes componen la interfaz de la aplicación para que los usuarios tengan una buena experiencia al trabajar en línea o fuera de línea? 
+
+Correctamente seleccionado
+¿Qué marco permite a cualquier dispositivo acceder a la wifi y utilizarla? 
+
+
+
+
+
+////////////////
+
+
+
+Módulo 5
+
+Servicios y herramientas para las pruebas y el despliegue
+
+
+
+Después de completar este módulo, debería ser capaz de:
+
+Diferenciar entre contenedores y máquinas virtuales
+Explicar cómo las máquinas virtuales ayudan a los desarrolladores web a probar los sitios web
+Describir distintos tipos de herramientas de tiempo de ejecución para probar y depurar los sitios web
+Describir las herramientas y los servicios más comunes utilizados para automatizar el despliegue de sitios web
+
+
+
+Herramientas y servicios de pruebas
+
+
+Virtualización
+
+
+Los contenedores y las máquinas virtuales (VM) son dos tecnologías que los desarrolladores web utilizan para crear entornos de ejecución. 
+
+
+
+Contenedor
+
+
+Un contenedor es un pequeño paquete de software que incluye sólo las partes de un sistema operativo necesarias para ejecutar código específico.
+
+Para utilizar un contenedor, los desarrolladores web no requieren una versión completa de un sistema operativo. Simplemente utilizan los elementos básicos que necesita la aplicación que desean ejecutar. Por ejemplo, un servidor web que no tenga una interfaz gráfica podría utilizar el sistema de archivos de un sistema operativo pero no el buscador de gráficos. De la misma forma, una aplicación de juegos puede depender en gran medida de los componentes gráficos y del sistema de archivos del sistema operativo, pero no utilizar los componentes de cifrado.  
+
+Un desarrollador puede ejecutar una pequeña aplicación de software que realiza repetidamente un trabajo utilizando un contenedor que incluye solo el software del sistema operativo necesario para ejecutar esa aplicación. Esto hace que el contenedor sea mucho más pequeño que un sistema operativo completo. También utiliza menos memoria, menos espacio de disco y menos potencia
+
+
+
+Máquina virtual (VM)
+
+
+Una máquina virtual (VM) es software que imita un sistema completo, tanto el hardware como el software. Una máquina virtual típica también incluye un sistema operativo como Linux o Windows. Una VM se puede ejecutar dentro del sistema operativo de un ordenador de escritorio, portátil o servidor determinado. Varias máquinas virtuales pueden incluso ejecutarse en un único dispositivo de hardware. 
+
+Los desarrolladores web crean una máquina virtual utilizando un paquete de software de máquina virtual. A continuación, instalan una versión completa del sistema operativo que necesitan y utilizan la VM de la misma forma que utilizarían cualquier otro dispositivo.
+
+
+
+Las VM tienden a utilizar muchos recursos y potencia computacional. Para tareas como ejecutar una función individual para un servicio, un contenedor podría ser una opción más eficiente
+
+
+
+
+
+Utilización de contenedores y máquinas virtuales para controlar entornos
+
+
+Los desarrolladores web pueden configurar contenedores y máquinas virtuales para ejecutar el código del sitio web de forma muy controlada.
+
+Los desarrolladores también pueden poner sus aplicaciones en un recinto de pruebas. El recinto de pruebas aísla un sitio web pero lo ejecuta de tal manera que imita un entorno real. Por ejemplo, un desarrollador puede poner un sitio web en un recinto de pruebas y luego exponerlo a un virus y comprobar si las medidas de seguridad que ha desarrollado son eficaces para proteger el sitio web contra el virus. Con el recinto de pruebas, el desarrollador puede aislar el virus para evitar infectar a otros ordenadores de la red. Los contenedores y las máquinas virtuales ayudan a crear estos entornos reales.
+
+El uso de máquinas virtuales y contenedores puede ayudar a los desarrolladores web a probar los sitios web en diversos entornos de usuarios, sin tener que comprar hardware para ejecutar esos entornos. Por ejemplo, un desarrollador web podría ejecutar varias máquinas virtuales, cada una de las cuales se ejecuta con un explorador de un fabricante distinto. A continuación, podría crear otra máquina virtual que ejecutara todos estos exploradores en la misma ubicación. Cada una de estas configuraciones le ayuda a probar distintos aspectos del sitio web.
+
+
+Es mucho más fácil crear entornos de máquina limpia mediante el uso de máquinas virtuales. Algunos software de máquina virtual permiten a los desarrolladores crear una unidad básica y una unidad de diferenciación. Instalan el sistema operativo en la unidad básica y luego crean una unidad de diferenciación para cualquier cambio adicional, por ejemplo, instalar un explorador determinado. Para volver a una máquina limpia, el desarrollador simplemente elimina la unidad de diferenciación y crea una nueva a partir de la unidad básica original. Esto le permite probar el sitio web en distintos exploradores sin tener que instalar el sistema operativo básico cada vez. 
+
+
+
+
+
+Herramientas de tiempo de ejecución
+
+
+Examinemos tres tipos de herramientas populares que los desarrolladores web utilizan para probar y depurar los sitios:
+
+1
+Herramientas para desarrolladores de exploradores
+
+2
+Herramientas de pruebas de las API
+
+3
+Herramientas de pruebas de rendimiento
+
+
+
+Cada herramienta proporciona una manera de visualizar el código fuente de un sitio web, depurar los problemas y modificar el HTML del sitio mientras se está ejecutando para que los desarrolladores puedan probar distintas soluciones y comprobar qué funciona y qué no. Estas herramientas son muy eficaces e indispensables para los desarrolladores web al desarrollar y probar sitios web.
+
+
+
+Herramientas para desarrolladores de exploradores
+
+
+En los exploradores basados en el proyecto de código abierto Chromium, como Google Chrome y Microsoft Edge, las herramientas se denominan Herramientas para desarrolladores.
+
+En Safari de Apple, los desarrolladores web pueden activar el menú Desarrollo para ver diversas herramientas de desarrollo de sitios web que proporciona Safari. 
+
+En Firefox, las herramientas están disponibles en el elemento de menú Herramientas del desarrollador web.
+
+
+
+Cada herramienta proporciona una manera de visualizar el código fuente de un sitio web, depurar los problemas y modificar el HTML del sitio mientras se está ejecutando para que los desarrolladores puedan probar distintas soluciones y comprobar qué funciona y qué no. Estas herramientas son muy eficaces e indispensables para los desarrolladores web al desarrollar y probar sitios web.
+
+
+
+
+
+Herramientas de pruebas de las API
+
+
+Ha aprendido que una tarea fundamental de la creación de sitios web es probar la transferencia de datos y la seguridad de las llamadas API. Una API de un sitio web expone los métodos que los desarrolladores web pueden utilizar para recuperar datos.
+
+
+Las API web proporcionan métodos que funcionan como los mostradores de una tienda de bebidas. Algunos métodos permiten a los desarrolladores enviar datos a los servidores web y bases de datos a través de la API.
+
+•
+El método más común para enviar datos se denomina método post.
+
+•
+El método más común para recuperar datos es el método get.
+
+
+Una herramienta popular que utilizan los desarrolladores para probar las llamadas API es Postman. Postman(opens in a new tab) tiene una opción que se puede utilizar de forma gratuita para empezar, y que ofrece una gran variedad de características para que los desarrolladores prueben los sitios web y resuelvan los problemas que encuentren. Los desarrolladores pueden crear solicitudes que utilicen los métodos post y get para comprobar cómo responde una API cuando intentan enviar o recuperar datos de una API.
+
+
+
+
+Herramientas de pruebas de rendimiento
+
+Los desarrolladores web obtienen información sobre el rendimiento del sitio web utilizando diversas herramientas que proporcionan indicadores sobre métricas clave. Una métrica es una unidad de medida aplicable a un aspecto determinado del rendimiento de un sitio web. Un ejemplo de una métrica es lo que mide el retardo entre el momento en que un usuario solicita una página web por primera vez y el momento en que el sitio web entrega los datos iniciales del sitio. Esta métrica se denomina tiempo hasta el primer byte. 
+
+La mayoría de las herramientas de pruebas de rendimiento notifican tipos similares de métricas. Por ejemplo, las métricas que recopila y visualiza la herramienta Lighthouse de Google son:
+
+•
+First Contentful Paint (FCP): mide cuánto tiempo le lleva al explorador representar el primer fragmento de contenido después de que un usuario navega a una página.
+
+•
+Índice de velocidad: mide la velocidad con la que el contenido se muestra visualmente durante la carga de una página.
+
+•
+Time to Interactive (TTI): mide cuánto tiempo lleva a una página ser completamente interactiva.
+
+•
+Total Blocking Time: esta métrica proporciona información sobre la cantidad de tiempo total que una página está bloqueada y no puede responder a la entrada del usuario, es decir, cuando este pulsa el ratón, toca la pantalla o pulsa una tecla de un teclado.  
+
+
+
+Fuente: Lighthouse Performance Audits(opens in a new tab), Chrome Developers 
+
+Lighthouse se integra en el explorador Google Chrome, pero otras herramientas como GTmetrix(opens in a new tab) no son específicas del explorador. En estas herramientas, un desarrollador escribe una dirección web y la herramienta genera un informe detallado sobre el rendimiento del sitio web.
+
+
+
+
+
+Herramientas y servicios de despliegue
+
+
+Una vez que los desarrolladores web han probado de forma exhaustiva los sitios web, deben desplegarlos para que los usuarios puedan acceder a ellos. Los desarrolladores suelen desplegar los sitios web de una de estas tres formas:
+
+•
+Un despliegue local, donde despliegan el sitio web en servidores web que gestiona una empresa determinada.
+
+•
+Un despliegue en la nube, donde despliegan el sitio web en un proveedor de servidores en la nube como IBM Cloud o Amazon Web Services (AWS).
+
+•
+Un despliegue híbrido en la nube, donde despliegan algunos servicios del sitio web en servidores locales y otros servicios en la nube. Por ejemplo, una empresa podría almacenar y entregar los datos de su sitio web en sus propios servidores, pero servir el contenido de su sitio web desde la nube.
+
+
+Muchas herramientas pueden admitir los tres tipos de despliegue, pero el despliegue en la nube se está convirtiendo rápidamente en el método de despliegue estándar para empresas y usuarios individuales.
+
+
+
+
+Interfaz de línea de comandos (CLI)
+
+Los desarrolladores pueden acceder a las características de muchas herramientas de despliegue desde la interfaz de línea de comandos (CLI). La línea de comandos es una herramienta que incluyen muchos sistemas operativos de servidores y de ordenadores de escritorio. La interfaz de la herramienta sólo admite entrada y salida de texto. Como sugiere el nombre, los desarrolladores utilizan la línea de comandos para escribir comandos y hacer trabajo o recuperar información. Una de las características principales de una línea de comandos es la capacidad de ejecutar automáticamente un archivo de texto que contiene un conjunto de comandos. Los desarrolladores pueden incluso crear este tipo de archivo de texto directamente en la CLI. En la mayoría de los sistemas operativos de servidor, estos archivos se denominan archivos de proceso por lotes.  
+
+Los desarrolladores pueden utilizar la línea de comandos para enviar comandos y obtener información de las herramientas de despliegue. Utilizando un archivo de proceso por lotes y la CLI, los desarrolladores pueden automatizar diversos pasos del despliegue. 
+
+Aquí mostramos un ejemplo de la interfaz de línea de comandos de Microsoft PowerShell(opens in a new tab). Los desarrolladores pueden especificar los comandos en esta interfaz, como un mandato para listar todos los archivos de una carpeta, y el programa PowerShell ejecuta esos comandos.
+
+
+
+
+Integración del código
+
+Cuando trabajan en equipo, varios desarrolladores web trabajarán en distintas partes de un sitio web. Antes del despliegue y después de todas las pruebas, es necesario reunir o integrar el código de estos desarrolladores para que todo el código pueda funcionar conjuntamente. Puesto que los desarrolladores cambian continuamente el código, las herramientas de despliegue utilizan una característica denominada integración continua que reúne periódicamente el código para probarlo y desplegarlo. 
+
+GitHub(opens in a new tab), un popular repositorio de código, ofrece una gran variedad de herramientas de despliegue y la integración de código es una característica central del sitio. El sistema de despliegue de IBM UrbanCode(opens in a new tab) también incluye integración continua y admite la automatización de otras herramientas que manejan la integración de código, como la herramienta de automatización de código abierto Jenkins(opens in a new tab).
+
+
+
+Herramientas de planeación
+
+Los despliegues web implican integración continua, entrega continua y despliegue continuo. Sin la capacidad para planear cuándo se deben realizar esas acciones, estos métodos para desarrollar, integrar y entregar código de sitios web pueden resultar complejos e imposibles de gestionar. Muchas herramientas de despliegue permiten a los desarrolladores definir fechas y horas específicas para sucesos determinados.  
+
+
+
+Planos
+
+En el despliegue de código, los planos representan la capacidad de crear y visualizar cada paso de un proceso de despliegue. Un plano gráfico muestra qué sucesos se producen en cada etapa del despliegue y permite a los ingenieros de despliegue modificar la configuración para una etapa determinada. Los desarrolladores web utilizan los planos para comprender mejor qué pasos del despliegue tendrán lugar y en qué orden.
+
+
+
+Herramientas basadas en la nube
+
+
+Cuando los desarrolladores eligen utilizar un proveedor de nube para alojar los sitios web, en la mayoría de los casos pueden acceder a todas las herramientas que necesitan para desplegar los sitios web en la nube. Los proveedores de nube también admiten integraciones con otras herramientas para facilitar la utilización de herramientas de código abierto con sus servicios. Por ejemplo, GitHub y Jenkins funcionan con todos los principales proveedores de nube, lo que facilita a los desarrolladores web el despliegue de los sitios en estos servicios. En el siguiente módulo analizaremos en más detalle el despliegue en la nube.
+
+
+
+
+
+////////////////
+
+
+
+Módulo 6
+
+Despliegue en la nube
+
+
+
+¿Qué es la nube?
+
+
+La nube, especialmente en los entornos técnicos, es el conjunto de servicios y almacenamiento de los que las empresas y los usuarios han llegado a depender. Por ejemplo, los desarrolladores web back-end podrían indicar que un conjunto de datos críticos de un sitio web están en almacenamiento en la nube o utilizan servicios de nube. En este contexto, se refieren a sitios o datos basados en Internet.
+
+
+
+Computación en la nube y desarrollo web
+
+
+Los proveedores de nube proporcionan todos los recursos que los desarrolladores web necesitan en un solo lugar. Por ejemplo, proporcionan herramientas de desarrollo, herramientas de despliegue y pruebas y herramientas de supervisión, así como escalabilidad a regiones de todo el mundo.
+
+
+Alojamiento
+Los servicios de nube ofrecen muchas opciones para alojar sitios web. Algunos ofrecen plantillas para populares sistemas de gestión de contenidos como WordPress y Drupal. Los sistemas de gestión de contenidos son paquetes de software que incluyen todo lo necesario para entregar contenido a los usuarios. Los proveedores de nube también alojan y gestionan los nombres de dominio.
+
+
+Réplica
+
+Imagine que necesita enviar por correo una carta mediante el servicio postal. Si el destinatario de la carta se encontrara en su misma ciudad, esperaría que la carta llegara mucho antes al destinatario que si este se encontrara en la otra punta del mundo. Aunque las señales electrónicas se mueven mucho más rápido que las cartas, aun así también muestran latencia. La latencia es el retardo entre el momento en que se transmite una señal electrónica y el momento en que se recibe. Cuanto más separados estén el origen y el destino, mayor será la latencia.
+
+Los servicios de nube modernos tienen servidores en todo el mundo. Ofrecen réplica para copiar automáticamente toda la base de código de un sitio web en servidores en distintas partes del mundo. La réplica ayuda a reducir la latencia al acercar el código del sitio web a los usuarios.
+
+
+Escalabilidad
+
+En los días previos a la nube, si necesitaba más potencia en su ordenador, debía actualizar el hardware, comprar otro ordenador o pedir uno prestado. Esto resultaba un inconveniente si sólo necesitaba la potencia adicional temporalmente.
+
+La nube ha ayudado a resolver este problema de escala. Muchos de los servicios web disponibles en la nube permiten a los equipos de desarrollo web pagar sólo por la capacidad y la potencia que utilicen. Si un desarrollador web necesita más almacenamiento, paga por él cuando lo necesita y puede volver al almacenamiento anterior cuando ya no lo requiera.
+
+
+Seguridad
+
+Cuando desea proteger su ordenador personal, puede instalar un escáner de virus o un cortafuegos. Los sitios web también necesitan protección. Usuarios malintencionados podrían intentar robar sus datos o que el sitio web deje de funcionar. Los servicios de nube incluyen herramientas que pueden garantizar la seguridad de los sitios web.
+
+Por ejemplo, los servicios de nube pueden ayudar a impedir los ataques de denegación de servicio (DoS). Un ataque de denegación de servicio intenta sobrecargar un sitio web enviando enormes cantidades de solicitudes falsas a su servidor para que el sitio web no pueda responder a las solicitudes legítimas. Los servicios de nube pueden supervisar estos tipos de ataque e impedir que las solicitudes lleguen al sitio web o alertar al propietario del sitio web sobre el ataque.
+
+
+Supervisión
+
+La mayoría de los servicios de nube incluyen herramientas para examinar el estado de los servicios web que utiliza el desarrollador web. Por ejemplo, un desarrollador web podría necesitar entender cuánta potencia utiliza el sitio a fin de escalarlo hacia arriba o hacia abajo si no hay potencia suficiente o si utiliza demasiada, respectivamente.
+
+Las herramientas de supervisión ayudan a los desarrolladores a ver todos los aspectos del sitio, desde el tráfico de red hasta las solicitudes que recibe el sitio web. Muchos servicios de nube proporcionan un panel de control personalizable para que los desarrolladores puedan ver rápidamente la información sobre muchos elementos esenciales del sitio web.
+
+
+Herramientas de desarrollo
+
+La mayoría de los proveedores de nube incluyen herramientas que los desarrolladores web pueden utilizar para crear sitios web. Algunos ofrecen herramientas para crear soluciones back-end, como IBM Vapor, y otros proporcionan editores de código para el desarrollo front-end y back-end, como Microsoft Visual Studio Code. La mayoría de los proveedores de nube también incluyen una interfaz de línea de mandatos para la resolución de problemas, el despliegue y las pruebas de los servicios web.  
+
+
+Los servicios de nube ahorran tiempo de despliegue, ya que incluyen muchas herramientas, como creación de páginas y soporte de conectores, que muchos autores de contenido necesitan. Los servicios de nube facilitan el despliegue y la gestión de estas plantillas. Los servicios de nube también proporcionan toda la infraestructura para que los desarrolladores web puedan crear sus propios sitios desde cero. Con ellos, los desarrolladores web pueden crear servidores web, máquinas virtuales y contenedores y escribir funciones. Las funciones, en este sentido, son software que maneja trabajos muy específicos para el sitio web.
+
+
+
+Inclusión en contenedores
+
+
+Un contenedor de software es un paquete estandarizado. Todo lo necesario para ejecutar el programa está dentro de un único contenedor que incluye el código, el entorno de ejecución, las bibliotecas y herramientas del sistema y la configuración.
+
+
+
+Los ventajas de la utilización de los contenedores
+
+Los contenedores proporcionan dos ventajas principales a los desarrolladores web.
+
+1
+En un contenedor, el código ya no depende del hardware para su ejecución. Al colocar todas las partes necesarias del software en un contenedor, los desarrolladores crean entornos autónomos y portátiles. A continuación, pueden desplegar los contenedores en distintos sistemas.
+
+2
+Los desarrolladores pueden utilizar un único contenedor para ejecutar lo que deseen desde un sitio web estático, un proceso de software o una aplicación grande. Las organizaciones pueden incluso dividir los sitios web y aplicaciones más grandes en microservicios que pueden empaquetar en contenedores y desplegar en la nube. Un microservicio es una parte autónoma de un sitio web o aplicación que ofrece una funcionalidad única, por ejemplo, autenticación del usuario, recomendaciones, menús o búsqueda.
+
+
+
+
+
+***************************

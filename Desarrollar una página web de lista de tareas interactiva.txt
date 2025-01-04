@@ -1,0 +1,331 @@
+
+
+
+Desarrollar una página web de lista de tareas interactiva
+
+
+
+Finalidad
+
+Su equipo está formado por un gestor de producto, un diseñador web y usted, el desarrollador web de front-end. Está desarrollando una página web para el departamento de contabilidad de la empresa. La finalidad de la página web es ayudar a los empleados a realizar un seguimiento de sus tareas de trabajo en una lista de tareas interactiva.
+
+
+Requisitos
+
+El gestor de producto ha proporcionado una lista de los requisitos que debe cumplir la página web. Estos son los requisitos:
+
+El usuario debe poder especificar una tarea.
+
+El usuario debe poder añadir una tarea mediante la tecla Intro del teclado o pulsando un botón.
+
+La tarea del usuario debe aparecer en la página web de forma estructurada.
+
+El usuario debe poder marcar una tarea como completada.
+
+El usuario debe tener la confirmación visual de que se ha completado una tarea.
+
+Se debe mostrar al usuario un mensaje de error si no especifica una tarea correctamente.
+
+Se deben seguir las pautas de marca de la empresa.
+
+La página de lista de tareas debe ser atractiva y funcional tanto en ordenadores de escritorio como en dispositivos móviles.
+
+
+
+Este diagrama de wireframes documenta todo el diseño de cada elemento de diseño que debería incluir la página web una vez completada
+
+
+
+
+Simulación: Configurar archivos de proyecto
+
+
+
+
+
+
+/////////////////
+
+
+
+
+¿Cuáles de las siguientes opciones son un requisito para la página web que está desarrollando? 
+
+ 
+
+Seleccione todas las que correspondan.
+
+El equipo de contabilidad debe leer todos los códigos de error si especifican una tarea incorrectamente. 
+
+El diseñador web convierte los requisitos y el wireframe en un página funcional.
+
+La lista de tareas debe ser funcional tanto en ordenadores de escritorio como en dispositivos móviles.
+
+El usuario debe poder añadir una tarea mediante la tecla Intro del teclado o pulsando un botón.
+
+
+
+
+
+
+
+/////////////////
+
+
+
+
+Módulo 3
+
+Configurar una página web con HTML
+
+
+
+Descripción general rápida de HTML
+
+
+Simulación: Utilizar HTML para aplicar estilo a una página
+
+
+
+
+
+//////////////////
+
+
+
+
+Módulo 4
+
+Aplicar estilos con CSS
+
+
+
+Pautas de marca a seguir
+
+
+Estas son las pautas de marca de la empresa:
+
+•
+Fuente: Sans-serif 
+
+•
+Colores: #0F62FE para los elementos principales, #BAE6FF para los elementos de contraste, #FFFFFF para los elementos blancos
+
+•
+Bordes: deben redondearse en todos los elementos
+
+
+
+
+Simulación: Utilizar CSS para aplicar estilo a una página
+
+
+Para crear selectores de ID, utilice el símbolo de almohadilla. Por ejemplo: #tasks. 
+
+Para crear selectores de clase, utilice el punto. Por ejemplo: .tasks.   
+
+Para crear selectores encadenados, utilice un punto entre los nombres de selector. Por ejemplo: .tasks.overflow. Puede encadenar selectores para agrupar elementos en función de las características que tengan en común, como su tipo de elemento o su nombre de clase. 
+
+Para crear pseudoelementos, utilice dos signos de dos puntos para separar el nombre de selector de la parte del elemento donde desea aplicar estilo. Por ejemplo: tasks::-webkit-scrollbar. Puede utilizar pseudoelementos para aplicar estilo a parte de un elemento.
+
+
+
+
+////////////////////
+
+
+
+
+
+Módulo 5
+
+Añadir interactividad con JavaScript
+
+
+
+Utilizará JavaScript en la página no solo para que el usuario pueda añadir tareas sino también para diseñar los elementos en la página. Utilizará distintas funciones JavaScript para proporcionar interactividad a los usuarios y diseñar la distribución de la página.
+
+Aquí tiene información importante sobre JavaScript a tener en cuenta para habilitar la interactividad y disponer los elementos en la página web.
+
+
+Interactividad
+Los escuchas de sucesos, como un suceso onclick, detectan o "escuchan" cuándo los usuarios interactúan con un elemento. 
+
+Cuando el usuario interactúa con el elemento, el escucha de sucesos ejecuta un manejador de sucesos en forma de función. 
+
+JavaScript puede esperar la interacción de los usuarios con el hardware, por ejemplo, cuando pulsan el teclado o el ratón.
+
+JavaScript puede cambiar otras partes de la interfaz de usuario cuando un usuario interactúa con un elemento. Por ejemplo, JavaScript puede aplicar un estilo de tachado al texto de las tareas de la lista cuando el usuario selecciona la casilla de tarea completada. 
+
+
+Diseño de página
+JavaScript puede escribir elementos HTML y colocarlos dentro de los elementos HTML existentes. 
+
+Mediante un método como querySelector, JavaScript puede encontrar elementos HTML y modificarlos. 
+
+JavaScript puede ocultar o mostrar elementos de la interfaz de usuario según los escenarios definidos. Por ejemplo, JavaScript puede mostrar una barra de desplazamiento cuando un elemento alcance una altura determinada y ocultarlo cuando esté por debajo de esa altura.
+
+
+
+Sintaxis JavaScript
+
+
+Llaves 	         { } 
+	
+Las llaves contienen funciones y otros bloques de código en JavaScript. La llave izquierda abre el bloque de código o función y la derecha lo cierra. Por ejemplo, una sentencia if incluiría código utilizando las llaves de apertura y cierre:
+
+if (a == b) {
+alert ("a y b son iguales")
+}
+
+
+Signo igual  	=	
+
+El signo igual u operador de asignación indica a una variable qué datos debería contener. Por ejemplo, myVar = 3 hace que la variable myVar sea igual a 3. 
+
+
+Signo igual doble
+==
+
+El signo igual doble u operador de igualdad evalúa si dos valores son iguales. La frase a == b evaluaría si el valor de a es igual al de b. Si se utiliza el signo igual doble, JavaScript intentará convertir y comparar valores de tipos distintos. Por ejemplo, JavaScript evaluará '1' == 1 como iguales aunque el primer valor es una serie y el segundo es un número.
+
+
+
+Signo igual triple
+===
+
+
+El signo igual triple u operador de igualdad estricta evalúa si dos elementos son estrictamente iguales. Por ejemplo,  JavaScript evaluará '1' === 1 como distintos porque el primer valor es una serie y el segundo es un número.
+
+
+Punto y coma	;	
+
+El punto y coma indica que una sentencia está completa. Por ejemplo, un punto y coma al fin de esta sentencia indica a JavaScript que trate la sentencia como completa y que está lista para su ejecución: alert(“hello”);
+
+
+
+Paréntesis	( )	
+
+
+Los paréntesis de apertura y de cierre envían o reciben información a y desde funciones. Por ejemplo, myFunction(3) pasaría el valor de 3 a la función llamada myFunction.  
+
+
+
+
+
+
+/////////////////////
+
+
+
+Módulo 6
+
+Probar una página web
+
+
+Probar los aspectos visuales
+
+Contiene una lista de comprobación de preguntas que se debe tener en cuenta al probar los aspectos visuales de la página web.
+
+Colores
+
+¿Los colores cumplen con los requisitos y el diagrama de wireframes?
+
+¿Ha incluido en el archivo CSS los valores de color hexadecimales correctos para los estilos? 
+
+
+
+Diseño de los elementos
+
+¿Hay elementos solapados?
+
+¿El espaciado entre los elementos es el adecuado?
+
+¿Algún elemento desaparece de la pantalla al añadir elementos de tarea?
+
+¿Las barras de desplazamiento funcionan con el diseño?
+
+¿Ha consultado el archivo CSS para asegurarse de que está espaciando los elementos de acuerdo con los requisitos y el diagrama de wireframes?
+
+
+
+Información del usuario
+
+¿Los mensajes aparecen de la forma prevista?
+
+¿Los mensajes son claros y legibles?
+
+¿La interfaz de usuario tiene indicaciones que especifican al usuario qué hacer?   
+
+¿Ha utilizado etiquetas claras para los botones?
+
+
+
+Probar la funcionalidad
+
+Contiene una lista de comprobación de preguntas que se debe tener en cuenta al probar la funcionalidad de la página web.
+
+Comportamiento de los elementos de usuario
+
+¿Los botones funcionan de la forma prevista?
+
+¿Las interacciones de teclado funcionan de la forma prevista?
+
+¿La casilla de verificación cambia visualmente el aspecto de una tarea?
+
+
+
+
+Comportamiento de los elementos visuales
+
+¿Las barras de desplazamiento se visualizan de la forma prevista?
+
+¿JavaScript presenta los elementos de la forma prevista? 
+
+¿Los mensajes para los usuarios aparecen de la forma prevista? 
+
+
+
+
+
+Extraer conclusiones de su primer proyecto web
+
+
+
+Si desea saber más sobre cómo desarrollar una página web usando HTML, CSS y JavaScript, consulte estos recursos: 
+
+Visual Studio Code(opens in a new tab): empiece probando una versión gratuita del editor de código de Microsoft para crear y depurar aplicaciones web y en la nube y consulte la documentación de VS Code(opens in a new tab) para obtener más información.    
+
+
+https://code.visualstudio.com/docs
+
+
+
+MDN Web Docs(opens in a new tab): encuentre guías y referencias para aprender HTML, CSS, JavaScript y más. Con el área de aprendizaje de MDN(opens in a new tab) dedicada al desarrollo web puede pasar de principiante a estar familiarizado con el desarrollo web.
+
+https://developer.mozilla.org/en-US/docs/Learn_web_development
+
+
+
+IBM Developer(opens in a new tab): ofrece oportunidades para ampliar conocimientos, utilizar código de ejemplo real y conectar con una comunidad global de desarrolladores. Encontrará artículos, blogs, rutas de formación y guías de aprendizaje por tema o lenguaje/marco. 
+
+
+https://developer.ibm.com/
+
+
+W3Escuelas(opens in a new tab): ofrece diversas guías de aprendizaje en línea gratuitas con prácticas. El sitio incluye guías de aprendizaje sobre HTML, CSS y JavaScript. (Nota: Deberá registrarse para una cuenta gratuita.)
+
+
+https://www.w3schools.com/
+
+
+
+
+/////////////////////
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+
+
+
+Su futuro en el desarrollo web : panorama laboral
+
+
+
+Opciones de aprendizaje gratuitas para adquirir competencias
+Aquí tiene algunos sitios recomendados que puede visitar si le interesa aprender más sobre los fundamentos del desarrollo web y de la programación.
+
+Nota: deberá registrarse para obtener una cuenta gratuita para acceder a los siguientes recursos de aprendizaje en línea. 
+
+IBM Developer(opens in a new tab) ofrece oportunidades para desarrollar habilidades, utilizar código de ejemplo real y conectar con una comunidad global de desarrolladores. Encontrará artículos, blogs, rutas de formación y guías de aprendizaje por tema o lenguaje/marco, incluidos Java(opens in a new tab) y Node.js(opens in a new tab). 
+
+edX(opens in a new tab) ofrece varios cursos gratuitos en vídeo sobre desarrollo y diseño web, entre los que se incluyen el de Harvard University CS50’s Introduction to Computer Science(opens in a new tab). Los cursos edX son gratuitos.  
+
+Web.dev(opens in a new tab), creado por Google, ofrece una amplia variedad de artículos y guías de aprendizaje sobre temas de desarrollo web para desarrolladores principiantes y avanzados.   
+
+W3Schools(opens in a new tab) es el principal sitio para desarrolladores web del mundo que ofrece una gran variedad de guías de aprendizaje gratuitas en línea con prácticas. El sitio contiene guías de aprendizaje sobre HTML(opens in a new tab), CSS(opens in a new tab), JavaScript(opens in a new tab) y más.  
+
+Codecademy(opens in a new tab) ofrece guías de aprendizaje autoguiadas para que los principiantes aprendan los fundamentos de la programación de desarrollo web. Experimente un entorno de desarrollo autónomo dentro del navegador en el que podrá aprender las estructuras básicas del código de front-end como HTML y CSS(opens in a new tab) antes de pasar a lenguajes de back-end como Ruby(opens in a new tab) y Python(opens in a new tab). 
+
+Khan Academy(opens in a new tab) ofrece varios cursos gratuitos de programación, entre ellos Intro to SQL(opens in a new tab) y Advanced JS: Games and Visualization(opens in a new tab). 
+
+También puede aprovechar IBM SkillsBuild(opens in a new tab) para potenciar su futuro en el campo de la tecnología con competencias laborales, cursos, credenciales digitales y mucho más.  
+
+
+
+
+
+Herramientas gratuitas para desarrollar conocimientos de programación
+
+
+
+Aquí encontrará algunos sitios recomendados que puede visitar si le interesan los retos para desarrollar y perfeccionar sus conocimientos de programación.
+
+Nota: tendrá que registrarse para una cuenta gratuita si desea acceder al código. 
+
+Scratch(opens in a new tab) es una comunidad de programación interactiva desarrollada por MIT. Scratch tiene su propio lenguaje con una interfaz visual simple diseñada para ayudar a los estudiantes a adquirir habilidades de pensamiento informático y de resolución de problemas.(opens in a new tab)
+
+Codepen(opens in a new tab) le ofrece sugerencias semanales para practicar sus habilidades de desarrollo. También puede revisar el código de otros desarrolladores en busca de inspiración y aprender nuevas técnicas de codificación.
+
+
+
+
+Organizaciones profesionales a tener en cuenta
+
+
+La International Web Association(opens in a new tab) (IWA) es una asociación global que ofrece a los profesionales de la web formación, la oportunidad de obtener certificaciones y una comunidad para profesionales de la web. La IWA cuenta con numerosas delegaciones locales en todo el mundo que ofrecen a los profesionales de la web oportunidades para establecer contactos y aprender. 
+
+La World Organization of Webmasters (WOW)(opens in a new tab), también conocida como WebProfessionals.org, es una asociación sin ánimo de lucro que ofrece oportunidades de obtener certificaciones profesionales, así como conferencias y eventos presenciales para profesionales de la web. 
+
+El World Wide Web Consortium (W3C)(opens in a new tab) es una comunidad internacional que desarrolla estándares abiertos(opens in a new tab) para garantizar el crecimiento a largo plazo de la World Wide Web.
+
+
+
+

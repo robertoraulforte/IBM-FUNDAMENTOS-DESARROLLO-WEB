@@ -1,0 +1,1351 @@
+
+
+INTRODUCCION A HTML Y CSS
+
+
+
+
+La declaración DOCTYPE
+
+
+La declaración DOCTYPE es <!DOCTYPE html>.
+
+Esta declaración describe la versión de HTML que se está utilizando.
+
+
+
+
+El elemento HTML
+
+
+El elemento HTML es <html></html>.
+
+Este elemento envuelve todos los demás elementos en una página. Define el tipo de documento (un documento HTML) que lee el analizador.
+
+
+
+El elemento de cabecera
+
+
+El elemento de cabecera es <head></head>.
+
+Este elemento define otros recursos, como metadatos, scripts y estilos que utiliza la página HTML. Normalmente, el usuario no percibe directamente lo que contiene el elemento de cabecera.
+
+
+
+
+El elemento del cuerpo
+
+
+El elemento del cuerpo es <body></body>.
+
+Este elemento es donde se colocará la mayor parte del contenido de la página. Los elementos de esta sección pueden utilizar recursos como scripts y estilos definidos en la sección de cabecera.
+
+
+
+
+En HTML, estos elementos se relacionan de esta forma:
+
+<!DOCTYPE html> 
+<html>
+	<head>
+	</head>
+	
+	<body>
+	</body>
+</html>
+
+
+Todo documento HTML debe empezar con este marco básico. Observe que los elementos de cabecera y del cuerpo están anidados en el elemento HTML.
+
+
+
+Párrafo <p></p>
+
+Se utiliza para dar formato a texto que necesita fluir junto.
+
+Los elementos de párrafo suelen tener un margen en la parte superior e inferior para proporcionar espacio entre los elementos circundantes.
+
+
+
+Cabecera <h[1-6]></h[1-6]>
+
+Se utiliza para enfatizar secciones de texto de forma jerárquica.
+
+Hay seis niveles de cabecera principal, cada uno con un formato distinto para mostrar un nivel decreciente de jerarquía. El elemento h1 es el nivel más alto y h6 es el más bajo. Es distinto al elemento <head> que es una sección HTML.
+
+
+
+Ancla <a></a>
+
+Se utiliza para enlazar a otro documento o recurso.
+
+La etiqueta de ancla requiere información adicional para enlazar a otro documento. Por ejemplo, puede enlazar a la página de inicio de su sitio web favorito utilizando el elemento de ancla.
+
+
+
+Tramo <span></span>
+
+Se utiliza para texto a nivel de palabra u oración.
+
+Este elemento es útil para aplicar estilo a oraciones individuales de un párrafo o sección. Es útil también al diseñar páginas con muchas palabras u oraciones individuales.
+
+
+
+Bloque de cita <blockquote></blockquote>
+
+Se utiliza para el texto de una cita de otra fuente.
+
+
+
+Salto <br>
+
+Se utiliza para que el texto salte a una nueva línea.
+
+No hay ningún otro formateo implícito en este elemento. Por ejemplo, el elemento no añade un margen superior. Este elemento no tiene ninguna etiqueta de cierre. 
+
+
+
+Imagen <img></img>
+
+Se utiliza para incluir una imagen en un documento HTML.
+
+Debe incluir el atributo src (fuente) que apunta a una ubicación válida de la imagen. Por ejemplo, puede utilizar <img src=“https://www.mysite.com/images/myimage.jpg”>Imagen de mi gato</img>
+
+
+
+
+Regla horizontal <hr>
+
+Se utiliza para colocar un salto visual entre otros elementos.
+
+Por lo general, se implementa como una línea recta y horizontal. Se puede modificar con estilos. Este elemento no tiene ninguna etiqueta de cierre.
+
+
+
+
+
+
+A continuación, siga los pasos de este ejemplo para descubrir cómo puede utilizar los elementos HTML para crear una página web básica.
+
+Información personal
+<p></p> 
+
+Puede utilizar etiquetas de párrafo alrededor de su nombre, dirección y número de teléfono para proporcionar un diseño claro y legible.
+
+Su foto
+<img></img> 
+
+Puede utilizar el elemento de imagen para incluir su foto en la página de su CV. La etiqueta de imagen puede apuntar a una foto de carnet o de otro tipo que los encargados de la selección pueden utilizar para hacerse una idea de quién es usted.
+
+
+Elementos de cabecera para estructurar la información
+<h1></h1> 
+
+Puede utilizar elementos de cabecera en torno a secciones como la de su información personal o de su historial laboral para presentar diversas secciones del CV. Los elementos de cabecera incluyen números que van del 1 (tamaño mayor) al 6 (tamaño menor).
+
+
+Regla horizontal para separar su historial laboral
+<hr></hr> 
+
+Para separar su información personal de su historial laboral, una regla horizontal puede proporcionar un salto visual claro entre las secciones.
+
+
+Elemento de bloque de cita para presentar comentarios positivos
+<blockquote></blockquote> 
+
+Para presentar un comentario positivo de un empleador anterior, utilice el bloque de cita para enfatizar lo que otros han dicho sobre usted.
+
+
+
+
+
+Explorar más
+
+Eche un vistazo a estos recursos:
+
+Guía de aprendizaje en línea "HTML Elements" de W3Schools(opens in a new tab) para obtener más información e incluso probar la utilización de distintos elementos HTML.
+MDN Web Docs de Mozilla(opens in a new tab) para obtener más información sobre los elementos y etiquetas HTML, y explorar la página de consulta de los elementos HTML.
+
+
+
+
+
+En un documento HTML estándar, ¿qué relación mantiene el elemento del cuerpo con el elemento HTML?
+
+Padre
+
+Homólogo
+
+Hijo
+
+Cabecera
+
+
+La respuesta correcta es:
+
+**Hijo**
+
+### **Explicación:**
+
+En un documento HTML estándar, la estructura jerárquica se organiza de la siguiente manera:
+
+- El **elemento `<html>`** es el elemento raíz que contiene todo el contenido de la página web.
+- El **elemento `<body>`** es un hijo del elemento `<html>`. 
+
+Es decir, el `<body>` está contenido dentro del `<html>`, por lo que se considera un **hijo** del elemento `<html>`. El cuerpo de la página web, representado por `<body>`, es donde se coloca el contenido visible para los usuarios, como texto, imágenes, enlaces, etc.
+
+### **Estructura básica de un documento HTML:**
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo</title>
+    </head>
+    <body>
+        <h1>Bienvenido a la página</h1>
+        <p>Este es un párrafo de texto.</p>
+    </body>
+</html>
+```
+
+En este ejemplo:
+- `<html>` es el elemento raíz.
+- `<head>` es un hijo de `<html>`.
+- `<body>` también es un hijo de `<html>`. 
+
+### **Conclusión:**
+El `<body>` es un **hijo** del elemento `<html>`.
+
+
+
+
+
+
+Shema desea añadir una cita con un enlace al autor de la cita en la página web de su CV.
+
+¿Qué dos elementos necesitaría utilizar?
+
+Bloque de cita <blockquote></blockquote> y ancla <a></a>
+
+bloque de cita <blockquote></blockquote> y enlace <link></link>
+
+cita <quote></quote> y ancla <a></a>
+
+ancla <a></a> y enlace </link>
+
+
+La respuesta correcta es:
+
+**Bloque de cita `<blockquote></blockquote>` y ancla `<a></a>`**
+
+### **Explicación de los elementos:**
+
+1. **`<blockquote></blockquote>`**:
+   - El elemento `<blockquote>` se utiliza para representar una cita extensa de otro autor. Se emplea generalmente para marcar texto que proviene de una fuente externa, y por defecto se le da un formato de sangría.
+   - Ejemplo de uso:
+     ```html
+     <blockquote>
+       "La vida es lo que pasa mientras estás ocupado haciendo otros planes."
+       <footer>John Lennon</footer>
+     </blockquote>
+     ```
+
+2. **`<a></a>`**:
+   - El elemento `<a>` se utiliza para crear enlaces. Puedes usarlo para enlazar a la página del autor de la cita.
+   - Ejemplo de uso:
+     ```html
+     <a href="https://www.johnlennon.com" target="_blank">John Lennon</a>
+     ```
+
+### **Combinación de ambos elementos**:
+
+Shema podría usar el bloque de cita `<blockquote></blockquote>` para envolver la cita y un enlace `<a></a>` para enlazar al autor. Ejemplo completo:
+
+```html
+<blockquote>
+  "La vida es lo que pasa mientras estás ocupado haciendo otros planes."
+  <footer>- <a href="https://www.johnlennon.com" target="_blank">John Lennon</a></footer>
+</blockquote>
+```
+
+### **Conclusión**:
+Para añadir una cita con un enlace al autor en la página web de Shema, necesitaría usar **`<blockquote></blockquote>`** para la cita y **`<a></a>`** para enlazar al autor.
+
+
+
+
+
+//////////////////////
+
+
+
+Módulo 2
+
+Controlar elementos con atributos
+
+
+
+Los atributos HTML se suelen incluir en la etiqueta de apertura de un elemento. Se incluyen después del nombre de elemento y antes del corchete de cierre del elemento de apertura. Este ejemplo muestra una etiqueta de párrafo con el atributo de estilo que cambia el color del texto en el elemento de párrafo a verde.
+
+<p style=“color:green;”>Este texto está en verde</p>
+
+
+
+Modificar el estilo de un elemento
+
+Mediante el atributo de estilo, puede modificar el aspecto de los elementos. También puede utilizar el atributo class o id para utilizar un estilo de hoja de estilo para controlar su aspecto.
+
+
+Proporcionar datos para interacciones y multimedia.
+
+Utilizará un atributo en las etiquetas de ancla e imagen para indicar al explorador dónde enviar a los usuarios o qué imágenes llevar a la página web.
+
+
+Especificar interacciones de suceso
+
+Puede apuntar a las funciones JavaScript utilizando atributos de suceso en determinados elementos. Esto hará que las páginas web sean dinámicas y proporcionará elementos interactivos
+
+
+Incluir metadatos
+
+Los metadatos son información que utiliza el sitio web y que los usuarios no suelen ver. Algunos de los atributos se utilizan para añadir más información a elementos para que el sitio web sea visible para los motores de búsqueda o accesible para los lectores de pantalla
+
+
+
+
+
+¿Dónde debería un desarrollador web añadir un atributo style a un elemento?
+
+Dentro de la etiqueta de apertura
+
+Dentro de la etiqueta de cierre
+
+Dentro del cuerpo del elemento
+
+Fuera de la etiqueta de apertura del elemento
+
+
+
+La opción correcta es:
+
+**Dentro de la etiqueta de apertura**
+
+Explicación:  
+El atributo `style` se utiliza para aplicar estilos CSS en línea a un elemento HTML y debe añadirse dentro de la etiqueta de apertura del elemento. Por ejemplo:
+
+```html
+<p style="color: red; font-size: 16px;">Este texto es rojo y tiene un tamaño de fuente de 16px.</p>
+```
+
+
+
+Existe un conjunto de atributos comunes a muchos elementos que utilizará con frecuencia, como por ejemplo:
+
+•
+Atributos de estilo y diseño
+
+•
+Atributos de acción
+
+•
+Atributos de suceso
+
+
+
+
+Atributos de estilo y diseño
+
+
+style
+Establece el estilo del elemento utilizando una serie de propiedades y valores. Las propiedades que se pueden establecer varían según el elemento al que se aplica el atributo style.
+
+
+id
+Establece la referencia de un estilo de id en una hoja de estilo. Los estilos de id los utiliza un único elemento.
+
+
+class
+Establece la referencia de un estilo de clase en una hoja de estilo. Los estilos de clase los pueden utilizar uno o varios elementos.
+
+
+display
+Establece cómo se debe presentar el elemento en relación con otros elementos. Por ejemplo, "display: inline" forzará a que el elemento y los elementos cercanos se presenten unos junto a otros horizontalmente.
+
+
+aria-label
+Establece un nombre o etiqueta en los elementos HTML para la tecnología de asistencia (por ejemplo, lectores de pantalla).
+
+
+
+
+Atributos de acción
+
+
+href
+Establece el destino de un recurso enlazado como un hiperenlace.
+
+
+src
+Establece la ubicación de un recurso como un archivo multimedia que debe incluirse en la página web.
+
+
+Autofocus
+Indica al explorador que el elemento debe tener el foco cuando se cargue la página.
+
+
+Draggable
+Indica si el elemento se puede arrastrar o no.
+
+
+
+
+Atributos de suceso
+
+
+onclick
+Establece que se ejecute la función de script cuando el usuario pulse en el elemento.
+
+
+onerror
+Establece que se ejecute la función de script cuando se produzca un error.
+
+
+onkeypress
+Establece que se ejecute la función de script cuando el usuario pulse una tecla.
+
+
+onscroll
+Establece que se ejecute la función de script cuando el usuario se desplace por la página.
+
+
+
+
+
+Priyanka está escribiendo código para crear su propio sitio web para un proyecto escolar. Quiere que parte del texto aparezca en negrita y morado.
+
+¿Cuál es código correcto que debe utilizar Priyanka?
+
+<p style=color:purple,bold>¡Mi color favorito es el morado!</p>
+
+<p style=“color:purple;bold;”<¡Mi color favorito es el morado!</p>
+
+<p style=“color:purple:weight:bold<¡Mi color favorito es el morado!</p>
+
+<p style= “color:purple; font-weight:bold;”>¡Mi color favorito es el morado!</p>
+
+La opción correcta es:
+
+**`<p style="color:purple; font-weight:bold;">¡Mi color favorito es el morado!</p>`**
+
+### Explicación:
+1. **`style`** es un atributo que permite aplicar estilos CSS en línea.
+2. **`color:purple;`** especifica el color del texto como morado.
+3. **`font-weight:bold;`** hace que el texto aparezca en negrita.
+4. El uso correcto de las propiedades CSS requiere que cada regla esté separada por un punto y coma (`;`).
+
+Las demás opciones tienen errores de sintaxis, como:
+- Uso incorrecto de comas (`color:purple,bold`).
+- Falta de cierre de etiquetas.
+- Uso incorrecto de propiedades CSS (`color:purple:weight:bold`).
+
+
+
+
+¿Cuál de los siguientes atributos HTML puede utilizar para cambiar el color del texto en una página web?
+
+Atributo de estilo
+
+Atributo de acción
+
+Atributo de color
+
+Atributo de suceso
+
+
+La respuesta correcta es:
+
+**Atributo de estilo**
+
+### Explicación:
+El atributo `style` se utiliza para aplicar estilos CSS directamente a un elemento HTML, incluyendo cambiar el color del texto mediante la propiedad CSS `color`. Por ejemplo:
+
+```html
+<p style="color: red;">Este texto es rojo.</p>
+```
+
+#### Otras opciones explicadas:
+- **Atributo de acción**: No es un atributo válido en HTML.
+- **Atributo de color**: Aunque era usado en etiquetas antiguas como `<font color="red">`, este atributo está obsoleto en HTML5.
+- **Atributo de suceso**: Se refiere a atributos para manejar eventos (como `onclick` o `onmouseover`), no para cambiar estilos.
+
+
+
+
+
+Toby está creando un sitio web para una nueva empresa. Desea añadir animación para que aparezcan imágenes cuando los usuarios se desplacen arriba y abajo de la página.
+
+¿Qué atributo de suceso añadiría Toby al código?
+
+onerror
+
+onscroll
+
+onclick
+
+onkeypress
+
+
+La respuesta correcta es:  
+
+**`onscroll`**  
+
+### Explicación:  
+El atributo de suceso `onscroll` se activa cuando el usuario se desplaza hacia arriba o hacia abajo dentro de una página o un elemento que tiene contenido desplazable. Toby puede usar este atributo para desencadenar animaciones cuando los usuarios hacen scroll por la página.  
+
+Ejemplo de uso:  
+```html
+<div onscroll="animarImagen()">  
+    <img id="miImagen" src="imagen.jpg" style="opacity: 0;">  
+</div>
+
+<script>
+function animarImagen() {
+    document.getElementById("miImagen").style.opacity = 1;
+}
+</script>
+```
+
+### Otras opciones explicadas:  
+- **`onerror`**: Se activa cuando ocurre un error al cargar un elemento, como una imagen o un script.  
+- **`onclick`**: Se activa cuando el usuario hace clic en un elemento.  
+- **`onkeypress`**: Se activa cuando el usuario presiona una tecla en su teclado.  
+
+Estas opciones no están relacionadas con el desplazamiento de la página.
+
+
+
+
+
+¿Cuál de los siguientes atributos puede utilizar para establecer el destino de un recurso enlazado como un hiperenlace? 
+
+autofocus 
+
+href 
+
+src 
+
+draggable 
+
+
+La respuesta correcta es:  
+
+**`href`**  
+
+### Explicación:  
+El atributo **`href`** (abreviatura de *Hypertext Reference*) se utiliza para especificar el destino de un enlace en elementos como `<a>` (ancla o hiperenlace). Por ejemplo:  
+
+```html
+<a href="https://www.ejemplo.com">Ir al sitio de ejemplo</a>
+```
+
+En este caso, al hacer clic en el enlace, el navegador redirigirá al usuario a `https://www.ejemplo.com`.
+
+---
+
+### Otras opciones explicadas:  
+- **`autofocus`**: Se utiliza en formularios para que un campo (como un `<input>`) obtenga automáticamente el foco al cargar la página.  
+  Ejemplo:  
+  ```html
+  <input type="text" autofocus>
+  ```
+
+- **`src`**: Se utiliza para especificar la ubicación de un recurso externo, como imágenes, videos o scripts. Por ejemplo:  
+  ```html
+  <img src="imagen.png" alt="Ejemplo de imagen">
+  ```
+
+- **`draggable`**: Es un atributo que indica si un elemento se puede arrastrar. Toma valores como `true` o `false`.  
+  Ejemplo:  
+  ```html
+  <img src="imagen.png" draggable="true">
+  ```  
+
+El único atributo que establece el destino de un hipervínculo es **`href`**.
+
+
+
+
+
+¿Cuál es el método correcto para que un enlace a Google aparezca en negrita utilizando atributos?
+
+<a href=“www.google.com”>Google</a>
+
+<a style=bold><href=“www.google.com”>Google</a>
+
+<a style= “font-weight:bold” href=“www.google.com”>Google</a>
+
+<p><style=bold>Google</p>
+
+
+La respuesta correcta es:  
+
+**`<a style="font-weight:bold" href="www.google.com">Google</a>`**  
+
+### Explicación:  
+- **`<a>`** es la etiqueta HTML que define un enlace.  
+- **`href="www.google.com"`** especifica el destino del enlace.  
+- **`style="font-weight:bold"`** aplica el estilo CSS en línea para que el texto del enlace aparezca en **negrita**.
+
+Ejemplo completo:
+```html
+<a style="font-weight:bold" href="https://www.google.com">Google</a>
+```
+
+Cuando se renderiza en un navegador, el texto "Google" estará en negrita y funcionará como un hipervínculo que lleva al usuario a Google.
+
+---
+
+### Por qué las otras opciones son incorrectas:
+1. **`<a href=“www.google.com”>Google</a>`**  
+   - Este enlace funciona, pero no tiene el atributo `style` para hacer el texto en negrita.  
+
+2. **`<a style=bold><href=“www.google.com”>Google</a>`**  
+   - Tiene un error de sintaxis. `style=bold` no es válido (debe ser `style="font-weight:bold"`), y `<href>` no es una etiqueta HTML válida.
+
+3. **`<p><style=bold>Google</p>`**  
+   - Esto no crea un enlace. Además, `style=bold` no es válido y la etiqueta `<p>` no define hipervínculos.
+
+
+
+
+
+
+//////////////////////
+
+
+
+Módulo 3
+
+Organizar el código
+
+
+
+Aplicar elementos semánticos a las secciones
+
+Los elementos semánticos han formado parte de la especificación HTML desde que se desarrolló HTML por primera vez. Son elementos autodescriptivos que los desarrolladores utilizan para organizar las secciones de un documento HTML. HTML5 introdujo algunos elementos nuevos que facilitan la organización. A continuación mostramos algunos elementos semánticos.
+
+<section> y <article> dividen las secciones lógicas o categóricas de información. No solo le ayuda a encontrar información como desarrollador, sino que también puede ayudar a los motores de búsqueda a analizar su contenido. Un ejemplo es una sección Acerca de nosotros de un blog o artículo.
+
+<time> define el contenido de tiempo. Este elemento ayuda a identificar contenido como el horario de apertura y cierre de una empresa.
+
+<nav> es útil para asignar una sección de elementos de navegación. Por ejemplo, los desarrolladores web pueden utilizarlo para poner una lista de hiperenlaces en una sección de referencia en la parte inferior de una página web.
+
+
+
+Crear la sección de cabecera correctamente
+
+
+La sección de cabecera de su página HTML principal es donde colocará información y referencias que todo el sitio web utilizará. Cada sitio tiene una página principal o de índice. Es el página que se carga cuando un explorador accede al URL del sitio. Se suele denominar index.html o default.html. El HTML que pone en la sección de cabecera normalmente no es lo que ven los usuarios, pero lo utilizan los motores de búsqueda y el sitio web. Cree la sección de cabecera correctamente para mejorar la indexación de búsqueda y la velocidad del sitio web.
+
+Los elementos de la sección de cabecera se cargan primero. La sección de cabecera debe incluir cualquier recurso que necesite para el resto del sitio. Por ejemplo, si crea una hoja de estilo y depende de los estilos de esa hoja de estilo en la página de inicio, algunos elementos podrían no aparecer correctamente si carga la hoja de estilo en la sección de cuerpo del sitio.
+
+
+
+¿Qué tipo de elementos van en la sección de cabecera del sitio web?
+
+Metadatos
+
+Los metadatos son información sobre un sitio web. Pueden incluir metadatos en el sitio web para que las plataformas de redes sociales lo conozcan. Los metadatos también ayudan con la indexación de los motores de búsqueda y permiten a los usuarios encontrar su contenido cuando realizan una búsqueda en la web.
+
+El siguiente ejemplo muestra cómo serían los metadatos de un sitio web ficticio para la plataforma de red social Twitter. Observe que estos metadatos incluyen tres metaelementos, cada uno de ellos con un atributo name. Los atributos contienen datos que Twitter puede leer, lo que proporciona a Twitter información sobre lo que contiene la página.
+
+<meta name=“twitter:card” content=“summary_large_image”>
+<meta name=“twitter:title” content=“The Coder‘s Playground”>
+<meta name=“twitter:description” content=“The Coder‘s Playground
+ es un sitio de red social que conecta a los desarrolladores de software. 
+Nuestro objetivo es fomentar la colaboración, el uso compartido de código y la comunidad. 
+Únase a nuestra creciente red social y pruebe lo mejor en desarrollo de software.”>
+
+
+Scripts
+
+Un script es código de software que los desarrolladores web utilizan para crear interactividad, gestionar los datos y diseñar una página web. Cuanto más complejo sea el sitio web, más necesitará depender de scripts para hacer cosas interesantes y dinámicas.
+
+Hay muchas bibliotecas de código abierto que puede utilizar para habilitar la interactividad en el sitio. El software de código abierto se puede utilizar y modificar gratuitamente. Si incluye en la sección de cabecera de la página principal las referencias a los archivos de script que utilizará, garantiza la disponibilidad de los recursos que necesita para el sitio cuando este se cargue.
+
+ Aquí mostramos un ejemplo de un script en la sección de cabecera del sitio que hace referencia a software de código abierto. Observe cómo el código HTML hace referencia a dos archivos JavaScript externos mediante el uso de atributos src.
+
+<script src="jquery-3.6.0.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+
+
+Fuentes
+
+Las fuentes determinan la tipografía de un sitio web. Las fuentes se pueden establecer en elementos individuales o de forma genérica para todos los elementos de texto de un sitio. Si selecciona una fuente personalizada para el sitio web, debe asegurarse de que todos los usuarios puedan verla. Debe hacer referencia a la fuente en la sección de cabecera. Aquí tiene un código de ejemplo de fuentes al que se hace referencia desde una carpeta de fuentes externa a un sitio web.
+
+<link rel="preload" as="font" href="/fonts/dashicons.ttf" crossorigin>
+<link rel="preload" as="font" href="/fonts/dashicons.woff" crossorigin>
+
+
+Hojas de estilo
+
+Es una buena práctica colocar las referencias a hojas de estilo en la cabecera del sitio. Esto garantiza que todos los estilos que necesita para el sitio web estarán disponibles para los elementos que los necesitan.
+
+ Aquí mostramos un ejemplo de una referencia a una hoja de estilo personalizada.
+
+<link rel="stylesheet" id="custom-style-css"
+  href="styles/style.css?ver=6.0.3" />
+
+
+
+
+Técnicas de organización que ayudan a los usuarios
+
+
+Listas
+
+Las listas, si se crean correctamente, pueden presentar mucha información de manera concisa. También pueden brindar al lector puntos de interrupción naturales, lo que puede ayudar a los alumnos a separar y recordar la información. Téngalo en cuenta al crear listas para un sitio web.
+
+Asegúrese de que los elementos de lista sean concisos. Demasiada información puede frustrar la finalidad de utilización de una lista.
+
+Utilice listas para tipos específicos de información. Las historias o narrativas corresponden a los párrafos.
+
+Utilice listas para ideas individuales.
+
+Recuerde el formato. Es posible que los elementos de lista que se ven correctamente en un teléfono móvil no tengan tan buen aspecto en pantallas más grandes.
+
+
+
+HTML admite tres tipos de listas:
+
+•
+Las listas desordenadas, que podría considerar como listas con viñetas, que se indican mediante el elemento <ul></ul>. Puede cambiar el estilo de las viñetas redondas a otro tipo de viñetas, como cuadrado o diamante, mediante una hoja de estilo o un estilo en línea.
+
+•
+Las listas ordenadas, como su nombre indica, están numeradas o con letras. Se crean mediante el elemento <ol></ol>.
+
+•
+Las listas de descripciones listan términos. Cada elemento de lista incluye una descripción de su término.
+
+
+Tanto las listas ordenadas como las listas sin ordenar implementan el elemento <li></li> para añadir elementos a sus listas. Aparecen como una lista con viñetas o como una lista numerada según el tipo de elemento padre. Observe que cada uno de estos elementos es semántico, en el sentido de que los propios nombres de los elementos describen lo que estos contienen.
+
+
+Aquí mostramos un ejemplo de una lista ordenada y el HTML que la generaría. 
+
+Elemento 1
+Elemento 2
+Elemento 3
+<ol>
+	<li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+</ol>
+Con el elemento de lista sin ordenar, la misma lista se puede convertir en una lista con viñetas si cambiamos el elemento <ol> por un elemento <ul>.
+
+ Aquí mostramos un ejemplo de una lista sin ordenar y el HTML que la generaría.
+
+Elemento 1
+Elemento 2
+Elemento 3
+<ul>
+         <li>Elemento 1</li>
+         <li>Elemento 2</li>
+         <li>Elemento 3</li>
+</ul>
+
+
+
+Las listas de descripciones funcionan de manera algo distinta, utilizando el elemento <dt> para el término y el elemento <dd> para la descripción.
+
+Aquí mostramos un ejemplo de una lista descriptiva y el HTML que la generaría.
+
+Elemento 1
+    Descripción 1
+
+Elemento 2
+    Descripción 2
+
+Elemento3
+    Descripción 3
+
+
+
+
+
+Javier y su equipo están trabajando en un proyecto de desarrollo web de gran envergadura para una nueva empresa de bebidas. Han adoptado una convención de estilo de código y comentan con frecuencia su código.
+
+¿Qué ventajas puede esperar el equipo al organizar el código de esta manera?
+
+ 
+
+Seleccione todas las que correspondan.
+
+El código es más fácil de encontrar. 
+
+El código se carga más rápido. 
+
+Facilita la colaboración. 
+
+La información se puede buscar fácilmente
+
+
+Las respuestas correctas son:  
+
+1. **El código es más fácil de encontrar.**  
+   - Una convención de estilo bien definida y código organizado permite a los desarrolladores localizar secciones específicas rápidamente, reduciendo el tiempo de búsqueda.  
+
+2. **Facilita la colaboración.**  
+   - Un estilo de código uniforme y comentarios claros ayudan a los miembros del equipo a entenderse mutuamente, incluso si no escribieron el código original, mejorando la productividad y minimizando malentendidos.
+
+3. **La información se puede buscar fácilmente.**  
+   - Con comentarios y una estructura organizada, los desarrolladores pueden utilizar herramientas de búsqueda para localizar información clave dentro del código, como funcionalidades o referencias específicas.
+
+---
+
+### Explicación de las opciones incorrectas:
+- **El código se carga más rápido.**  
+   - La organización y los comentarios no afectan directamente el rendimiento del sitio web, ya que los navegadores ignoran los comentarios y el estilo del código cuando interpretan el HTML, CSS o JavaScript.
+
+
+
+
+Incorrecto
+El equipo de Javier puede esperar que el código se cargue más rápido y que sea más fácil de encontrar. El equipo también puede colaborar mejor, ya que están organizados.
+
+
+
+
+¿Por qué es importante que los desarrolladores web organicen su código?
+
+Organizar la información para los usuarios ayuda a los desarrolladores a organizar, escribir, documentar y mantener el código.
+
+Organizar el código en las páginas web facilita la exploración y la navegación en el código de los documentos web.
+
+Garantizar que las páginas web estén organizadas ayuda a los usuarios a encontrar lo que necesitan y a disfrutar del tiempo que pasen en el sitio web.
+
+La utilización de convenciones de estilo de código ayuda a los desarrolladores a ver la diferencia entre las distintas convenciones de denominación de las funciones.
+
+
+La respuesta correcta es:  
+
+**Organizar el código en las páginas web facilita la exploración y la navegación en el código de los documentos web.**
+
+### Explicación:  
+Organizar el código de manera adecuada ayuda a los desarrolladores a:  
+- Mantener un proyecto limpio y fácil de entender.  
+- Facilitar la navegación por el código, especialmente en proyectos grandes.  
+- Reducir el tiempo necesario para realizar cambios o solucionar problemas.  
+
+### Análisis de las otras opciones:
+1. **Organizar la información para los usuarios ayuda a los desarrolladores a organizar, escribir, documentar y mantener el código.**  
+   - Incorrecto: Esto mezcla el propósito de la organización del código con la experiencia del usuario. Los usuarios no interactúan directamente con el código; organizarlo es para el beneficio de los desarrolladores.
+
+2. **Garantizar que las páginas web estén organizadas ayuda a los usuarios a encontrar lo que necesitan y a disfrutar del tiempo que pasen en el sitio web.**  
+   - Incorrecto: Aunque una página bien diseñada mejora la experiencia del usuario, este punto se refiere al diseño y la navegación del sitio web, no a la organización del código.
+
+3. **La utilización de convenciones de estilo de código ayuda a los desarrolladores a ver la diferencia entre las distintas convenciones de denominación de las funciones.**  
+   - Incorrecto: Aunque el uso de convenciones de estilo es útil, no se trata de comparar convenciones de nombres, sino de garantizar coherencia y legibilidad.
+
+
+
+
+
+
+Dónde puede un desarrollador web añadir una fuente personalizada y metadatos en un documento HTML?
+
+En la sección de cabecera
+
+Después de la sección del cuerpo
+
+Antes de la etiqueta de apertura <HTML>
+
+En la sección del cuerpo
+
+
+La respuesta correcta es:
+
+**En la sección de cabecera**  
+
+### Explicación:
+
+- La **sección de cabecera** (usando la etiqueta `<head>`) es donde deben colocarse las fuentes personalizadas y los metadatos en un documento HTML. Esto incluye elementos como el título de la página, las definiciones de estilo, y las fuentes personalizadas, usando la etiqueta `<link>` o `<style>`.
+
+Por ejemplo, para añadir una fuente personalizada, podrías usar:
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página web de ejemplo">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Mi Página Web</title>
+</head>
+```
+
+- **Fuentes personalizadas**: Se definen con un enlace a un archivo de fuente, como en el ejemplo de Google Fonts.
+- **Metadatos**: Se añaden usando la etiqueta `<meta>` para describir el contenido de la página o especificar la codificación.
+
+### Por qué las otras opciones son incorrectas:
+- **Después de la sección del cuerpo**: Colocar fuentes o metadatos después del cuerpo no es correcto, ya que deberían definirse en el `<head>` para que el navegador las lea antes de renderizar la página.
+  
+- **Antes de la etiqueta de apertura `<HTML>`**: No se pueden incluir fuentes o metadatos antes de la etiqueta `<html>`, ya que el documento HTML no se ha definido aún.
+
+- **En la sección del cuerpo**: Aunque el cuerpo (`<body>`) contiene el contenido visible, las fuentes y los metadatos deben definirse en el `<head>`, no dentro del cuerpo, para garantizar una carga adecuada de los recursos.
+
+
+
+
+Ben está creando un sitio web para un proyecto escolar. Tiene una sección en su diseño donde quiere describir brevemente un proceso para que sus usuarios puedan seguirlo fácilmente.
+
+¿Qué elemento HTML debería utilizar?
+
+Una lista
+
+Una tabla
+
+Una fuente
+
+Un gráfico
+
+
+La respuesta correcta es:
+
+**Una lista**  
+
+### Explicación:
+Cuando se desea describir un proceso de manera clara y fácil de seguir, **una lista** es la mejor opción. HTML ofrece dos tipos de listas que pueden ser útiles para este propósito:
+
+1. **Lista ordenada (`<ol>`)**: Si el proceso tiene un orden específico que los usuarios deben seguir.
+   ```html
+   <ol>
+       <li>Paso 1: Abre la aplicación.</li>
+       <li>Paso 2: Regístrate o inicia sesión.</li>
+       <li>Paso 3: Selecciona tu configuración.</li>
+   </ol>
+   ```
+
+2. **Lista desordenada (`<ul>`)**: Si los pasos no necesitan seguir un orden específico.
+   ```html
+   <ul>
+       <li>Abre la aplicación.</li>
+       <li>Configura tu cuenta.</li>
+       <li>Comienza a usarla.</li>
+   </ul>
+   ```
+
+### Por qué las otras opciones son incorrectas:
+- **Una tabla**: Se utiliza para organizar datos en filas y columnas. No es la mejor opción para describir un proceso, ya que no es adecuada para mostrar pasos secuenciales.
+  
+- **Una fuente**: Una fuente se refiere a un tipo de letra o una fuente externa de texto. No es un elemento adecuado para describir un proceso.
+
+- **Un gráfico**: Un gráfico podría ser útil para ilustrar visualmente un proceso, pero no es la mejor opción si el objetivo es describirlo de forma textual y paso a paso.
+
+
+
+
+
+¿Cuál de las siguientes opciones es una afirmación correcta sobre los elementos semánticos?
+
+Seleccione todas las que correspondan.
+
+Son elementos autodescriptivos para organizar secciones de un documento HTML.
+
+<casing> es un elemento semántico para combinar varias palabras sin espacios.
+
+Especifican cómo escribir objetos de código para utilizar como convenciones en un equipo de desarrollo web.
+
+<nav> es un elemento semántico para una sección de elementos de navegación.
+
+
+Las respuestas correctas son:
+
+1. **Son elementos autodescriptivos para organizar secciones de un documento HTML.**
+   - Los elementos semánticos en HTML son aquellos que tienen un significado claro y descriptivo. Ayudan a organizar el contenido de una página web de manera lógica y estructurada. Ejemplos de elementos semánticos incluyen `<header>`, `<article>`, `<section>`, `<footer>`, entre otros.
+
+2. **`<nav>` es un elemento semántico para una sección de elementos de navegación.**
+   - El elemento `<nav>` es semántico porque define una sección del documento que contiene enlaces de navegación. Este elemento tiene un propósito claro y ayuda a los motores de búsqueda y tecnologías de asistencia a entender la estructura del documento.
+
+### Por qué las otras opciones son incorrectas:
+
+- **`<casing>` es un elemento semántico para combinar varias palabras sin espacios.**
+   - **Incorrecto**: No existe un elemento `<casing>` en HTML. Para combinar varias palabras sin espacios, se pueden utilizar otras estrategias como CSS o incluso atributos de `class` o `id` con convenciones de nombres, pero no existe un elemento semántico con este nombre.
+
+- **Especifican cómo escribir objetos de código para utilizar como convenciones en un equipo de desarrollo web.**
+   - **Incorrecto**: Esta afirmación hace referencia a las convenciones de estilo de código, como el uso de comentarios o las reglas de formateo, pero no a los elementos semánticos de HTML. Los elementos semánticos se centran en el contenido y la estructura del HTML, no en las convenciones de codificación.
+
+
+
+
+///////////////////
+
+
+
+
+Módulo 4
+
+Codificar con estilo: utilizar CSS
+
+
+
+El estilo de un sitio web incluye todo, desde la paleta de colores hasta las fuentes que ven los usuarios. Los desarrolladores web añaden estilos a sus sitios mediante estilos en línea o una hoja de estilo.
+
+Los estilos en línea se aplican en el nivel de elemento mediante el atributo style.
+Una hoja de estilo es una colección de estilos.
+
+
+
+Estilo heredado
+
+En HTML, los elementos hijo heredan los estilos de los elementos padre.
+
+•
+Un elemento hijo es aquel que está envuelto por uno o varios elementos.
+
+•
+Un elemento que envuelve a otro elemento es padre de ese elemento.
+
+
+Estilo sustituido
+
+Los elementos hijo pueden sustituir algunos estilos de los elementos padre. Un estilo se sustituye si el elemento hijo implementa los mismos estilos del padre usando un valor distinto. Si un estilo puede tener solo un valor, como un estilo de color, el elemento hijo sustituirá el estilo del elemento padre.
+
+El siguiente ejemplo ilustra este funcionamiento.
+
+<div style="color:red;">
+	<p style= "color: blue;"></p>
+</div>
+
+
+
+¿Qué debería observar? Dado que un elemento únicamente puede tener un solo color en un momento dado, el elemento de división padre aparecerá en rojo, pero el elemento de párrafo hijo sustituye el estilo del padre y aparecerá en azul
+
+
+
+Herencia
+
+
+<section style=“margin-top: 20px;”> 
+
+          <div style=“margin-top: 10px;”> </div>
+ </section>
+
+
+Sustitución
+
+<span style= “color:green;”>
+
+          <span style= “color:black”>Hello there</span>
+ </span>
+
+
+
+
+
+¿Cómo funcionan los estilos en línea?
+
+
+Aquí mostramos un ejemplo de cómo aplicar un estilo en línea a un elemento utilizando el atributo de estilo.
+
+<p style= "font-decoration:underline;">subráyame</p>
+
+
+Los desarrolladores crearon las hojas de estilo para resolver algunos de los desafíos utilizando estilos en línea.
+
+
+
+¿Cómo funcionan las hojas de estilo?
+
+
+Hojas de estilo externas
+
+HTML es muy útil para enlazar a otros recursos en lugar de incluir todo lo que una página necesita en la propia página. Si un desarrollador web necesita incluir una imagen en una página web, puede utilizar un elemento image y apuntar a un archivo de imagen. Las hojas de estilo funcionan de forma similar. Los estilos se pueden crear en un archivo externo con una extensión .css y luego incorporarlo en el documento HTML.
+
+Aquí mostramos un ejemplo de una referencia a una hoja de estilo externa en la sección de cabecera de un documento HTML usando el elemento link con el atributo href:
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="pagestyle.css">
+	</head>
+<body>
+</body>
+<html>
+
+
+El siguiente código es lo que contendría pagestyle.css.
+
+p {
+  margin-left:20px;
+}
+
+
+
+
+
+Hojas de estilo internas
+
+Si bien una buena práctica es poner los estilos en una hoja de estilo externa, puede incluir una hoja de estilo en el propio documento HTML. Esto es útil para pruebas o cuando un desarrollador necesita una única página web temporalmente. Este es un ejemplo de una hoja de estilo interna:
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	p {
+ 		 margin-left:20px;
+	}
+	</style>
+	</head>
+<body>
+	<p>text</p>
+</body>
+</html>
+
+
+
+La anatomía de un estilo
+
+Las hojas de estilo tienen sintaxis adicional. Un estilo en una hoja de estilo tiene tres partes básicas: un selector, un nombre de nodo y un bloque de declaración. El bloque de declaración tiene uno o varios estilos que se componen de propiedades y valores
+
+
+El selector indica el tipo de estilo. El selector indica si el estilo lo puede utilizar un elemento individual o bien lo pueden utilizar muchos elementos o todos los elementos de un tipo determinado.
+
+•
+El nombre de nodo es el nombre utilizado para el selector. El nombre no puede contener espacios. Una buena práctica es utilizar el estilo Kabab para los nombres de nodo CSS.
+
+•
+La propiedad indica la parte del elemento que el estilo cambiará.
+
+•
+El valor es la unidad o el término que determina cómo la propiedad cambia el elemento. Un ejemplo de unidad es 10px. Por ejemplo, un término es bold o gray. Algunas propiedades se establecen por unidades y otras por términos. Algunas, como font-weight, pueden aceptar una unidad como 700 o un término como bold, que son equivalentes.
+
+•
+La declaración es la combinación de una propiedad y un valor.
+
+•
+El bloque de declaración es el conjunto de estilos que los desarrolladores escriben entre llaves.
+
+
+
+
+Tipos de estilos de una hoja de estilo
+
+
+Selector de id
+
+El selector de id es un símbolo de almohadilla. Los selectores de id solo se pueden utilizar en un único elemento HTML. Aquí mostramos un ejemplo de un estilo de selector de id:
+
+#font-style-bold {
+…
+}
+
+
+Selector de clase
+
+El selector de clase es un punto. Los selectores de clase se pueden utilizar en cualquier elemento de un documento HTML al que se le pueda aplicar estilo. Aquí mostramos un ejemplo de un estilo de selector de clase:
+
+.background-style-red{
+…
+}
+
+
+Selector de elemento
+
+El selector de elemento es un nombre de elemento y se aplica automáticamente a cada elemento con ese nombre. Para crear un selector de elemento, utilice el nombre de elemento como nombre del selector y cree el estilo o estilos entre las llaves de apertura y de cierre. Aquí mostramos un ejemplo:
+
+div {
+margin-right: 10px;margin-right: 10px;
+margin-top: margin-top: 20px;
+}
+
+
+Dos selectores con el mismo nombre
+
+Si un desarrollador web utiliza el mismo nombre de selector más de una vez en una hoja de estilo, el explorador combinará los estilos de ambos selectores y los aplicará a todos a los elementos que utilicen el selector. Aquí tiene dos selectores que utilizan el mismo nombre en la misma hoja de estilo.
+
+.style-alert-message
+{
+font-weight: bold;
+}
+
+.style-alert-message
+{
+font-style: italic;
+}
+
+La clase style-alert-message será una combinación de ambos selectores y mostrará texto en negrita y cursiva.
+
+
+
+
+Utilización de los selectores CSS
+
+
+Para utilizar los estilos de los elementos de un documento HTML, los desarrolladores web deben aplicarlos.
+
+
+El selector de elemento
+
+<div>Lista de lectura</div>
+
+
+El selector de id
+
+<p id= "font-style-bold">Este es mi texto en negrita</p>
+
+
+El selector de clase
+
+<img class= "background-style-red" src= /images/img1.jpg>Esta es mi imagen</img>
+
+
+
+
+/////////////////
+
+
+
+Módulo 5
+
+Modelo de cuadro CSS
+
+
+
+En este módulo, conocerá el modelo de cuadro CSS y examinará sus componentes con la ayuda de un diagrama. Explorará por qué los desarrolladores web utilizan el modelo de cuadro CSS para el diseño de un sitio web. Aprenderá a definir la altura y la anchura de una cuadro CSS.
+
+
+La mayoría de los desarrolladores web utilizan el modelo de cuadro CSS para imitar el comportamiento de una tabla con columnas y filas, pero con una mayor flexibilidad. El modelo de cuadro CSS define cómo un explorador representará los elementos HTML en una página colocando cada elemento en su propio cuadro. En un modelo de cuadro CSS, los desarrolladores web consideran la altura, la anchura, los márgenes, el contenido y otros aspectos de una página web
+
+
+
+Puede ver que los cuadros CSS tienen estos cuatro componentes principales: 
+
+•
+Área de contenido
+
+•
+Relleno
+
+•
+Borde
+
+•
+Márgenes
+
+
+
+Borde
+Este componente establece las líneas visibles alrededor del cuadro. El grosor del borde aumentará o disminuirá la distancia entre el contenido y otros elementos alrededor del cuadro. En el ejemplo del vecindario, esto sería la cerca alrededor de la propiedad.
+
+Márgenes izquierdo/derecho/superior/inferior
+Estos componentes establecen la distancia desde el cuadro a otros cuadros u otro contenido circundante. En el ejemplo del vecindario, los márgenes serían los árboles y aceras que separan las cercas de cada parcela.
+
+Relleno superior/izquierdo/derecho/inferior
+Este componente establece la distancia desde el interior del cuadro hasta los elementos de contenido que incluye. En el ejemplo del vecindario, el relleno sería el jardín alrededor de la casa.
+
+
+Área de contenido
+Este componente es el espacio dentro del cuadro donde se encuentra el contenido principal. En el ejemplo del vecindario, esto serían las dimensiones de la casa en cada parcela.
+
+
+Altura
+Este atributo establece la altura del área de contenido. En el ejemplo del vecindario, esto sería la profundidad de la casa en la propiedad.
+
+Anchura
+Este atributo establece la anchura del contenido. En el ejemplo del vecindario, esto sería la anchura de la casa en la propiedad
+
+
+
+
+
+
+
+///////////////////
+
+
+
+Módulo 6
+
+Buenas prácticas para escribir HTML y CSS
+
+
+
+A continuación, explorará cuatro buenas prácticas que siguen los desarrolladores web.
+
+•
+Establecer una declaración doctype adecuada
+
+•
+Utilizar hojas de estilo
+
+•
+Utilizar etiquetas de cierre
+
+•
+Guardar y revisar el trabajo con frecuencia
+
+
+
+
+Los exploradores web pueden leer muchos lenguajes distintos. No obstante, a diferencia de su amigo, para que el explorador comprenda el código de un lenguaje de marcado, se le debe indicar qué versión del lenguaje va a leer. Todo documento HTML debe tener una declaración doctype para que el explorador muestre la página web de la forma que se espera. La declaración doctype indica al explorador qué versión de HTML está utilizando. Debe aparecer en la parte superior del documento.
+
+
+
+HTML tiene variaciones.
+
+La declaración doctype no es la misma para todas las versiones de HTML. Por ejemplo, la declaración HTML4 se escribiría como:
+
+ 
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+
+            "http://www.w3.org/TR/html4/strict.dtd">
+
+
+No es un elemento ni una etiqueta.
+
+La declaración doctype no es ni un elemento ni una etiqueta. Los desarrolladores web sólo utilizan la declaración doctype al principio de un documento para declarar la versión de HTML que se utiliza. Pero la declaración no se utiliza en ningún otro lugar de un documento ni requiere una etiqueta de cierre.
+
+
+No tiene distinción entre mayúsculas y minúsculas.
+
+Cuando un desarrollador coloca la declaración doctype al principio de un documento HTML, al explorador no le importa especialmente si se escribe como <!DOCTYPE html>, <!doctype html> o <!Doctype html>. Sin embargo, se suele escribir como <!DOCTYPE html>.
+
+
+
+
+Utilizar hojas de estilo en lugar de estilos en línea
+
+
+Si bien los estilos en línea tienen una finalidad, no son la mejor manera de crear un sitio web. Es una buena práctica utilizar hojas de estilo externas, o incluso hojas de estilo internas. Separar el estilo del contenido HTML es lo que se conoce como separación de intereses.
+
+
+
+
+Recuerde cerrar las etiquetas
+
+
+En HTML, es una buena práctica utilizar de forma sistemática etiquetas de cierre. Estas son algunas razones por las que los desarrolladores web se aseguran de cerrar los elementos que lo necesitan.
+
+
+
+Guardar y revisar el trabajo con frecuencia
+
+
+Utilizar la eficacia de los Entornos de Desarrollo Integrados (IDE)
+
+
+Los IDE contienen un espacio para que los desarrolladores web escriban y editen código. Algunos IDE incluyen la función de realce de la sintaxis, donde mediante colores y efectos de fuente se muestra la estructura de la sintaxis, elementos de lenguaje específicos y errores
+
+
+La finalización del código reduce los errores tipográficos y de otro tipo gracias a recomendaciones de autocompletado a medida que el desarrollador web codifica. Por ejemplo, la tecnología de finalización del código puede añadir etiquetas de cierre cuando los desarrolladores creen una etiqueta de apertura, para que nunca olviden cerrar las etiquetas.
+
+
+La mayoría de los IDE ofrecen la posibilidad de guardar automáticamente el trabajo. Los desarrolladores web crearán y abrirán un archivo mediante el IDE, y luego el IDE guardará automáticamente el trabajo a intervalos regulares.
+
+
+Incluso el código mejor escrito puede contener problemas. En programación, estos problemas se denominan errores. La depuración integrada permite a los desarrolladores web solucionar el error directamente en el IDE y acceder a todas las funciones del IDE para editar el código a fin de corregir el error.
+
+
+

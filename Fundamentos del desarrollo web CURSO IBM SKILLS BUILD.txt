@@ -1,0 +1,999 @@
+
+
+
+DESARROLLO DE SITIOS PARA LA WEB
+
+MODULO 3 : HTML5 LA EVOLUCION DEL HIPERTEXTO
+
+
+
+HTML5 admite etiquetas como <article> y <footer> para describir con claridad el diseño de un documento HTML. ¿Qué tipo de etiquetas son estas? 
+
+Especificaciones
+
+Etiquetas de sucesos
+
+Etiquetas sintácticas
+
+Etiquetas semánticas
+
+
+
+Las etiquetas como `<article>` y `<footer>` son **etiquetas semánticas**.
+
+### Explicación:
+- **Etiquetas semánticas**: Son aquellas que tienen un significado claro y específico sobre el contenido que contienen. Estas etiquetas ayudan a los navegadores, motores de búsqueda y desarrolladores a entender mejor la estructura y el propósito del contenido de la página. 
+
+Ejemplos de etiquetas semánticas en HTML5:
+- `<header>`: Representa un encabezado de una sección o página.
+- `<footer>`: Contiene información de pie de página.
+- `<article>`: Representa un contenido independiente, como una publicación de blog o un artículo.
+- `<section>`: Define una sección de un documento.
+- `<nav>`: Representa un bloque de enlaces de navegación.
+- `<aside>`: Contiene contenido relacionado o adicional al contenido principal.
+
+Estas etiquetas facilitan el diseño accesible y estructurado de los documentos HTML. 
+
+**Respuesta correcta:** **Etiquetas semánticas**.
+
+
+
+
+
+La especificación HTML5 es amplia y se actualiza continuamente, por lo que la forma en que cada explorador admite HTML5 puede variar. Los desarrolladores web deben mantenerse al día sobre los últimos avances de la especificación HTML y sobre la compatibilidad de los exploradores.
+
+
+
+
+
+
+¿Cuál de las siguientes opciones es una mejora que los usuarios pueden esperar de los sitios web que utilizan HTML5?
+
+ 
+
+Seleccione todas las que correspondan.
+
+Los usuarios pueden guardar automáticamente los cambios en los datos.
+
+Los usuarios pueden instalar Flash para la interactividad.
+
+Los usuarios pueden diseñar la estructura de documento utilizando etiquetas semánticas.
+
+Los usuarios pueden visualizar gráficos y reproducir vídeos sin instalar un complemento de terceros
+
+
+
+Las mejoras que los usuarios pueden esperar de los sitios web que utilizan HTML5 son:
+
+1. **Los usuarios pueden guardar automáticamente los cambios en los datos.**  
+   HTML5 incluye la API de almacenamiento web (`localStorage` y `sessionStorage`), que permite a las aplicaciones guardar datos en el navegador sin necesidad de servidores externos.
+
+2. **Los usuarios pueden diseñar la estructura de documento utilizando etiquetas semánticas.**  
+   HTML5 introduce etiquetas semánticas como `<article>`, `<section>`, `<footer>`, `<nav>`, que mejoran la claridad y la estructura del documento.
+
+3. **Los usuarios pueden visualizar gráficos y reproducir vídeos sin instalar un complemento de terceros.**  
+   HTML5 proporciona elementos como `<canvas>` para gráficos y `<video>` y `<audio>` para medios, eliminando la necesidad de complementos como Flash.
+
+---
+
+**No es una mejora:**
+- **Los usuarios pueden instalar Flash para la interactividad.**  
+   HTML5 está diseñado para reemplazar Flash, ya que proporciona funcionalidades nativas para gráficos, animaciones y contenido multimedia.
+
+---
+
+**Respuestas correctas:**
+- **Los usuarios pueden guardar automáticamente los cambios en los datos.**  
+- **Los usuarios pueden diseñar la estructura de documento utilizando etiquetas semánticas.**  
+- **Los usuarios pueden visualizar gráficos y reproducir vídeos sin instalar un complemento de terceros.**
+
+
+
+
+Con HTML5, los usuarios pueden guardar automáticamente los cambios realizados en los datos, visualizar gráficos y vídeos sin necesidad de instalar complementos, y mucho más.
+
+
+
+
+
+
+¿Cuál de las siguientes opciones es una mejora que los desarrolladores web pueden esperar al desarrollar sitios web utilizando HTML5? 
+
+ 
+
+Seleccione todas las que correspondan.
+
+Los desarrolladores web pueden utilizar una aplicación web para resolver los desafíos relacionados con la seguridad.
+
+Los desarrolladores web pueden instalar Flash para la interactividad.
+
+Los desarrolladores web pueden utilizar marcos para manejar los datos.
+
+Los desarrolladores web pueden utilizar etiquetas semánticas para describir exactamente lo que quieren estructurar como contenido.
+
+
+
+Las mejoras que los desarrolladores web pueden esperar al desarrollar sitios web utilizando HTML5 son:
+
+### Respuestas correctas:
+1. **Los desarrolladores web pueden utilizar etiquetas semánticas para describir exactamente lo que quieren estructurar como contenido.**  
+   HTML5 introduce etiquetas semánticas (`<article>`, `<section>`, `<header>`, `<footer>`, etc.), lo que permite a los desarrolladores estructurar el contenido de manera más clara, mejorando la accesibilidad y el SEO.
+
+2. **Los desarrolladores web pueden utilizar marcos para manejar los datos.**  
+   Aunque no es una característica exclusiva de HTML5, su integración con tecnologías modernas (como APIs web, frameworks como Angular o React) facilita la manipulación de datos en aplicaciones web interactivas.
+
+---
+
+### Opciones incorrectas:
+1. **Los desarrolladores web pueden utilizar una aplicación web para resolver los desafíos relacionados con la seguridad.**  
+   HTML5 no ofrece directamente una solución para los desafíos de seguridad. Sin embargo, algunas de sus características (como el uso de `sandbox` en `<iframe>` o restricciones de CORS) mejoran aspectos de seguridad, pero no representan una "aplicación web" para resolver estos problemas.
+
+2. **Los desarrolladores web pueden instalar Flash para la interactividad.**  
+   HTML5 elimina la necesidad de Flash, ya que proporciona soluciones nativas para multimedia e interactividad.
+
+---
+
+### **Respuestas finales correctas:**
+- **Los desarrolladores web pueden utilizar etiquetas semánticas para describir exactamente lo que quieren estructurar como contenido.**  
+- **Los desarrolladores web pueden utilizar marcos para manejar los datos.**
+
+
+Con HTML5, los desarrolladores web pueden utilizar etiquetas semánticas para describir exactamente qué diseñar como estructura y utilizar marcos para el manejo de los datos sólidos.
+
+
+
+
+////////////////
+
+
+
+
+MODULO 4 : FUNCION DE CSS, APLICAR ESTILO A LAS PAGINAS WEB
+
+
+
+Los elementos hijo heredan el estilo de los elementos padre a menos que este estilo se sustituya. Los desarrolladores web pueden sustituir un estilo si el elemento hijo implementa el mismo estilo que el padre pero con un valor distinto.
+
+
+
+
+
+Selectores de clase
+
+
+Creará un estilo de clase cuando desee que un estilo determinado se aplique a muchos elementos HTML en un documento. Creará un estilo de id cuando desee que ese estilo se aplique a un elemento HTML individual. También puede utilizar los nombres de los elementos HTML, como <p> o <h1>, como selectores.
+
+
+
+Por ejemplo, supongamos que desea que un estilo se aplique a cada uno de los elementos de párrafo del documento HTML. Crearía un estilo con un selector de clase o un selector de elemento HTML para poder crear el estilo una sola vez, y todos los elementos de párrafo recibirían ese estilo. Ahora no necesitará aplicar el estilo a cada elemento de párrafo del documento HTML. Además, si desea cambiar el estilo, hará el cambio en la hoja de estilo, y el cambio se aplicará en todos los elementos de párrafo.
+
+
+
+Selector de id
+
+
+Si tiene un elemento determinado en el documento HTML, supongamos un elemento de sección, que desea que tenga un estilo exclusivo, utilizará un selector de id en ese elemento.
+
+Por ejemplo, supongamos que tiene una sección que desea poner en negrita y cursiva porque contiene una declaración de limitación de responsabilidad legal y desea asegurarse de que la lean todos los usuarios. Puede crear un selector de id y utilizar ese estilo solo para esa sección.
+
+
+
+
+Un selector de clase
+
+Al crear un selector de clase, escribirá un punto mediante el teclado. En CSS, el símbolo de punto indica un estilo de clase. Se coloca antes del nombre de estilo.
+
+
+Un selector de id
+
+Un selector de id se designa mediante un símbolo de almohadilla. El símbolo de almohadilla indica un estilo de id. Se coloca antes del nombre de estilo.
+
+
+
+Selector
+
+El selector es un elemento HTML, un punto para las clases o un símbolo de almohadilla para los id.
+
+
+Nombre de nodo
+
+Asignar un nombre al estilo le ayudará a comprender lo que hace el estilo. El nombre no puede contener espacios. Una buena práctica es utilizar la bicapitalización para los nombres de estilo CSS. La bicapitalización utiliza una letra minúscula para la primera palabra y una letra mayúscula para cada palabra siguiente. Un ejemplo de bicapitalización: miNuevoEstilo.
+
+
+Bloque de declaración
+
+Cada elemento style tendrá uno o varios bloques de declaración.  Estos incluyen estilos entre llaves. Los estilos pueden incluir la ponderación de fuente y el color de fuente.
+
+
+
+
+
+Rellene el espacio en blanco. Suponga que tiene una sección específica de un sitio web que está desarrollando y que debe ir subrayada y en cursiva. Utilizaría un selector de ________ en ese elemento específico.
+
+etiqueta
+
+hijo
+
+clase
+
+id
+
+
+La respuesta correcta es: **id**.
+
+### Explicación:
+Un **selector de id** se utiliza para aplicar estilos a un elemento específico en un documento HTML. Los IDs son únicos dentro de una página y se identifican con el símbolo `#` en CSS.
+
+### Ejemplo:
+Si necesitas aplicar un estilo específico (subrayado y cursiva) a un elemento único, podrías hacerlo de esta manera:
+
+#### HTML:
+```html
+<section id="miSeccion">
+    Este es el contenido de la sección que debe estar subrayada y en cursiva.
+</section>
+```
+
+#### CSS:
+```css
+#miSeccion {
+    text-decoration: underline;
+    font-style: italic;
+}
+```
+
+### Por qué no otras opciones:
+1. **Etiqueta**: Aplicaría el estilo a todos los elementos de un tipo en el documento (como todos los `<section>`), no a un elemento específico.
+2. **Hijo**: Se usa para seleccionar elementos que son hijos directos de un contenedor, pero no identifica un único elemento específico.
+3. **Clase**: Podría usarse, pero está pensada para estilos reutilizables en múltiples elementos, no exclusivamente para uno.
+
+**Respuesta final: `id`.**
+
+
+Creará un estilo de id cuando desee que ese estilo se aplique a un elemento HTML individual.
+
+
+
+
+
+
+Para aplicar estilo en negrita y azul a cada cabecera del sitio, ¿cuál es el fragmento de código apropiado para el documento CSS?
+
+.boldBlueText {
+
+          font-weight:bold;
+
+          color: blue;
+        }
+
+.boldBlueText <
+
+           font-weight:bold;
+
+           color: blue;
+        />
+
+#boldBlueText <
+
+              font-weight:bold;
+
+              color: blue;
+       />
+
+.boldbluetext {
+
+            font-weight=strong;
+
+            color=blue;
+        }
+
+
+
+
+
+La opción correcta es:
+
+```css
+.boldBlueText {
+    font-weight: bold;
+    color: blue;
+}
+```
+
+### Explicación:
+1. **`.boldBlueText`**: El selector `.boldBlueText` aplica los estilos a todos los elementos que tengan la clase `boldBlueText`. La notación con el punto (`.`) se utiliza para clases en CSS.
+
+2. **`font-weight: bold;`**: Es la forma correcta de especificar que el texto debe aparecer en negrita.
+
+3. **`color: blue;`**: Define que el color del texto será azul.
+
+---
+
+### Por qué no las otras opciones:
+1. **`.boldBlueText < ... />`**: Esta sintaxis no es válida en CSS. El uso de `<` y `/>` no corresponde a ninguna regla en CSS.
+
+2. **`#boldBlueText < ... />`**: El símbolo `#` se usa para seleccionar un **id**, no una clase. Además, la sintaxis `< ... />` es incorrecta.
+
+3. **`.boldbluetext { font-weight=strong; color=blue; }`**: Aunque el selector podría funcionar para una clase, la asignación de valores con `=` en lugar de `:` es incorrecta en CSS.
+
+---
+
+**Respuesta final:**
+```css
+.boldBlueText {
+    font-weight: bold;
+    color: blue;
+}
+```
+
+
+
+
+Cada estilo en una hoja de estilo tiene tres elementos básicos: el indicador de selector (en este caso a. ya que desea aplicar estilo a cada uno de los elementos de cabecera del sitio), un nombre de estilo (que puede especificar como desee, pero una buena práctica es escribir en bicapitalización) y el estilo. Debe especificar el estilo entre llaves { }.
+
+
+
+
+
+Julia está desarrollando un sitio web para un fotógrafo y está creando una página de galería que muestre el trabajo del fotógrafo. La página tendrá veinte imágenes, cada una de ellas con un título de imagen, una fecha, un breve párrafo y un enlace a más fotos de esa sesión. Julia quiere asegurarse de que todos estos componentes tengan el mismo estilo para cada imagen.
+
+ 
+
+¿Qué buena práctica debería utilizar para desarrollar el sitio web?
+
+Utilizar una combinación de hojas de estilo en cascada (CSS) y estilo HTML en línea.
+
+Utilizar una combinación de HTML y JavaScript.
+
+Utilizar estilo en línea en el documento HTML.
+
+Utilizar hojas de estilo en cascada (CSS)
+
+
+La mejor práctica que Julia debería utilizar es: **Utilizar hojas de estilo en cascada (CSS)**.
+
+---
+
+### Explicación:
+1. **Hojas de estilo en cascada (CSS)** permiten definir estilos consistentes para todos los elementos en la página. Esto facilita la aplicación de estilos uniformes a los componentes (como las imágenes, títulos, párrafos y enlaces) sin necesidad de repetir código en cada elemento.
+
+2. **Ventajas de CSS:**
+   - **Reutilización:** Julia puede definir una sola clase o selector y aplicarlo a múltiples elementos.
+   - **Mantenimiento:** Cambiar el estilo de toda la página es sencillo; solo necesita modificar el archivo CSS, no el HTML.
+   - **Separación de preocupaciones:** Mantiene el contenido (HTML) separado del diseño (CSS), lo que mejora la organización y claridad del código.
+
+---
+
+### Por qué no las otras opciones:
+1. **Utilizar una combinación de hojas de estilo en cascada (CSS) y estilo HTML en línea:**  
+   Los estilos en línea (atributos como `style="..."` dentro de etiquetas HTML) pueden dificultar el mantenimiento y no son recomendados para sitios bien estructurados.
+
+2. **Utilizar una combinación de HTML y JavaScript:**  
+   JavaScript se utiliza para interactividad, no para definir estilos. No es una práctica adecuada para resolver este caso.
+
+3. **Utilizar estilo en línea en el documento HTML:**  
+   Los estilos en línea limitan la reutilización y hacen que el código sea más difícil de mantener y menos limpio.
+
+---
+
+### **Conclusión:**  
+Julia debería **utilizar hojas de estilo en cascada (CSS)** para crear una página de galería profesional, consistente y fácil de mantener.
+
+
+
+Las hojas de estilo en cascada (CSS) añaden estilo a elementos de la misma clase o id sin necesidad de aplicar estilo a cada elemento de un documento HTML.
+
+
+
+
+
+
+
+Para relacionar un archivo `index.html` con un archivo `style.css`, debes usar la etiqueta `<link>` en la sección `<head>` del documento HTML. Esta etiqueta establece una conexión entre el HTML y el archivo CSS externo.
+
+### Ejemplo:
+#### Archivo `index.html`:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería del Fotógrafo</title>
+    <!-- Relación con style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a la Galería</h1>
+    </header>
+    <div class="gallery">
+        <div class="photo">
+            <img src="photo1.jpg" alt="Descripción de la foto">
+            <h2>Título de la Imagen</h2>
+            <p>Breve descripción o fecha.</p>
+            <a href="session1.html">Ver más fotos</a>
+        </div>
+        <!-- Más imágenes... -->
+    </div>
+</body>
+</html>
+```
+
+#### Archivo `style.css`:
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 1rem;
+}
+
+.photo {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+```
+
+---
+
+### Detalles clave:
+1. **Etiqueta `<link>`:**
+   - `rel="stylesheet"` indica que estás enlazando una hoja de estilos.
+   - `href="style.css"` especifica la ruta del archivo CSS.
+
+2. **Ubicación de los archivos:**
+   - Si `style.css` está en el mismo directorio que `index.html`, solo necesitas `href="style.css"`.
+   - Si está en un subdirectorio, usa la ruta relativa, por ejemplo: `href="css/style.css"`.
+
+3. **Estructura recomendada de archivos:**
+   ```plaintext
+   proyecto/
+   ├── index.html
+   ├── css/
+   │   └── style.css
+   └── images/
+       └── photo1.jpg
+   ```
+
+Así se asegura que el HTML y CSS trabajen juntos correctamente.
+
+
+
+
+
+
+¿Cuál de las siguientes razones es el motivo por el que CSS se estandarizó como el lenguaje de hoja de estilo que utilizan los desarrolladores?
+
+ 
+
+Seleccione todas las que correspondan.
+
+Había muchas versiones de los lenguajes de hoja de estilo, lo que resultaba engorroso para los desarrolladores.
+
+Los desarrolladores necesitaban una forma mejor de gestionar el estilo.
+
+HTML se centraba en la información y la presentación no era importante.
+
+Los desarrolladores descubrieron la eficacia de la presentación en los documentos HTML.
+
+
+
+
+Las razones correctas por las que CSS se estandarizó como el lenguaje de hoja de estilo son:
+
+1. **Había muchas versiones de los lenguajes de hoja de estilo, lo que resultaba engorroso para los desarrolladores.**
+   
+   **Explicación:** Antes de CSS, había varios métodos y tecnologías para dar estilo a los documentos web, lo que generaba inconsistencias y complicaba el desarrollo. CSS surgió como una solución estándar que centraliza y unifica el enfoque del diseño de páginas web.
+
+2. **Los desarrolladores necesitaban una forma mejor de gestionar el estilo.**
+
+   **Explicación:** Los desarrolladores necesitaban una forma más eficiente y flexible de gestionar el estilo de los sitios web. CSS permitió separar el contenido de la presentación, facilitando la gestión y modificación del diseño sin alterar el HTML.
+
+3. **Los desarrolladores descubrieron la eficacia de la presentación en los documentos HTML.**
+
+   **Explicación:** La separación del contenido y la presentación a través de CSS permitió una mayor flexibilidad y consistencia en la creación de sitios web. Además, CSS facilita la aplicación de estilos de manera más eficiente a través de clases, ID y otros selectores.
+
+---
+
+**Respuesta final:**
+- **Había muchas versiones de los lenguajes de hoja de estilo, lo que resultaba engorroso para los desarrolladores.**
+- **Los desarrolladores necesitaban una forma mejor de gestionar el estilo.**
+- **Los desarrolladores descubrieron la eficacia de la presentación en los documentos HTML.**
+
+
+
+Aunque HTML se centraba en la información, la forma en que esta se presentaba era importante. CSS se estandarizó como el lenguaje de hoja de estilo que utilizan los desarrolladores web porque los desarrolladores entendían la importancia de la presentación pero necesitaban una forma mejor de gestionar el estilo en HTML. También tenían muchas versiones de lenguajes de hoja de estilo, cuya gestión resultaba engorrosa.
+
+
+
+
+
+En el siguiente fragmento de código, el elemento hijo <img> no incluye un estilo, por lo que toma el estilo del elemento padre <p>.
+
+ 
+
+<p style="margin-left:10px;">
+
+              <img></img>
+
+</p>
+
+ 
+
+¿Cuál es la característica de CSS que permite a los elementos hijo heredar el estilo de sus elementos padre?
+
+Cascada
+
+Sintaxis
+
+Clase
+
+Estilo
+
+
+
+
+Los estilos se aplican en cascada porque los elementos hijo heredan el estilo de los elementos padre a menos que estos se sustituyan. Esta es una de las características principales de las de hojas estilo en cascada (CSS).
+
+
+La característica de CSS que permite a los elementos hijo heredar el estilo de sus elementos padre es **Cascada**.
+
+### Explicación:
+
+- **Cascada**: El término "cascada" en CSS se refiere a cómo los estilos se aplican a los elementos HTML según el orden y la especificidad de las reglas. Los estilos de los elementos padres pueden ser heredados por los elementos hijos de forma predeterminada, a menos que se especifique lo contrario. En tu ejemplo, el estilo `margin-left: 10px;` aplicado al elemento `<p>` afecta indirectamente al `<img>` dentro de él debido a la naturaleza de la cascada y la herencia de CSS.
+
+### Por qué no las otras opciones:
+
+- **Sintaxis**: Se refiere a la estructura y reglas del lenguaje CSS, no a la herencia de estilos.
+- **Clase**: Las clases en CSS son una forma de aplicar estilos a elementos específicos, pero no están relacionadas con la herencia de estilos de los elementos padres.
+- **Estilo**: Este término se refiere a las propiedades y valores aplicados a los elementos, pero no específicamente a cómo los estilos se heredan.
+
+---
+
+**Respuesta correcta:**
+- **Cascada**
+
+
+
+
+
+
+/////////////////////
+
+
+
+
+
+Módulo 5
+
+Función de JavaScript: interacción
+
+
+
+Hablando del lenguaje
+
+
+Los lenguajes de script se interpretan correctamente cuando el sistema los necesita. Esto significa que el código que escribe el desarrollador es el código que utiliza el sistema. 
+
+Los lenguajes compilados deben traducirse al lenguaje que el sistema comprende antes de poder utilizar los programas. 
+
+
+
+Facilidad de uso
+
+
+Si es necesario realizar un cambio en un código escrito en un lenguaje de script, un desarrollador web puede abrir el archivo de código, hacer el cambio y subirlo al servidor web.
+
+Hacer cambios rápidos en el código compilado es más difícil, ya que es necesario traducirlo para poder utilizarlo.
+
+
+
+
+Rápido tiempo de proceso
+
+Los lenguajes de script se interpretan correctamente cuando el sistema los lee. Esto significa que se traducen de código legible por las personas a código que el sistema entiende cuando se ejecuta el programa. Este tiempo de proceso tiende a hacer que los scripts sean más lentos que el código compilado.
+
+Los lenguajes compilados son más rápidos de procesar para el sistema porque ya están en el lenguaje que el sistema entiende.
+
+
+
+
+
+JavaScript no está estrictamente orientado a objetos. Por esta razón, Microsoft desarrolló TypeScript, un lenguaje de programación que transpila a JavaScript. Un transpilador convierte un lenguaje de script en otro. Cuando un desarrollador escribe TypeScript, un script de proceso lo convierte en JavaScript antes de su publicación.
+
+
+
+
+¿Qué característica de JavaScript ayuda al desarrollador a dar soporte el código existente del sitio y al mismo tiempo le permite utilizar las últimas actualizaciones de JavaScript para escribir nuevo código?
+
+Es compatible con versiones anteriores.
+
+Es un lenguaje interpretado.
+
+Está orientado a objetos.
+
+Se basa en el lenguaje de programación Java.
+
+La característica de JavaScript que ayuda al desarrollador a dar soporte al código existente del sitio y al mismo tiempo le permite utilizar las últimas actualizaciones de JavaScript para escribir nuevo código es:
+
+**Es compatible con versiones anteriores.**
+
+Esto significa que las nuevas versiones de JavaScript están diseñadas para ser compatibles con el código más antiguo, lo que permite a los desarrolladores seguir utilizando funciones y características antiguas mientras adoptan las nuevas actualizaciones sin que el código antiguo deje de funcionar. Este enfoque permite una transición más suave entre versiones y facilita la incorporación de nuevas características sin afectar el código existente.
+
+
+JavaScript es compatible con las versiones anteriores, lo que significa que el código anterior continuará funcionando aunque el lenguaje se actualice continuamente y ofrezca más funciones.
+
+
+
+
+
+Los desarrolladores suelen utilizar código JavaScript para responder a un suceso. Un suceso es algo que se produce en una página web. Así es como funciona
+
+Inicia un suceso cuando pulsa en un botón o arrastra una foto en una página web. Los elementos HTML, como el elemento de botón, tienen escuchas de sucesos. Los escuchas de sucesos reciben instrucciones de una interacción en una página web.
+
+Cuando reciben esas instrucciones, pueden realizar las tareas específicas. En los lenguajes de programación, estas tareas se denominan manejadores de sucesos. Los manejadores de sucesos en la web se escriben en JavaScript.
+
+
+
+//////////////
+
+
+
+Supongamos que crea un formulario con una sección que utiliza selectores de id de CSS. Este fragmento de código es un formulario simple que solicita al usuario su nombre y apellido.
+
+
+
+<section>
+	<input id="firstName">Nombre</input>
+	<input id="lastName">Apellido</input>
+</section>
+
+
+Un desarrollador web puede escribir código JavaScript y utilizar una función denominada querySelector para encontrar el elemento HTML con el selector de id firstName. El siguiente fragmento de código muestra el mandato en JavaScript.
+
+document.querySelector(‘#firstName’);
+Esta línea de código explorará el documento HTML en busca de un elemento con el atributo de id firstName. Una vez que el código encuentra el elemento, el desarrollador puede evaluar el valor del campo.
+
+Supongamos que el desarrollador ejecuta ese mandato después de que el usuario seleccione el botón Enviar del formulario y determina que el campo Nombre no se ha rellenado. Pueden enviar un mensaje indicando que el usuario debe rellenar el campo para poder enviar el formulario.
+
+
+
+
+
+Aquí tienes un ejemplo de cómo puedes estructurar el formulario con el uso de `querySelector` para verificar si el campo "Nombre" ha sido rellenado y, en caso contrario, mostrar un mensaje al usuario para que lo complete antes de enviar el formulario.
+
+### HTML y JavaScript:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Nombre y Apellido</title>
+    <style>
+        /* Estilo simple para el mensaje de error */
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form id="userForm">
+        <section>
+            <label for="firstName">Nombre:</label>
+            <input id="firstName" type="text" placeholder="Escribe tu nombre">
+        </section>
+        <section>
+            <label for="lastName">Apellido:</label>
+            <input id="lastName" type="text" placeholder="Escribe tu apellido">
+        </section>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Mensaje de error -->
+    <p id="error-message" class="error" style="display:none;">Por favor, rellene el campo "Nombre".</p>
+
+    <script>
+        // Obtener el formulario
+        const form = document.getElementById("userForm");
+
+        // Agregar un escuchador de eventos al evento 'submit' del formulario
+        form.addEventListener("submit", function(event) {
+            // Prevenir que el formulario se envíe inmediatamente
+            event.preventDefault();
+
+            // Obtener el valor del campo 'firstName'
+            const firstName = document.querySelector('#firstName').value;
+
+            // Verificar si el campo 'firstName' está vacío
+            if (firstName === "") {
+                // Mostrar el mensaje de error si el campo está vacío
+                document.getElementById("error-message").style.display = "block";
+            } else {
+                // Si todo está bien, se podría procesar el formulario o enviarlo
+                document.getElementById("error-message").style.display = "none";
+                alert("Formulario enviado correctamente");
+                // Aquí podrías enviar el formulario si todo está bien
+                // form.submit();
+            }
+        });
+    </script>
+</body>
+</html>
+```
+
+### Explicación:
+
+1. **Formulario HTML:**
+   - El formulario contiene dos campos de entrada: uno para el nombre (`firstName`) y otro para el apellido (`lastName`).
+   - Ambos campos están identificados con un atributo `id`, que luego es utilizado en el código JavaScript para seleccionar los elementos.
+
+2. **Estilo CSS:**
+   - Se incluye un estilo para el mensaje de error. El mensaje se mostrará en rojo y con un tamaño de fuente pequeño.
+   - El mensaje de error está oculto por defecto (`display: none;`).
+
+3. **JavaScript:**
+   - Se usa `document.querySelector('#firstName')` para obtener el valor del campo "Nombre" cuando el formulario es enviado.
+   - Si el campo "Nombre" está vacío (`firstName === ""`), se muestra un mensaje de error usando `document.getElementById("error-message").style.display = "block";`.
+   - Si el campo tiene un valor, el mensaje de error se oculta, y se muestra un mensaje de éxito indicando que el formulario se ha enviado correctamente.
+
+4. **Escuchador de eventos `submit`:**
+   - Se evita el envío del formulario con `event.preventDefault();` para poder realizar la validación antes de enviar los datos.
+   - Si el campo "Nombre" no se ha completado, el formulario no se envía y aparece un mensaje indicando que el campo debe ser completado.
+
+Este ejemplo ilustra cómo usar `querySelector` para acceder a elementos mediante su `id`, evaluar su valor y mostrar un mensaje de error si el campo no está completo.
+
+
+
+
+
+///////////////
+
+
+
+
+¿Qué lenguaje de programación visualiza un mensaje emergente después de que un usuario realice una interacción en una página web? 
+
+CSS 
+
+HTML 
+
+JavaScript 
+
+XML 
+
+
+La respuesta correcta es **JavaScript**.
+
+JavaScript es el lenguaje de programación que permite agregar interactividad en las páginas web, como la visualización de mensajes emergentes (pop-ups o alertas) después de que un usuario interactúe con la página, como hacer clic en un botón o completar un formulario.
+
+Ejemplo:
+
+```javascript
+alert("¡Hola! Has hecho clic en el botón.");
+```
+
+Este código muestra un mensaje emergente con el texto "¡Hola! Has hecho clic en el botón." cuando el usuario interactúa con el sitio web.
+
+
+
+
+
+
+¿Cuáles son algunas de las interacciones que puede desarrollar con JavaScript? 
+
+ 
+
+Seleccione todas las que correspondan. 
+
+Permitir a los usuarios subir imágenes y visualizarlas en un sitio
+
+Activar un mensaje en una página web cuando alguien pulse en un botón
+
+Crear validación de formularios que explore el formulario en busca de campos que no se hayan rellenado y muestre un mensaje de error al usuario
+
+Estructurar la página web
+
+
+Las interacciones que puedes desarrollar con **JavaScript** son:
+
+- **Permitir a los usuarios subir imágenes y visualizarlas en un sitio**: JavaScript permite manejar la carga de archivos y su visualización en una página web mediante eventos y el uso de la API de archivos.
+  
+- **Activar un mensaje en una página web cuando alguien pulse en un botón**: JavaScript es ideal para este tipo de interacción. Se puede usar un evento `onclick` para mostrar un mensaje (como una alerta) cuando un usuario hace clic en un botón.
+
+- **Crear validación de formularios que explore el formulario en busca de campos que no se hayan rellenado y muestre un mensaje de error al usuario**: JavaScript es muy comúnmente usado para la validación de formularios antes de que los datos se envíen, asegurándose de que los campos obligatorios estén completos.
+
+**No corresponde a JavaScript**:
+
+- **Estructurar la página web**: Este es el rol de **HTML**, no de JavaScript. HTML se usa para estructurar el contenido de la página, mientras que JavaScript es usado para la interactividad y funcionalidad.
+
+Por lo tanto, las respuestas correctas son:
+
+- Permitir a los usuarios subir imágenes y visualizarlas en un sitio.
+- Activar un mensaje en una página web cuando alguien pulse en un botón.
+- Crear validación de formularios que explore el formulario en busca de campos que no se hayan rellenado y muestre un mensaje de error al usuario.
+
+
+
+
+JavaScript permite a los desarrolladores web crear interacciones como, por ejemplo, desencadenar alertas en función de sucesos, crear validación de formularios, permitir a los usuarios subir y visualizar imágenes, y proporcionar una forma de añadir contenido dinámico al sitio web. 
+
+
+
+
+
+
+Es un desarrollador web que está creando un formulario para recopilar información de dirección. Ha creado un elemento de entrada con un atributo de id 'homeAddress'. Si se utiliza JavaScript, ¿cuál es el método correcto para encontrar este elemento de entrada? 
+
+document.querySelector = homeAddress 
+
+document.querySelector(‘.homeAddress’) 
+
+document.querySelector(‘#homeAddress’) 
+
+document.querySelector(‘homeAddress’)
+
+
+El método correcto para encontrar el elemento de entrada con el atributo de id `homeAddress` en JavaScript es:
+
+```javascript
+document.querySelector('#homeAddress');
+```
+
+### Explicación:
+- `document.querySelector` es un método de JavaScript que permite seleccionar un elemento en el DOM (Document Object Model).
+- El selector de CSS que se pasa a `querySelector` debe comenzar con `#` cuando se busca un elemento por su `id`.
+  
+Por lo tanto, la respuesta correcta es **`document.querySelector('#homeAddress')`**.
+
+
+
+El símbolo de almohadilla (#) en la función querySelector indica a JavaScript que busque un atributo de id. 
+
+
+
+
+
+
+Freda está desarrollando una página web con un formulario y desea que cuando algún usuario del sitio seleccione el botón Enviar se abra una alerta que indique "Su formulario se ha enviado". Ha escrito el siguiente código HTML:
+
+
+
+<button onclick="formSubmitSuccess()">Click</button>
+
+
+
+ ¿Qué suceso corresponde a este código?
+
+
+submitSuccess 
+
+formSubmitSuccess 
+
+pulse 
+
+onclick 
+
+
+El suceso que corresponde a este código es **`onclick`**.
+
+### Explicación:
+
+- El atributo `onclick` es un **suceso (evento)** en HTML que se activa cuando el usuario hace clic en el elemento (en este caso, el botón).
+- El código `onclick="formSubmitSuccess()"` indica que cuando el usuario haga clic en el botón, se ejecutará la función **`formSubmitSuccess()`**.
+
+### Respuesta:
+El suceso correcto es **`onclick`**. 
+
+Este suceso indica que la acción de clic en el botón desencadenará la función `formSubmitSuccess()`.
+
+### Ejemplo completo en JavaScript:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de ejemplo</title>
+    <script>
+        function formSubmitSuccess() {
+            alert("¡Su formulario se ha enviado!");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="formSubmitSuccess()">Click</button>
+</body>
+</html>
+```
+
+En este ejemplo, al hacer clic en el botón, se mostrará un cuadro de alerta con el mensaje "¡Su formulario se ha enviado!".
+
+
+
+
+El suceso es onclick. Freda ha programado el suceso onclick para llamar al mensaje de alerta cuando los usuarios seleccionen Enviar. 
+
+
+
+
+
+¿Cuáles son algunas de las características de los lenguajes de script? 
+
+ 
+
+Seleccione todas las que correspondan. 
+
+Se crearon para realizar pequeñas tareas con rapidez. 
+
+Le permiten realizar cambios rápidos en el código. 
+
+Son legibles por las personas cuando el sistema los escribe y los lee. 
+
+Deben compilarse antes de ejecutar el programa.
+
+
+
+Las características de los lenguajes de script incluyen:
+
+- **Se crearon para realizar pequeñas tareas con rapidez**: Los lenguajes de script son ideales para automatizar tareas pequeñas y específicas de forma rápida, sin necesidad de una compilación compleja.
+
+- **Le permiten realizar cambios rápidos en el código**: Debido a su naturaleza interpretada, los lenguajes de script permiten realizar cambios rápidamente en el código y ejecutar el script sin necesidad de una recompilación extensa.
+
+- **Son legibles por las personas cuando el sistema los escribe y los lee**: Los lenguajes de script suelen ser más accesibles y fáciles de leer y escribir para los seres humanos, ya que están diseñados para facilitar la escritura rápida de código, a diferencia de los lenguajes de programación más complejos.
+
+La opción **"Deben compilarse antes de ejecutar el programa"** no es característica de los lenguajes de script. Los lenguajes de script son **interpretados**, no necesitan una compilación previa. 
+
+### Respuesta correcta:
+- Se crearon para realizar pequeñas tareas con rapidez.
+- Le permiten realizar cambios rápidos en el código.
+- Son legibles por las personas cuando el sistema los escribe y los lee.
+
+
+
+Los lenguajes de script son legibles por las personas tanto cuando se escriben como cuando el sistema los lee. Le permiten realizar cambios rápidos en el código. Se crearon para realizar pequeñas tareas con rapidez
+
+
+
+
+
+
+/////////////////////
+
+
+
+Módulo 6
+
+De los requisitos al lanzamiento
+
+
+
+
+
+
+
+

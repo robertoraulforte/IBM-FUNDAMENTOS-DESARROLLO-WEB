@@ -1,0 +1,1628 @@
+
+
+
+
+Creacion de sitios web dinamicos con Javascript
+
+
+
+
+Módulo 1
+
+La web dinámica: una introducción a JavaScript
+
+
+
+Crear la página: JavaScript y sus usos
+
+
+Utilizar JavaScript con HTML
+
+
+Incluir JavaScript en el cuerpo de un documento HTML 
+
+Los desarrolladores pueden incluir JavaScript en el cuerpo de un documento HTML utilizando un elemento script. Escriben JavaScript entre las etiquetas de apertura y de cierre del elemento. No es necesario que los desarrolladores indiquen al explorador que el elemento de script contiene JavaScript, ya que los exploradores están diseñados para detectarlo. Sin embargo, es recomendable añadir un atributo type="text/javascript" por razones de legibilidad, lo que también facilita al explorador la utilización del script.  
+
+Aquí mostramos un ejemplo:
+
+<script type="text/javascript"> 
+        alert(“Este es un mensaje JavaScript”);  
+</script>
+
+
+No se recomienda Incluir JavaScript de esta forma para sitios web activos. Debido a que los archivos HTML se cargan secuencialmente en orden descendente, si los elementos del cuerpo necesitan que el script se ejecute antes de que la página cargue el script, es posible que la página no funcione como se esperaba. Sin embargo, para probar el código o proporcionar una demostración, esta es una forma rápida y sencilla de incluir JavaScript en un documento HTML.  
+
+
+
+
+Incluir JavaScript en la cabecera de un documento HTML 
+
+Incluir JavaScript en la sección de cabecera es similar a utilizar JavaScript en el cuerpo, excepto que el elemento de script se coloca en la cabecera. Los desarrolladores web suelen utilizan este método para añadir JavaScript a un archivo HTML porque ofrece muchas ventajas. La principal ventaja de incluir JavaScript en la cabecera es que debido a que el explorador carga el contenido de la sección de cabecera antes que el resto de la página, cualquier código incluido en ella se cargará antes de que se le llame.  
+
+Aquí mostramos un ejemplo: 
+
+<head> 
+     <script type="text/javascript"> 
+          alert("Este es un mensaje JavaScript");  
+     </script> 
+<head>
+
+
+
+Incluir JavaScript desde un archivo externo
+
+También puede escribir el código JavaScript en un archivo externo y utilizarlo desde el documento HTML. Los desarrolladores web prefieren este método para incluir JavaScript en páginas web, el cual facilita la gestión del código JavaScript. Este método también facilita trabajar con otros miembros del equipo de desarrollo web. Algunos miembros del equipo pueden trabajar en el código JavaScript mientras que otros trabajan en HTML y CSS.
+
+Los archivos JavaScript tienen una extensión .js. Estos son archivos de texto sin formato y los desarrolladores web pueden crearlos usando un editor de texto o un entorno de desarrollo integrado (IDE). Para incluir el archivo JavaScript en el archivo HTML, los desarrolladores colocan una referencia al archivo externo en la sección de cabecera del archivo HTML. El elemento script utiliza el atributo src para identificar el nombre del archivo JavaScript.
+
+ Aquí mostramos un ejemplo:
+
+
+<head> 
+     <script src="myJavascriptFile.js"></script> 
+<head>
+
+
+
+
+Utilizar JavaScript para modificar HTML
+
+
+Los desarrolladores pueden utilizar JavaScript para manipular estilos de página e incluso para reemplazar dinámicamente toda la hoja de estilo CSS. Si asignan un id a un elemento, pueden utilizar JavaScript para buscar elementos por ese ID y luego modificar el elemento. Un id es una serie con distinción de mayúsculas y minúsculas que identifica un elemento específico, y solo un único elemento puede tener ese id específico.
+
+
+
+
+
+El modelo de objetos de documento (DOM)
+
+
+El DOM en HTML funciona de forma similar. Es un tipo de mapa de todo el documento HTML que muestra qué tipo de componentes contiene el documento y dónde encontrarlos. El DOM también permite a los desarrolladores web interactuar con él mediante interfaces.
+
+
+Anteriormente ha conocido el mandato JavaScript getElementById y cómo utilizarlo para encontrar un elemento por su id y luego cambiar el estilo del elemento identificado. Este es un ejemplo de una interfaz. El id de elemento forma parte del DOM y el método getElementByID permite a los desarrolladores encontrar y luego cambiar o modificar el elemento.
+
+JavaScript utiliza las interfaces que el DOM proporciona para hacer cambios en el HTML. Mediante las interfaces del DOM, los desarrolladores pueden encontrar, cambiar, añadir y eliminar elementos, atributos de elementos y sucesos en los elementos. 
+
+
+
+
+Utilizar JavaScript para reaccionar a las acciones de los usuarios
+
+
+Los sucesos son cambios del sistema que se han producido. Los motivos de estos cambios pueden ser una modificación en los datos, una interacción del usuario, un error u otros. Los desarrolladores pueden utilizar JavaScript para responder a este tipo de sucesos.  
+
+Para escribir código JavaScript para responder a un suceso, los desarrolladores crean un manejador de sucesos. El explorador web está a la escucha de sucesos. Cuando un usuario pulsa en un elemento en una página web, como por ejemplo una imagen, el código del explorador percibe que se ha realizado una pulsación. Sin embargo, es responsabilidad del desarrollador manejar el suceso y definir qué debe suceder cuando ocurra. 
+
+
+
+Para crear un manejador de sucesos en HTML y JavaScript se requieren dos pasos principales. Este ejemplo utiliza el suceso onclick que se produce cuando un usuario pulsa en el elemento, pero hay muchos otros sucesos que los desarrolladores pueden manejar. 
+
+Divisor numerado 1
+
+
+Crear el escucha de sucesos 
+
+En primer lugar, cree un elemento con un atributo onclick. Este atributo es el escucha de sucesos correspondiente a este suceso, que indica al explorador que realice alguna acción cuando el usuario pulse en el elemento. Este código HTML va en el cuerpo del documento HTML.  
+
+Aquí mostramos un ejemplo:
+
+<div onclick="myClickFunction()"></div>
+
+
+El escucha de sucesos apunta a una función JavaScript denominada myClickFunction. Una función es un conjunto de código JavaScript que le permite pasar datos al código y obtener datos de él. 
+
+
+Divisor numerado 2
+
+
+Crear el manejador de sucesos 
+
+A continuación, cree una función JavaScript con el nombre que ha utilizado para el atributo onclick. En este caso, utilice myClickFunction. Definirá una función utilizando la palabra clave function seguida del nombre de la función. Después del nombre de función, añada paréntesis de apertura y de cierre y a continuación escriba el código JavaScript para la función entre un par de llaves de apertura y de cierre. 
+
+Puede escribir esta función dentro de un elemento de script en los elementos de cabecera o de cuerpo del documento HTML o en un archivo aparte.  
+
+Aquí mostramos un ejemplo: 
+
+function myClickFunction() { 
+     alert("Este es un mensaje JavaScript"); 
+}
+Estos son los pasos básicos para crear un manejador de sucesos en JavaScript.
+
+
+
+
+
+
+Crear una página web dinámica
+
+
+
+
+
+///////////////
+
+
+
+
+Módulo 2
+
+El modelo de programación JavaScript
+
+
+Programación orientada a objetos
+
+
+Construir objetos de código
+
+
+Miembros
+
+Un miembro de un objeto de código es cualquier aspecto o característica que le permite almacenar datos o realizar un trabajo.  
+
+Por ejemplo, el objeto de código anterior con la tarea de registro en un sitio web. Los miembros de ese objeto incluyen: 
+
+•
+Los datos que puede recibir como entrada 
+
+•
+El método mediante el que procesa esos datos (el "cómo") 
+
+•
+La salida que devuelve al usuario (el "qué")   
+
+
+A continuación se muestran algunos miembros que pueden tener los objetos de código.
+
+
+Constantes
+
+Las constantes contienen datos que no se pueden modificar mientras el programa está en ejecución. Las crea el programador o bien se crean mediante un parámetro que otros programadores pueden modificar, y las utiliza el objeto cuando se ejecuta el código.    
+
+Por ejemplo, para un objeto de inicio de sesión, un programador podría crear una constante para el número de intentos que puede realizar un usuario para iniciar sesión con su nombre de usuario y contraseña. El programador podría decidir limitarlo a tres intentos y por lo tanto definir una constante para indicar al objeto que permita al usuario enviar sus credenciales como máximo tres veces. 
+
+
+Propiedades
+
+Una propiedad son datos que se pueden modificar durante la ejecución del programa. 
+
+La propiedad de contraseña en un objeto de inicio de sesión que contiene los datos de contraseña del usuario cuando este escribe sus credenciales en un formulario del sitio web. El programa puede utilizar esta propiedad en otros lugares del objeto de código de inicio de sesión. Por ejemplo, otro objeto podría permitir al usuario cambiar su contraseña y esta propiedad se puede modificar en ese objeto. 
+
+
+Métodos
+
+Los métodos son código que realiza algún trabajo. Son funciones dentro de los objetos. 
+
+Cuando un usuario envía su nombre de usuario y su contraseña, el software que verifica sus credenciales con la información en la base de datos se procesa en un método.
+
+
+Sucesos
+
+Un suceso es cualquier acción que se realiza en un objeto, o que este realiza.   
+
+Por ejemplo, cuando el usuario envía el formulario con su nombre de usuario y su contraseña o cuando el objeto verifica si las credenciales coinciden con la información en la base de datos. 
+
+
+
+
+Herencia 
+
+Si un desarrollador crea un objeto de código para dar soporte al inicio de sesión de usuario, otro desarrollador que también necesite proporcionar la funcionalidad de inicio de sesión puede utilizar el objeto de inicio de sesión original en otra parte del sitio. Esta es la característica de reutilización de los objetos de código. 
+
+
+Instanciación
+
+En programación, los desarrolladores denominan instanciación al proceso de creación de un nuevo objeto de código. Puede observar que ese término contiene la palabra "instancia". Una instancia de un objeto es una versión individual de lo que sea que esté creando.
+
+
+Encapsulación 
+
+La encapsulación es esta capacidad que tienen los programadores de proteger algunos aspectos de un objeto, al mismo tiempo que permiten que otros puedan ser modificados por otros desarrolladores. 
+
+
+
+
+Programación funcional
+
+
+Una función es similar a un método en la programación orientada a objetos.   
+
+•
+Es un conjunto de código que puede aceptar una entrada, realizar algún trabajo y devolver una salida.   
+
+•
+Para utilizar una función, un desarrollador la llama desde otro código de software. 
+
+•
+Llamar a una función significa ejecutar el código en la función.  
+
+•
+Si bien las funciones no están asociadas con los objetos, los métodos sí lo están.
+
+
+
+
+
+
+///////////////////
+
+
+
+Módulo 3
+
+Descripción general de la estructura JavaScript
+
+
+Variables
+
+JavaScript también utiliza el contexto para saber cómo manejar los datos en las variables. JavaScript es un lenguaje débilmente tipado. Esto significa que los desarrolladores no necesitan declarar un tipo de variable para poder rellenar la variable con datos. Al igual que al utilizar el término "enorme", JavaScript utiliza el contexto para deducir qué tipo de datos contiene una variable
+
+
+Los desarrolladores declaran las variables JavaScript principalmente de tres formas: const, var y let. 
+
+
+Las variables declaradas como const contienen datos que no se pueden cambiar durante la ejecución. Por ejemplo, en un programa matemático un desarrollador podría utilizar una variable const para almacenar el valor de pi. En lugar de utilizar el valor real a lo largo de todo el programa, puede utilizar su variable const. Una variable const puede contener cualquier tipo de datos y el contenido se denomina datos inmutables. 
+
+
+Las variables declaradas como var contienen datos que se pueden modificar en tiempo de ejecución. Pueden contener cualquier tipo de datos y JavaScript determina (o convierte) el tipo de datos que contiene la variable según sea necesario en función del contexto.
+
+
+Las variables declaradas usando la palabra clave let suelen tener un valor definido cuando se declaran de forma similar a una variable const. Sin embargo, las variables declaradas con let se pueden modificar. Por ejemplo, un desarrollador podría querer que se incremente un número cuando un usuario pulse un botón. El valor inicial se definiría como 1 usando la palabra clave let y luego el usuario lo incrementaría.   
+
+
+
+Relleno de variables 
+
+Los desarrolladores web rellenan las variables con datos mediante una operación denominada asignación. Asignan un valor a la variable usando el signo igual. En el siguiente ejemplo, el código declara la variable denominada newVariable como un tipo var y asigna el valor de 2. 
+
+var newVariable = 2;
+
+
+
+Uso básico de las funciones en JavaScript 
+
+Supongamos que un desarrollador está creando una función que permite a los usuarios iniciar sesión en un sitio web. La función toma el nombre de usuario y la contraseña como entrada y verifica la información, y luego la salida indica al usuario si la combinación de nombre de usuario y contraseña es válida. 
+
+
+Las funciones en JavaScript son muy eficaces y versátiles. Una función estándar toma la entrada, hace algún trabajo y genera la salida. Las funciones en JavaScript también pueden llamar a otras funciones.
+
+
+Ampliación del uso de las funciones en JavaScript 
+
+Como ha aprendido, la programación orientada a objetos proporciona a los desarrolladores la capacidad de ampliar un objeto añadiendo nuevos miembros. Los desarrolladores web también pueden ampliar una función JavaScript. Para ampliar las prestaciones de una función, los desarrolladores utilizan otras funciones. En JavaScript, la utilización de una función para heredar las características de otra y la subsiguiente ampliación de la nueva función se denomina creación de prototipos. Es una forma en la que JavaScript exhibe características de un lenguaje de programación orientada a objetos. 
+
+JavaScript se diferencia de otros lenguajes orientados a objetos porque utiliza las funciones como la red troncal de muchas de sus operaciones. Los desarrolladores web denominan a las funciones en JavaScript funciones de primera clase.  
+
+
+Esta definición enfatiza el rol que desempeñan las funciones en un lenguaje como JavaScript. Otros lenguajes orientados a objetos crean objetos sin utilizar funciones. En JavaScript, los desarrolladores utilizan funciones para crear objetos. En los lenguajes orientados a objetos como Java y C#, los objetos en sí son de primera clase. 
+
+
+
+Expresiones y operadores
+
+
+Los lenguajes de software como JavaScript utilizan expresiones y operadores. Al igual que las expresiones en matemáticas, las expresiones en software pueden evaluar y realizar operaciones con números utilizando operadores como la suma y la resta.  
+
+Los desarrolladores también utilizan expresiones para evaluar y modificar datos de texto. Por ejemplo, los desarrolladores de JavaScript pueden utilizar el símbolo más para unir dos fragmentos de texto. Esta unión de cadenas de texto se conoce como concatenación.
+
+
+Operadores especiales 
+
+Anteriormente ha aprendido que JavaScript utiliza el símbolo más para concatenar dos cadenas de texto. Pero JavaScript también utiliza el símbolo más para sumar dos números. Por ejemplo, la variable newNumber en la expresión var newNumber = 2 + 2 tendrá el valor 4. A continuación, JavaScript determina en tiempo de ejecución qué operación realizar según el tipo de datos en las variables. Esto se conoce como conversión de tipo implícito. 
+
+
+Pero como JavaScript ya utiliza el signo igual para asignar valores a las variables, se utiliza un operador especial para operaciones comparativas: el signo igual doble.  
+
+
+
+Sucesos
+
+Los programas de software cambian constantemente. Pueden cambiar porque un usuario interactúa con ellos o porque se envían datos desde un servidor. También pueden cambiar si se produce un error o se completa un cálculo. Los desarrolladores se refieren a cualquier cambio en un sistema de software como un suceso. 
+
+
+Escuchas de sucesos
+
+
+Están a la escucha de que se produzca un cambio en un elemento. 
+Los elementos HTML pueden incluir atributos de escucha de sucesos que llaman a funciones JavaScript. 
+Un ejemplo de escucha de sucesos es un atributo onclick incluido en un elemento botón.
+
+
+Controladores de sucesos
+
+Responden a (o manejan) el suceso. 
+Normalmente, son funciones JavaScript que le indican al explorador cómo responder. 
+Un ejemplo de un manejador de sucesos es tener una función que cree un mensaje emergente de realizado satisfactoriamente cuando un usuario pulse en un botón. 
+
+
+
+
+Un desarrollador web declara la siguiente variable en el código JavaScript:  var userName;  
+
+ 
+
+¿Para qué puede utilizar el desarrollador esta variable? 
+
+Para responder a un suceso como una pulsación de botón 
+
+Para funcionar como operador de una expresión 
+
+Para comparar dos expresiones 
+
+Para contener datos o una función
+
+
+La variable `var userName;` declarada en JavaScript puede utilizarse para **contener datos o una función**. Aquí está el análisis:
+
+### Explicación de cada opción:
+1. **Para responder a un suceso como una pulsación de botón**  
+   Esto no es directamente válido. Aunque una variable podría contener una función que se ejecuta al ocurrir un evento, no se utiliza directamente para responder al evento. Los eventos en JavaScript son manejados por funciones asociadas a escuchadores de eventos (event listeners).
+
+2. **Para funcionar como operador de una expresión**  
+   Esto no es correcto. Una variable no puede ser un operador. Los operadores son elementos como `+`, `-`, `*`, `&&`, `||`, etc.
+
+3. **Para comparar dos expresiones**  
+   Esto no es el propósito de una variable. La comparación de expresiones se realiza mediante operadores relacionales como `==`, `===`, `<`, `>`, etc., no mediante el uso directo de una variable.
+
+4. **Para contener datos o una función**  
+   Esta es la respuesta correcta. Una variable declarada en JavaScript puede usarse para almacenar datos (como cadenas, números, objetos) o funciones. Por ejemplo:
+
+   ```javascript
+   var userName = "John"; // Contiene datos
+   var greetUser = function() {
+       console.log("Hello, " + userName);
+   }; // Contiene una función
+   ```
+
+### Respuesta correcta:
+**Para contener datos o una función.**
+
+
+
+
+Está enviando el formulario de solicitud de un curso en línea. Al pulsar el botón Enviar, se visualiza una ventana emergente que indica "Por favor verifíquelo".  
+
+ 
+Para ello, ¿qué manejador de sucesos puede utilizar? 
+
+onload 
+
+onmouseover 
+
+onmouseout   
+
+onclick 
+
+
+La respuesta correcta es:
+
+**onclick**
+
+### Explicación:
+El manejador de eventos `onclick` se utiliza para ejecutar una función o realizar una acción cuando un usuario hace clic en un elemento, como un botón. En este caso, al pulsar el botón "Enviar" en el formulario, el manejador `onclick` es adecuado para mostrar la ventana emergente con el mensaje "Por favor verifíquelo".
+
+### Ejemplo:
+```html
+<button onclick="alert('Por favor verifíquelo')">Enviar</button>
+```
+
+### Análisis de las otras opciones:
+1. **onload**  
+   Este evento se activa cuando un elemento, como una página web o una imagen, ha terminado de cargarse. No es adecuado para manejar un clic en un botón.
+
+2. **onmouseover**  
+   Este evento se dispara cuando el cursor del ratón pasa sobre un elemento. Se usa para efectos al pasar el ratón, no para manejar un clic.
+
+3. **onmouseout**  
+   Este evento ocurre cuando el cursor del ratón se mueve fuera de un elemento. Tampoco es apropiado para manejar un clic.
+
+### Respuesta final:
+**onclick** es el manejador de sucesos correcto para este caso.
+
+
+
+
+En JavaScript, ¿qué funciones se tratan como cualquier otra variable y se pueden pasar como argumento a otras funciones? 
+
+Las funciones de las variables 
+
+Las funciones fuertemente tipadas 
+
+Las funciones débilmente tipadas 
+
+Las funciones de primera clase 
+
+
+La respuesta correcta es:
+
+**Las funciones de primera clase**
+
+### Explicación:
+En JavaScript, las funciones son **ciudadanos de primera clase** (o de primera clase, "first-class citizens"). Esto significa que pueden ser tratadas como cualquier otra variable. En concreto, se pueden:
+
+1. **Asignar a variables**:
+   ```javascript
+   const sayHello = function() {
+       console.log("Hola!");
+   };
+   sayHello(); // Llama a la función
+   ```
+
+2. **Pasar como argumentos a otras funciones**:
+   ```javascript
+   function executeFunction(func) {
+       func();
+   }
+
+   executeFunction(function() {
+       console.log("Ejecutando una función pasada como argumento.");
+   });
+   ```
+
+3. **Devolver desde otras funciones**:
+   ```javascript
+   function createMultiplier(multiplier) {
+       return function(number) {
+           return number * multiplier;
+       };
+   }
+
+   const double = createMultiplier(2);
+   console.log(double(5)); // Resultado: 10
+   ```
+
+### Análisis de las otras opciones:
+1. **Las funciones de las variables**  
+   No es un término válido. Una función puede asignarse a una variable, pero no existe un concepto de "funciones de las variables" como tal.
+
+2. **Las funciones fuertemente tipadas**  
+   JavaScript es un lenguaje débilmente tipado, y las funciones no tienen una tipificación fuerte.
+
+3. **Las funciones débilmente tipadas**  
+   Aunque JavaScript es débilmente tipado, este término no describe la capacidad de pasar funciones como argumentos.
+
+### Respuesta final:
+**Las funciones de primera clase.**
+
+
+
+
+Paolo está creando un sitio web de una red social. Durante el registro, el nombre y el apellido del usuario se recopilan por separado mediante las variables firstName y lastName. Paulo ahora crea una variable fullName para visualizar el nombre debajo de la foto de perfil. 
+
+ 
+
+¿Cuál es la expresión correcta para lograr esto?  
+
+firstName & lastName = fullName 
+
+fullName = firstName + lastName   
+
+firstName + lastName = fullName 
+
+fullName = firstName & lastName   
+
+
+
+La expresión correcta para concatenar las variables `firstName` y `lastName` en JavaScript es:
+
+**`fullName = firstName + lastName`**
+
+### Explicación:
+En JavaScript, el operador `+` se utiliza para concatenar cadenas. Por lo tanto, si `firstName` y `lastName` contienen los valores deseados, se pueden combinar en `fullName` mediante esta expresión.
+
+### Ejemplo:
+```javascript
+var firstName = "Paolo";
+var lastName = "Rossi";
+var fullName = firstName + " " + lastName; // Agregamos un espacio entre los nombres
+console.log(fullName); // Resultado: "Paolo Rossi"
+```
+
+### Análisis de las otras opciones:
+1. **`firstName & lastName = fullName`**  
+   El operador `&` no se utiliza para concatenar cadenas en JavaScript. Además, esta sintaxis no es válida porque intenta asignar un valor a `fullName` desde el lado derecho.
+
+2. **`firstName + lastName = fullName`**  
+   Esta sintaxis es inválida porque la asignación debe ir de derecha a izquierda (el lado izquierdo de `=` debe ser el nombre de la variable que recibe el valor).
+
+3. **`fullName = firstName & lastName`**  
+   El operador `&` no realiza concatenación de cadenas, por lo que esta expresión no generará el resultado deseado.
+
+### Respuesta final:
+**`fullName = firstName + lastName`**
+
+
+
+
+Alvin está creando un sitio web de selección de personal. Quiere visualizar un mensaje de bienvenida que incluya el nombre de usuario actual del usuario en la página de inicio. 
+
+ 
+
+¿Qué operador puede utilizar para combinar el mensaje y el nombre de usuario? 
+
+* (asterisco) 
+
+- (menos) 
+
+= (igual) 
+
++ (más) 
+
+
+La respuesta correcta es:  
+
+**`+` (más)**  
+
+### Explicación:  
+En JavaScript, el operador `+` se utiliza para concatenar (combinar) cadenas de texto. Alvin puede usar este operador para unir el mensaje de bienvenida y el nombre del usuario.  
+
+### Ejemplo:  
+```javascript
+var userName = "Alvin";
+var welcomeMessage = "Bienvenido, " + userName + "!";
+console.log(welcomeMessage); // Resultado: "Bienvenido, Alvin!"
+```
+
+### Análisis de las otras opciones:  
+1. **`*` (asterisco)**  
+   Este operador se utiliza para la multiplicación de números, no para concatenar cadenas. Si se intenta usar con cadenas, se generará un error.  
+
+2. **`-` (menos)**  
+   Este operador se utiliza para restar números. No tiene sentido usarlo para combinar cadenas.  
+
+3. **`=` (igual)**  
+   Este es el operador de asignación, que se usa para asignar valores a una variable. No combina cadenas.  
+
+### Respuesta final:  
+**`+` (más)** es el operador correcto para concatenar el mensaje de bienvenida con el nombre de usuario.
+
+
+
+
+
+/////////////////////
+
+
+
+
+Módulo 4
+
+Interactuar con los datos
+
+
+Introducción a los datos
+
+
+Buscar
+Como usuario, proporciona información al sitio web sobre lo que desea comprar introduciendo información en la barra de búsqueda. El sitio web busca en todos los datos de producto para visualizar los artículos coincidentes.   
+
+
+Sugerencias
+El sitio web utiliza los datos históricos de las compras que ha realizado anteriormente, así como de las compras de otros usuarios, para ofrecer sugerencias sobre otros artículos que podrían interesarle.   
+
+
+Autenticación
+Especifica los datos, incluida su dirección de correo electrónico y su contraseña, en el sitio web y este verifica esa información con la información almacenada de la cuenta. El sitio puede tener otros datos adjuntos a su información de cuenta, incluidos los detalles de su tarjeta de crédito, por lo que devuelve esa información.   
+
+
+Geolocalización
+Al utilizar datos de su proveedor de servicio de Internet (ISP), el sitio web recopila información básica sobre su ubicación actual.  
+
+
+Realización de cálculos
+Utilizando la información de envío que proporciona, más la información de precios, envío e impuestos, el sitio web calcula el total del pedido.
+
+
+
+Los sitios web suelen recopilar los datos de dos tipos de fuentes: el usuario o una base de datos.   
+
+Los datos generados por el usuario son cualquier información que un usuario especifique en un sistema. Por lo general, se trata de datos procedentes de un dispositivo de entrada, como una pulsación de un ratón, un mandato voz de un micrófono o letras o números de un teclado.  
+
+Los sitios web también utilizan datos de bases de datos. Una base de datos es una colección estructurada de datos que suele estar almacenada en un ordenador o servidor. Las bases de datos de sitios web pueden contener datos que los usuarios han especificado anteriormente, como nombres de usuario, contraseñas y direcciones de correo electrónico, así como información sobre las acciones que ha realizado un usuario en el sitio web. También pueden contener información específica del sitio web, como información sobre productos en el caso de sitios de comercio electrónico, o datos de investigación en el caso de gráficos de sitios científicos o del gobierno.
+
+
+
+Tipos de datos
+
+
+Booleanos
+
+Los datos booleanos son los datos que pueden tener los valores de verdadero o falso.
+
+falso, verdadero
+
+
+Número
+
+Los datos de números son los datos que incluyen valores de número.
+
+-100, 0, 100, 100.01, 100.00, .01
+
+
+
+Cadena
+
+Los datos de cadena son los datos que son datos textuales, incluidos caracteres y combinaciones de caracteres, dígitos y símbolos.
+
+“hello”, “hello, world”, “+1-800-888-8888”   
+
+
+
+No identificado
+
+Una variable es indefinida cuando no tiene ningún valor, por ejemplo, antes de que un usuario especifique sus datos.
+
+Cuando un ordenador evalúa una función y devuelve un valor sin definir, devuelve "indefinido"
+
+
+
+Null
+
+Null es un tipo de datos especial que solo tiene el valor de Null. Null se suele utilizar para representar un valor no válido o que falta.
+
+"NULL"
+
+
+Los datos indefinidos son otro tipo en el que los datos aún no tienen un valor, por ejemplo, antes de que un usuario especifique sus datos.
+
+
+
+
+Funciones de datos
+
+
+La mayoría de las organizaciones utilizan bases de datos para almacenar sus datos.    
+
+•
+Las bases de datos se componen de una o más tablas que pueden estar relacionadas entre sí.  
+
+•
+Una tabla es una forma de estructurar y organizar los datos en una base de datos. Se compone de columnas y filas. Organizar los datos de esta forma facilita el acceso a los datos y su manipulación.   
+
+•
+Las tablas se componen de registros en cada fila, que son un grupo de datos relacionados almacenados en una tabla.   
+
+Los desarrolladores utilizan cuatro funciones principales para implementar bases de datos: crear, leer, actualizar y suprimir (CRUD, por sus siglas en inglés).
+
+
+
+Crear
+
+Esta es la operación que utiliza para añadir una nueva bebida al menú. Imagine que tiene un nuevo café con leche con jengibre para la temporada de invierno. Crea un nuevo artículo en la base de datos que incluye:
+
+ 
+Nombre: café con leche con jengibre 
+Tipo: bebida de café caliente  
+Precio: 3,99 $ 
+Temporada de invierno  
+
+
+Leer
+
+
+Esta operación le permite ver todos los artículos que tiene en el menú. La operación recupera la información de la base de datos y visualiza los resultados. La operación de lectura le permite recuperar un único elemento, varios elementos o todos los elementos
+
+
+
+Actualizar
+
+
+Esta es la operación que utiliza para actualizar o editar la información en el menú. Por ejemplo, si el precio de la leche aumenta y necesita modificar el precio de todos los cafés con leche en el menú, puede utilizar la operación de actualización
+
+
+
+Suprimir
+
+
+Esta operación le permite eliminar elementos del menú. Si ya no quiere servir té en la cafetería, puede llamar a esta función para suprimir todas las entradas de té de la base de datos.
+
+
+Para realizar estas operaciones CRUD, los desarrolladores web utilizan un lenguaje especial que entienden las bases de datos, denominado lenguaje de consulta estructurado (SQL)
+
+
+
+
+
+Introducción al lenguaje de consulta estructurado
+
+
+Como ya habrá aprendido, SQL tiene una sintaxis distinta para escribir mandatos. Pero ¿a qué mandatos pueden llamar los desarrolladores web con SQL? SQL tiene tres categorías de mandatos o lenguajes principales, que permiten a los desarrolladores y administradores de las bases de datos crear, mantener y utilizar las bases de datos. 
+
+
+Lenguaje de definición de datos (DDL)
+
+Los desarrolladores web utilizan los mandatos de definición de datos para crear y definir bases de datos y tablas de datos. Los siguientes son mandatos habituales utilizados para la definición de datos. 
+
+CREATE: este mandato crea bases de datos, tablas y más. 
+ALTER: este mandato modifica las bases de datos o tablas existentes. Por ejemplo, puede utilizar este mandato para añadir o eliminar columnas en una tabla. 
+DROP: este mandato elimina las tablas existentes de una base de datos.
+
+
+Lenguaje de manipulación de datos (DML)
+
+Los desarrolladores web utilizan mandatos de manipulación de datos para modificar los datos de las tablas de una base de datos. Algunos mandatos de manipulación de datos pueden relacionarse con las operaciones CRUD. Los siguientes son mandatos habituales utilizados para la manipulación de datos. 
+
+INSERT: este mandato añade nuevos registros a una tabla, como la operación create en CRUD. 
+UPDATE: este mandato modifica los registros existentes en una tabla. 
+DELETE: este mandato elimina registros de una tabla.
+
+
+Lenguaje de consulta de datos (DQL)
+
+Los desarrolladores web utilizan mandatos de consulta de datos para buscar datos en las tablas en una base de datos. A continuación se muestran los principales mandatos de consulta de datos.  
+
+SELECT: este mandato muestra el contenido de una tabla, como la operación read en CRUD.
+
+
+
+
+Para usar MySQL en la terminal de Visual Studio Code, sigue estos pasos:
+
+---
+
+### **1. Asegúrate de tener MySQL instalado**
+- Descarga e instala MySQL desde el [sitio oficial](https://dev.mysql.com/downloads/).
+- Durante la instalación, toma nota de:
+  - El usuario (por defecto, es `root`).
+  - La contraseña configurada para el usuario.
+
+---
+
+### **2. Configura el entorno de tu sistema**
+1. **Agrega el binario de MySQL a la variable de entorno PATH**:
+   - En sistemas Windows:
+     - Busca `mysql.exe`, que usualmente se encuentra en:  
+       `C:\Program Files\MySQL\MySQL Server <versión>\bin`.
+     - Agrega esta ruta a la variable `PATH` del sistema.
+   - En sistemas macOS o Linux:
+     - Normalmente, los binarios de MySQL estarán disponibles directamente si lo instalaste con un gestor de paquetes (como `brew` o `apt`).
+
+2. **Verifica la instalación**:
+   - Abre cualquier terminal (o la de Visual Studio Code).
+   - Escribe:  
+     ```bash
+     mysql --version
+     ```
+   - Deberías ver la versión de MySQL instalada.
+
+---
+
+### **3. Abre la terminal en Visual Studio Code**
+- En Visual Studio Code, abre la terminal integrada con:
+  - **Menú**: Ve a `Ver > Terminal` o usa el atajo de teclado:  
+    - `Ctrl + ñ` (Windows/Linux).  
+    - `Cmd + ñ` (macOS).
+
+---
+
+### **4. Conéctate a tu servidor MySQL**
+1. Escribe el siguiente comando para conectarte al servidor:
+   ```bash
+   mysql -u root -p
+   ```
+   - `-u root`: Especifica el usuario (reemplázalo si usas otro usuario).
+   - `-p`: Solicita la contraseña para el usuario.
+
+2. Ingresa la contraseña cuando se te solicite.
+
+---
+
+### **5. Comienza a usar MySQL**
+Ahora puedes ejecutar comandos SQL directamente desde la terminal:
+```sql
+SHOW DATABASES; -- Muestra las bases de datos disponibles
+USE nombre_base; -- Selecciona una base de datos
+CREATE TABLE ejemplo (id INT, nombre VARCHAR(50)); -- Crea una tabla
+```
+
+---
+
+### **6. Opcional: Extensiones de MySQL para Visual Studio Code**
+Para una experiencia más visual, considera instalar extensiones de MySQL en Visual Studio Code:
+1. Ve a la **Marketplace** (`Ctrl+Shift+X` o `Cmd+Shift+X` en macOS).
+2. Busca extensiones como:
+   - **MySQL** o **SQLTools** (soporta MySQL).
+3. Configura la conexión a tu base de datos desde la interfaz de estas extensiones.
+
+---
+
+### Resumen:
+1. Configura MySQL y verifica su instalación.
+2. Usa la terminal integrada de Visual Studio Code.
+3. Conéctate al servidor MySQL con `mysql -u usuario -p`.
+4. Ejecuta tus comandos SQL en la terminal.
+
+
+
+
+
+////////////////////
+
+
+
+Módulo 5
+
+Ejecución: introducción a Node.js
+
+
+
+Los desarrolladores utilizan los servidores web para suministrar las páginas web a los usuarios. Un servidor web ejecuta software que está a la escucha de solicitudes y entrega las páginas a los usuarios que las solicitan. 
+
+
+A medida que la World Wide Web evoluciona, también evoluciona la necesidad de servidores web más potentes. Uno de los elementos de software más eficaces que se ejecutan en los servidores es Node.js, que está escrito en JavaScript. 
+
+
+¿Qué es Node.js?
+
+Node.js es un entorno de ejecución basado en JavaScript que está disponible gratuitamente en Internet. Los desarrolladores pueden descargarlo y modificarlo gratuitamente. Este modelo de distribución de software se conoce como software de código abierto. Como entorno de ejecución, Node.js se ejecuta en los servidores en Internet y puede utilizarse para el desarrollo de aplicaciones. Una aplicación es un servidor web que está a la "escucha" de las solicitudes de páginas web.
+
+1
+Cuando un usuario escribe una dirección web como "https://www.ibm.com" en el explorador, envía a los servidores web una solicitud de ese sitio web. Es lo que denominamos una actividad del lado del cliente, porque la genera un usuario o cliente. 
+
+2
+Cuando el usuario envía la solicitud, el servicio de nombres de dominio (DNS) en Internet convierte la dirección web en una dirección IP. Una dirección IP identifica la ubicación del sitio web utilizando un código numérico de cuatro partes.   
+
+3
+A continuación, el DNS dirige la solicitud a los servidores web de IBM. Esos servidores web están a la escucha de solicitudes. Un servidor escucha las solicitudes al detectar cuándo se le envía información. 
+
+
+
+
+
+/////////////////
+
+
+
+¿Qué es Node.js?
+
+
+Node.js es un entorno que permite ejecutar JavaScript en el servidor. En lugar de que JavaScript funcione solo en el navegador del usuario (como suele ser), con Node.js puedes usar JavaScript para crear aplicaciones del lado del servidor, como:
+
+1. **Servir páginas web:** Node.js puede manejar solicitudes de los usuarios y responder enviando páginas web, imágenes u otros datos.
+
+2. **Conectar con bases de datos:** Puede guardar, buscar y actualizar datos en bases de datos (como almacenar información de usuarios).
+
+3. **Procesar lógica del servidor:** Node.js puede ejecutar programas que procesan datos, calculan resultados o controlan cómo se deben manejar las solicitudes.
+
+4. **Crear aplicaciones en tiempo real:** Por ejemplo, chat en vivo o notificaciones instantáneas.
+
+Piensa en Node.js como un motor que permite que tu computadora "entienda" JavaScript para hacer tareas en el servidor.
+
+
+
+A continuación, explorará cómo los servidores web que ejecutan Node.js detectan y responden a las solicitudes web
+
+
+Detección de una solicitud
+
+
+Los servidores web que ejecutan Node.js funcionan escuchando las solicitudes. Los exploradores pueden enviar muchas solicitudes a un servidor web Node.js, pero este sólo responderá a la solicitud si estos la envían de una forma muy específica. Los servidores web escuchan las solicitudes de páginas web mediante un protocolo específico en un puerto determinado.
+
+En el caso de las páginas web, el protocolo es el protocolo de transferencia de hipertexto (HTTP) o el protocolo seguro de transferencia de hipertexto (HTTPS). El protocolo envía la solicitud de una forma específica e indica a los servidores que ejecutan Internet de qué tipo de solicitud se trata.  
+
+
+El puerto permite direccionar la solicitud al servidor web.
+
+Un servidor web sin puertos abiertos no puede aceptar ninguna solicitud.  
+
+Las solicitudes de páginas web contactan con un servidor web principalmente en dos puertos: 80 para solicitudes http y 443 para solicitudes https.
+
+
+
+Cumplimiento de una solicitud 
+
+Cuando el servidor web sabe que la solicitud es de un tipo determinado, como por ejemplo entregar páginas web, puede cumplir esa solicitud devolviendo los datos al explorador del usuario. La mayoría de las veces, una solicitud de una página web individual implica enviar muchos tipos de datos al explorador del usuario. Por ejemplo, el servidor web envía texto, imágenes y código de software al explorador cuando le envía una solicitud de la página de inicio de IBM
+
+
+A veces, cuando un entorno de ejecución como Node.js cumple una solicitud, envía código JavaScript al explorador del usuario para recopilar información. Ese código se ejecuta, obtiene la información que el servidor necesita y a continuación envía otra solicitud de datos adicionales al servidor web
+
+
+
+
+
+Un desarrollador web crea un pequeño sitio web que contiene cinco páginas que permiten a un usuario explorar imágenes. También crea un servidor web utilizando Node.js que entrega esas páginas a los usuarios.  
+En este caso de ejemplo, ¿cuál de las siguientes actividades es una actividad del lado del servidor? 
+
+Se envía una imagen a través de Internet al explorador del usuario. 
+
+El usuario realiza una solicitud de una imagen determinada. 
+
+La imagen cambia de tamaño para ajustarse al explorador móvil del usuario.
+
+El explorador genera un error que indica que "no se ha podido encontrar la imagen".
+
+
+La actividad del lado del servidor en este caso es: 
+
+**El usuario realiza una solicitud de una imagen determinada.**
+
+### Explicación:
+1. **Se envía una imagen a través de Internet al explorador del usuario:** Esto ocurre como resultado de una actividad del lado del servidor, pero el acto de "enviar" la imagen es un proceso de transferencia de datos, no una actividad específica del servidor.
+
+2. **El usuario realiza una solicitud de una imagen determinada:** Esta es una acción del lado del servidor porque el servidor recibe la solicitud, la procesa y responde enviando la imagen al cliente.
+
+3. **La imagen cambia de tamaño para ajustarse al explorador móvil del usuario:** Este cambio probablemente ocurre del lado del cliente, ya que generalmente lo maneja el navegador mediante CSS o JavaScript.
+
+4. **El explorador genera un error que indica que "no se ha podido encontrar la imagen":** Esto ocurre en el cliente cuando no se recibe respuesta o la imagen no está disponible en el servidor.
+
+En resumen, **procesar la solicitud del usuario para obtener una imagen es una actividad del lado del servidor.**
+
+
+
+
+Las ventajas de Node.js
+
+
+Node.js está escrito en JavaScript
+
+JavaScript es el lenguaje más popular utilizado en los sitios web. Puesto que Node.js está escrito en JavaScript, los desarrolladores sólo necesitan aprender un lenguaje que pueden utilizar al desarrollar sus páginas web y en el servidor. 
+
+
+Node.js es eficiente con los recursos de servidor
+
+Cuando un servidor web procesa una solicitud, a veces debe realizar otras tareas en segundo plano, como recuperar información de una base de datos. Si esas tareas llevan tiempo, puede impedir que el servidor web acepte o cumpla otras solicitudes mientras espera. Esto se denomina bloqueo o punto muerto porque la solicitud bloquea al servidor mientras realiza las tareas en segundo plano. Node.js está escrito para ser un entorno sin bloqueo. Un servidor web que se ejecuta en software escrito con Node.js puede evitar el punto muerto transfiriendo las tareas en segundo plano a otra aplicación. La otra aplicación indica a un servidor web que complete la solicitud una vez finalizadas las tareas en segundo plano. Esto libera el servidor web para aceptar y cumplir otras solicitudes mientras la otra aplicación realiza sus tareas en segundo plano. 
+
+
+Node.js es de código abierto
+
+Debido a que todo el código de Node.js está disponible gratuitamente, los desarrolladores web pueden modificarlo según sus necesidades. Los desarrolladores web han escrito cientos de bibliotecas adicionales para ampliar Node.js Una biblioteca es un conjunto de código que se conecta a una aplicación existente para ampliar las funciones existentes o añadir nuevas funciones a la aplicación.
+
+
+
+¿Cómo obtienen los desarrolladores las bibliotecas para Node.js? Existe una herramienta especial con esta finalidad denominada Gestor de paquetes de nodo (MNP). Explorará esta herramienta en la siguiente lección. 
+
+
+
+
+Node.js y el NPM
+
+
+NPM hace algo similar a esta biblioteca ficticia para el software de desarrollo web. Es un paquete de software que busca, recupera e instala software de su catálogo. Con NPM, los desarrolladores web pueden ampliar Node.js y otras herramientas de desarrollo web utilizando un amplio catálogo de software de código abierto.
+
+Para utilizar NPM, los usuarios deben instalar Node.js en su sistema.
+
+
+
+Marcos y bibliotecas
+
+Los paquetes de software que instala utilizando NPM se denominan marcos y bibliotecas. Los tipos de software a los que se refieren estos dos términos son similares pero tienen diferencias significativas
+
+
+
+
+¿Verdadero o falso? Las bibliotecas no utilizan marcos, pero los marcos utilizan bibliotecas. 
+
+Verdadero
+
+Falso
+
+**Verdadero.**
+
+### Explicación:
+- **Bibliotecas:** Son colecciones de funciones o herramientas que los desarrolladores pueden usar para realizar tareas específicas. No establecen cómo estructurar tu aplicación; simplemente las "llamas" cuando las necesitas.
+
+- **Marcos (frameworks):** Son estructuras completas que dictan cómo debe construirse tu aplicación. Un marco suele incluir reglas y componentes, y muchas veces utiliza bibliotecas internas o te permite incorporar bibliotecas adicionales.
+
+Por lo tanto, las bibliotecas no dependen de marcos, pero los marcos suelen incluir o depender de bibliotecas para funcionar.
+
+
+
+
+
+Rishi escribe una dirección web en el explorador y pulsa Intro.  
+
+ 
+
+¿Qué tipo de actividad ha realizado Rishi? 
+
+Una actividad del lado del cliente 
+
+Una actividad de bloqueo de puerto 
+
+Una actividad del lado del servidor 
+
+Una actividad de viaje de ida y vuelta 
+
+La actividad que ha realizado Rishi es:  
+
+**Una actividad de viaje de ida y vuelta.**
+
+### Explicación:
+Cuando Rishi escribe una dirección web y pulsa Intro, sucede lo siguiente:
+
+1. **Solicitud del cliente:** El navegador (lado del cliente) envía una solicitud al servidor para acceder a la página web.
+
+2. **Respuesta del servidor:** El servidor procesa la solicitud y envía de vuelta la información necesaria (como la página HTML, imágenes, etc.).
+
+Este intercambio de información entre el cliente (navegador) y el servidor se denomina **viaje de ida y vuelta (round-trip activity)** porque implica un ida (solicitud) y vuelta (respuesta). 
+
+Las otras opciones no son correctas porque:
+- **Actividad del lado del cliente:** Ocurre exclusivamente en el navegador, pero aquí hay interacción con el servidor.
+- **Actividad de bloqueo de puerto:** Esto no aplica en este contexto.
+- **Actividad del lado del servidor:** Ocurre en el servidor, pero no describe todo el intercambio.
+
+
+
+
+Un servidor Node.js puede aceptar varias solicitudes mientras se realizan tareas en segundo plano.  
+
+ 
+
+¿A qué característica de Node.js corresponde este ejemplo?
+
+Estar basado en puertos y protocolos 
+
+Estar escrito en JavaScript 
+
+Ser un proceso del lado del cliente 
+
+Ser eficiente con los recursos del servidor 
+
+**Ser eficiente con los recursos del servidor.**
+
+### Explicación:
+Node.js es eficiente porque utiliza un modelo **asíncrono y basado en eventos**. Esto significa que puede manejar múltiples solicitudes al mismo tiempo sin bloquear el servidor, incluso mientras realiza tareas en segundo plano, como leer archivos o consultar bases de datos.
+
+Esta característica permite que:
+- El servidor continúe procesando nuevas solicitudes mientras otras tareas están en progreso.
+- Se aprovechen mejor los recursos del servidor, especialmente en sistemas con alta concurrencia.
+
+### Las otras opciones:
+1. **Estar basado en puertos y protocolos:** Esto es una característica general de los servidores web, no algo exclusivo de Node.js.
+2. **Estar escrito en JavaScript:** Es cierto, pero no explica la capacidad de manejar múltiples solicitudes.
+3. **Ser un proceso del lado del cliente:** Node.js funciona del lado del servidor, no del cliente.
+
+
+
+
+
+¿Cuál de las siguientes opciones es una descripción correcta de Node.js? 
+
+Node.js es un protocolo que indica a los servidores que ejecutan Internet qué tipo de solicitud se está enviando. 
+
+Node.js es de código abierto y un entorno de ejecución basado en JavaScript. 
+
+Node.js es un software propietario, diseñado para aceptar únicamente solicitudes de páginas web. 
+
+Node.js es una página web que utiliza HTTP o HTTPS.
+
+
+**La respuesta correcta es:**
+
+**Node.js es de código abierto y un entorno de ejecución basado en JavaScript.**
+
+### Explicación:
+- **Node.js:** Es un entorno de ejecución que permite ejecutar JavaScript en el servidor, fuera del navegador. Es de **código abierto**, lo que significa que cualquiera puede usarlo y modificarlo libremente. Node.js es popular porque es rápido y eficiente, gracias a su modelo asíncrono basado en eventos.
+
+### Por qué las otras opciones no son correctas:
+1. **"Node.js es un protocolo que indica a los servidores qué tipo de solicitud se está enviando":**
+   - Incorrecto. Node.js no es un protocolo, aunque puede manejar solicitudes HTTP/HTTPS gracias a sus bibliotecas.
+
+2. **"Node.js es un software propietario, diseñado para aceptar únicamente solicitudes de páginas web":**
+   - Incorrecto. Node.js es de código abierto y no está limitado a solicitudes de páginas web. También se utiliza para aplicaciones en tiempo real, APIs, etc.
+
+3. **"Node.js es una página web que utiliza HTTP o HTTPS":**
+   - Incorrecto. Node.js no es una página web, sino un entorno de ejecución para JavaScript. Sin embargo, puede usarse para construir servidores web que procesen solicitudes HTTP/HTTPS.
+
+
+
+
+
+Un servidor web está a la escucha de las solicitudes de los clientes en el puerto 443. El cliente envía la solicitud mediante HTTPS.  
+
+ 
+
+¿HTTPS es un ejemplo de qué tecnología?
+
+Un protocolo   
+
+Un servidor DNS 
+
+Un escucha 
+
+Un puerto 
+
+
+**HTTPS es un ejemplo de un protocolo.**
+
+### Explicación:
+- **HTTPS (HyperText Transfer Protocol Secure):** Es un protocolo de comunicación utilizado para transferir datos de manera segura entre el cliente (navegador) y el servidor web. Utiliza cifrado mediante SSL/TLS para proteger la información durante la transferencia.
+
+### Por qué las otras opciones no son correctas:
+1. **Un servidor DNS:** Es un sistema que traduce nombres de dominio (como www.ejemplo.com) en direcciones IP, pero no es lo mismo que HTTPS.
+2. **Un escucha:** Esto describe el estado del servidor que espera solicitudes, pero no se refiere a HTTPS en sí.
+3. **Un puerto:** Aunque HTTPS típicamente utiliza el puerto 443, el puerto no es lo mismo que el protocolo HTTPS.
+
+
+
+
+
+¿Cuál de las siguientes opciones permite a los desarrolladores web compartir su software con otros desarrolladores web? 
+
+Node.js
+
+HTTPS
+
+NPM 
+
+HTTP
+
+**La respuesta correcta es: NPM.**
+
+### Explicación:
+- **NPM (Node Package Manager):** Es un gestor de paquetes para Node.js que permite a los desarrolladores web compartir y reutilizar bibliotecas o módulos de software. Con NPM, los desarrolladores pueden publicar sus proyectos para que otros los descarguen e integren en sus aplicaciones.
+
+### Por qué las otras opciones no son correctas:
+1. **Node.js:** Es un entorno de ejecución para JavaScript, pero no es específicamente para compartir software.
+2. **HTTPS:** Es un protocolo para transferir datos de forma segura entre cliente y servidor, no para compartir software.
+3. **HTTP:** Es un protocolo para transferir datos, pero no está diseñado para compartir software entre desarrolladores.
+
+NPM es específicamente la herramienta diseñada para compartir y gestionar software en el ecosistema de Node.js.
+
+
+
+
+Cómo pueden los desarrolladores web utilizar JavaScript en un documento HTML?
+
+En los metadatos de un archivo HTML
+
+En el cuerpo de un documento HTML
+
+En el pie de página de un documento HTML
+
+En un archivo interno
+
+**La respuesta correcta es: En el cuerpo de un documento HTML.**
+
+### Explicación:
+Los desarrolladores web pueden usar JavaScript en un documento HTML colocándolo dentro de la etiqueta `<script>`. Por lo general, este código se inserta en el cuerpo del documento (`<body>`), aunque también puede ir en el `<head>` o referenciarse desde un archivo externo.
+
+### Ejemplo:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+    <script>
+        // JavaScript dentro del cuerpo del documento HTML
+        console.log('¡Hola desde JavaScript!');
+    </script>
+</body>
+</html>
+```
+
+### Por qué las otras opciones no son del todo correctas:
+1. **En los metadatos de un archivo HTML:** Aunque se puede colocar en el `<head>` (donde están los metadatos), el lugar más común y práctico es en el cuerpo del documento.
+2. **En el pie de página de un documento HTML:** Esto es parte del cuerpo del documento, pero no es una categoría distinta. 
+3. **En un archivo interno:** JavaScript puede escribirse en un archivo externo y enlazarse, pero no es lo mismo que "un archivo interno".
+
+
+
+
+¿Cuáles de las siguientes opciones es una ventaja de utilizar Node.js como entorno de ejecución?
+
+Es eficiente con los recursos del servidor.
+
+Está diseñado específicamente para aplicaciones de escritorio.
+
+Es un servidor web sin bloqueo.
+
+Requiere una interfaz gráfica.
+
+
+**Las respuestas correctas son:**
+
+1. **Es eficiente con los recursos del servidor.**  
+   - Node.js utiliza un modelo asíncrono y basado en eventos, lo que le permite manejar múltiples solicitudes al mismo tiempo sin bloquear el servidor, optimizando el uso de los recursos.
+
+2. **Es un servidor web sin bloqueo.**  
+   - Node.js utiliza operaciones de entrada/salida sin bloqueo, lo que significa que no espera a que una tarea termine antes de comenzar otra, lo que mejora su rendimiento en aplicaciones con alta concurrencia.
+
+### Por qué las otras opciones no son correctas:
+1. **Está diseñado específicamente para aplicaciones de escritorio:**  
+   - Incorrecto. Node.js está diseñado principalmente para construir aplicaciones del lado del servidor y en algunos casos, también puede ser usado para aplicaciones de red o servicios.
+
+2. **Requiere una interfaz gráfica:**  
+   - Incorrecto. Node.js no depende de interfaces gráficas; funciona en la línea de comandos o como backend para aplicaciones web y móviles.
+
+
+
+
+
+¿Cuáles de las siguientes opciones son las cuatro funciones principales de base de datos?   
+
+Concluir, leer, insertar y eliminar 
+
+
+
+Crear, seleccionar, actualizar y eliminar 
+
+Crear, insertar, actualizar y suprimir 
+
+Crear, leer, actualizar y suprimir 
+
+
+**La respuesta correcta es:**
+
+**Crear, leer, actualizar y suprimir.**
+
+### Explicación:
+Estas cuatro funciones son conocidas como **operaciones CRUD**, que son las operaciones básicas que se pueden realizar sobre los datos en una base de datos. Son las siguientes:
+
+1. **Crear (Create):** Insertar nuevos registros en la base de datos.
+2. **Leer (Read):** Consultar y recuperar datos de la base de datos.
+3. **Actualizar (Update):** Modificar los registros existentes.
+4. **Suprimir (Delete):** Eliminar registros de la base de datos.
+
+Estas operaciones son fundamentales para gestionar y manipular los datos en cualquier sistema de gestión de bases de datos (DBMS).
+
+
+
+
+
+Janine está escribiendo código JavaScript para ejecutarlo cuando un usuario pulsa en un botón en su página web. En la siguiente línea de código, ¿a qué se refiere clickFunction? 
+
+<button onclick="clickFunction()">Pulsar</button> 
+
+Es el nombre de la expresión que define el escucha de sucesos. 
+
+Es el nombre del botón. 
+
+Es el nombre del manejador de sucesos que contiene el código que se ejecuta cuando un usuario pulsa en el botón. 
+
+Es el nombre del escucha de sucesos que contiene el código que se ejecuta cuando un usuario pulsa en el botón. 
+
+
+**La respuesta correcta es:**
+
+**Es el nombre del manejador de sucesos que contiene el código que se ejecuta cuando un usuario pulsa en el botón.**
+
+### Explicación:
+En el código `<button onclick="clickFunction()">Pulsar</button>`, `clickFunction` es el **nombre del manejador de sucesos** (también conocido como **handler**). Este manejador se define en otro lugar en el código y contiene el código que se ejecutará cuando el usuario haga clic en el botón.
+
+El manejador de sucesos es una función que se activa cuando ocurre un evento, como un clic en el botón. En este caso, cuando el usuario hace clic en el botón, se ejecutará la función `clickFunction()`.
+
+
+
+
+Cuando los desarrolladores web utilizan objetos de código, ¿qué técnica les permite ampliar un objeto de código existente y reutilizar un objeto de código? 
+
+Autenticación 
+
+Cifrado 
+
+Encapsulación 
+
+Herencia 
+
+
+**La respuesta correcta es: Herencia.**
+
+### Explicación:
+**Herencia** es una técnica de programación orientada a objetos que permite crear un nuevo objeto basándose en uno ya existente. A través de la herencia, los desarrolladores pueden extender un objeto, reutilizar su código y agregarle nuevas funcionalidades sin tener que reescribir el código original.
+
+### Por qué las otras opciones no son correctas:
+- **Autenticación:** Se refiere al proceso de verificar la identidad de un usuario, no a la reutilización de código.
+- **Cifrado:** Es un proceso de protección de datos, no relacionado con la reutilización o ampliación de objetos.
+- **Encapsulación:** Es un principio de programación que consiste en ocultar los detalles internos de un objeto y exponer solo lo necesario. Aunque está relacionado con la orientación a objetos, no se utiliza para ampliar o reutilizar objetos.
+
+
+
+
+
+¿Cuál es la diferencia entre una propiedad y una constante en un objeto de código? 
+
+Una propiedad no se puede heredar y una constante sí. 
+
+Una propiedad almacena datos numéricos, mientras que una constante contiene datos de caracteres. 
+
+Una propiedad puede responder a sucesos, mientras que una constante no. 
+
+Una propiedad se puede modificar durante la ejecución del programa mientras que una constante no. 
+
+**La respuesta correcta es:**
+
+**Una propiedad se puede modificar durante la ejecución del programa mientras que una constante no.**
+
+### Explicación:
+- **Propiedad:** Es una característica de un objeto en programación orientada a objetos. Las propiedades pueden almacenar diferentes tipos de valores (números, cadenas, funciones, etc.) y, lo más importante, **se pueden modificar** durante la ejecución del programa.
+  
+- **Constante:** Es un valor que, una vez asignado, **no puede cambiar** durante la ejecución del programa. En JavaScript, las constantes se definen utilizando la palabra clave `const`.
+
+### Por qué las otras opciones no son correctas:
+1. **"Una propiedad no se puede heredar y una constante sí":**  
+   - Incorrecto. Tanto las propiedades como las constantes pueden ser heredadas en el contexto de la herencia de objetos.
+
+2. **"Una propiedad almacena datos numéricos, mientras que una constante contiene datos de caracteres":**  
+   - Incorrecto. Las propiedades pueden almacenar cualquier tipo de dato, no solo números, y las constantes también pueden contener cualquier tipo de dato, no solo cadenas de caracteres.
+
+3. **"Una propiedad puede responder a sucesos, mientras que una constante no":**  
+   - Incorrecto. Las constantes no responden a sucesos porque no pueden modificarse. Las propiedades pueden ser diseñadas para responder a eventos si son funciones o métodos, pero no es una regla general.
+
+
+
+
+
+Mandy está intentando actualizar la dirección de un cliente en su base de datos, pero cuando ejecuta el código SQL, se encuentra que todos los clientes en su base de datos ahora tienen la nueva dirección. Se da cuenta de que ha olvidado incluir la cláusula MySQL que determina qué registros se deben actualizar.  
+
+ 
+
+¿Qué cláusula debe añadir a su sentencia UPDATE? 
+
+DELETE
+
+WHERE 
+
+CREATE
+
+INSERT
+
+**La respuesta correcta es: WHERE.**
+
+### Explicación:
+En SQL, la cláusula **`WHERE`** se utiliza para especificar las condiciones que deben cumplirse para que solo se actualicen los registros que coincidan con esos criterios. Sin esta cláusula, la sentencia **`UPDATE`** afectará a todos los registros de la tabla, como sucedió en el caso de Mandy.
+
+### Ejemplo de cómo debería ser la sentencia correcta:
+```sql
+UPDATE clientes
+SET direccion = 'Nueva Dirección'
+WHERE id_cliente = 123;
+```
+En este ejemplo, solo se actualizará la dirección del cliente con `id_cliente = 123`.
+
+### Por qué las otras opciones no son correctas:
+1. **DELETE:** La cláusula `DELETE` se utiliza para eliminar registros de una tabla, no para actualizarlos.
+2. **CREATE:** La cláusula `CREATE` se usa para crear nuevas tablas, bases de datos o índices, no para actualizar registros existentes.
+3. **INSERT:** La cláusula `INSERT` se utiliza para agregar nuevos registros a una tabla, no para actualizar los existentes.
+
+
+
+
+
+¿Cómo prefieren los desarrolladores web incluir JavaScript en las páginas web para facilitar la gestión de JavaScript y la colaboración entre los miembros de un equipo? 
+
+En la cabecera de un documento HTML 
+
+En el cuerpo de un documento HTML 
+
+En un archivo interno 
+
+En un archivo externo 
+
+
+**La respuesta correcta es: En un archivo externo.**
+
+### Explicación:
+Los desarrolladores web prefieren incluir **JavaScript en un archivo externo** por varias razones:
+
+1. **Facilita la gestión:** Separar el código JavaScript del HTML hace que el código sea más limpio, organizado y fácil de mantener.
+2. **Reutilización:** Un archivo externo de JavaScript puede ser reutilizado en múltiples páginas web sin tener que escribir el mismo código en cada una de ellas.
+3. **Colaboración:** Los equipos de desarrollo pueden trabajar en archivos JavaScript por separado, lo que facilita la colaboración sin interferir con el código HTML.
+4. **Rendimiento:** Los archivos externos pueden ser cacheados por el navegador, lo que mejora el tiempo de carga de las páginas.
+
+### Ejemplo de cómo se incluiría un archivo externo:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página Web</title>
+    <script src="miarchivo.js"></script>
+</head>
+<body>
+    <h1>Bienvenido</h1>
+</body>
+</html>
+```
+
+### Por qué las otras opciones no son tan preferibles:
+1. **En la cabecera de un documento HTML:** Aunque es posible, incluir JavaScript en la cabecera puede ralentizar el proceso de renderizado de la página, ya que el navegador necesita procesar el script antes de mostrar el contenido.
+2. **En el cuerpo de un documento HTML:** También es posible, pero si no se coloca al final del cuerpo o se usa el atributo `defer`, puede afectar negativamente la carga de la página.
+3. **En un archivo interno:** Aunque es una opción válida para scripts pequeños o pruebas, los archivos externos son preferibles para proyectos grandes debido a su organización y facilidad de mantenimiento.
+
+
+
+
+
+
+Rellene los espacios en blanco. JavaScript funciona de varias maneras. JavaScript es ________ ya que permite a los desarrolladores web crear y revisar objetos que tienen datos de propiedades. JavaScript también es un lenguaje de programación ___________ ya que permite a los desarrolladores web utilizar funciones para realizar un trabajo.
+
+orientado a objetos, funcional 
+
+funcional, basado en miembros 
+
+orientado a objetos, procedimental 
+
+funcional, procedimental 
+
+
+**La respuesta correcta es:**
+
+**orientado a objetos, funcional.**
+
+### Explicación:
+1. **Orientado a objetos:** JavaScript permite a los desarrolladores crear y trabajar con objetos que contienen propiedades y métodos. Esto lo hace un lenguaje **orientado a objetos**, donde los objetos son entidades clave que agrupan datos y comportamientos.
+   
+2. **Funcional:** JavaScript también es un **lenguaje funcional**, ya que permite a los desarrolladores utilizar funciones como objetos de primera clase, lo que significa que las funciones pueden ser asignadas a variables, pasadas como parámetros a otras funciones y retornadas desde otras funciones.
+
+### Por qué las otras opciones no son correctas:
+- **Funcional, basado en miembros:** "Basado en miembros" no es una categoría que se describa comúnmente en el contexto de lenguajes de programación.
+- **Orientado a objetos, procedimental:** Si bien JavaScript puede ser utilizado de manera procedimental, es más conocido por ser un lenguaje que soporta tanto la programación orientada a objetos como la funcional. La descripción "procedimental" no es tan precisa en este caso.
+- **Funcional, procedimental:** Aunque JavaScript permite la programación funcional, la parte orientada a objetos también es relevante, y "procedimental" no refleja completamente las capacidades del lenguaje.
+
+
+
+
+
+Rellene el espacio en blanco. Los desarrolladores web integran un(a) _________ en un sitio web completo y este cambiará el funcionamiento del sitio web. 
+
+cadena 
+
+dependencia 
+
+marco 
+
+biblioteca 
+
+**La respuesta correcta es: marco.**
+
+### Explicación:
+Los desarrolladores web integran un **marco** (framework) en un sitio web completo, y este cambia o mejora el funcionamiento del sitio web. Un **marco** es un conjunto de herramientas y bibliotecas predefinidas que proporcionan una estructura básica para desarrollar aplicaciones web. Los marcos facilitan el trabajo de los desarrolladores al proporcionar una base sólida sobre la que pueden construir, manejar rutas, gestionar peticiones, entre otros aspectos del desarrollo web.
+
+### Por qué las otras opciones no son correctas:
+- **Cadena:** Una cadena se refiere a una secuencia de caracteres, no es una herramienta o conjunto de herramientas que cambian el funcionamiento de un sitio web.
+- **Dependencia:** Una dependencia es una librería o módulo que un proyecto necesita para funcionar, pero no describe un cambio fundamental en el funcionamiento general del sitio web como lo hace un marco.
+- **Biblioteca:** Una **biblioteca** es un conjunto de funciones o herramientas que se pueden usar dentro de un proyecto, pero a diferencia de un marco, no impone una estructura o flujo específico para la aplicación.
+
+
+
+
+
+¿Cuál de las siguientes opciones es la palabra clave SQL correcta para recuperar registros de una base de datos? 
+
+DELETE 
+
+UPDATE 
+
+SELECT 
+
+INSERT 
+
+**La respuesta correcta es: SELECT.**
+
+### Explicación:
+En SQL, la palabra clave **`SELECT`** se utiliza para recuperar registros o datos de una base de datos. Se usa para consultar la base de datos y devolver información basada en criterios específicos.
+
+### Ejemplo de uso:
+```sql
+SELECT * FROM clientes;
+```
+Este comando recupera todos los registros de la tabla "clientes".
+
+### Por qué las otras opciones no son correctas:
+1. **DELETE:** La palabra clave `DELETE` se utiliza para eliminar registros de una base de datos.
+2. **UPDATE:** La palabra clave `UPDATE` se utiliza para modificar registros existentes en una base de datos.
+3. **INSERT:** La palabra clave `INSERT` se utiliza para agregar nuevos registros a una base de datos.
+
+
+
+
+
+Paolo está creando un sitio web de una red social. Durante el registro, el nombre y el apellido del usuario se recopilan por separado mediante las variables firstName y lastName. Paulo ahora crea una variable fullName para visualizar el nombre debajo de la foto de perfil.
+
+
+
+Para ello, ¿cuál de las siguientes opciones es la expresión correcta?  
+
+fullName = firstName & lastName   
+
+fullName = firstName + lastName   
+
+firstName & lastName = fullName 
+
+firstName + lastName = fullName
+
+**La respuesta correcta es:**
+
+**fullName = firstName + " " + lastName**
+
+### Explicación:
+En JavaScript, para concatenar cadenas de texto (como los valores de `firstName` y `lastName`), usamos el operador `+`. Para agregar un espacio entre el primer nombre y el apellido, se coloca un `" "` (un espacio entre comillas) entre las variables. 
+
+Así que la expresión correcta sería:
+```javascript
+fullName = firstName + " " + lastName;
+```
+
+Esta expresión combina `firstName` y `lastName` con un espacio entre ellos y asigna el resultado a la variable `fullName`.
+
+### Por qué las otras opciones no son correctas:
+- **fullName = firstName & lastName:** El operador `&` no se utiliza para concatenar cadenas en JavaScript. Se utiliza en otros contextos, como en operaciones a nivel de bits.
+- **firstName & lastName = fullName:** La sintaxis es incorrecta. No puedes asignar el valor de una expresión a la izquierda de una operación.
+- **firstName + lastName = fullName:** La sintaxis es incorrecta. El lado izquierdo debe ser la variable `fullName` y no una expresión.
+
+Recuerda que para obtener un nombre completo con espacio entre el primer nombre y el apellido, deberías usar la sintaxis adecuada con el operador `+` y el espacio.
+
+
+
+
+
+Darren declara una variable const para almacenar el nombre del usuario que explora su sitio web. También escribe una función para actualizar el nombre si un usuario actualiza sus datos personales. Cuando prueba el código le da error.  
+
+¿Cómo puede Darren corregir este error? 
+
+Debe cambiar la variable const a var. 
+
+Debe especificar el tipo de datos para la variable const. 
+
+Debe eliminar la opción de actualizar los datos personales. 
+
+Debe almacenar el nombre del usuario en una base de datos. 
+
+
+**La respuesta correcta es:**
+
+**Debe cambiar la variable const a var.**
+
+### Explicación:
+En JavaScript, las variables declaradas con `const` son **inmutables**, lo que significa que no pueden ser reasignadas después de su inicialización. Si Darren está intentando cambiar el valor de la variable `const` dentro de su función para actualizar el nombre del usuario, eso causará un error porque `const` no permite la reasignación de valores.
+
+Para permitir que el valor de la variable se actualice, Darren debe usar `var`, `let`, o `const` (en función de sus necesidades específicas). En este caso, `let` sería una opción más moderna y preferible, ya que permite la reasignación y también tiene un alcance de bloque, lo que es más seguro que `var` en muchos casos.
+
+### Ejemplo de cómo corregir el error:
+```javascript
+let userName = "Darren";  // Usamos 'let' en lugar de 'const'
+
+function updateUserName(newName) {
+    userName = newName;  // Ahora podemos cambiar el valor de 'userName'
+}
+```
+
+### Por qué las otras opciones no son correctas:
+- **Debe especificar el tipo de datos para la variable const:** En JavaScript no se necesita especificar el tipo de datos para las variables, ya que es un lenguaje de tipado dinámico. La razón del error no es la falta de tipo de datos, sino que `const` no permite reasignar valores.
+- **Debe eliminar la opción de actualizar los datos personales:** Esto no es necesario. La opción de actualizar los datos personales puede mantenerse, pero se debe usar una declaración de variable que permita la reasignación, como `let`.
+- **Debe almacenar el nombre del usuario en una base de datos:** Si bien es una buena práctica almacenar información persistente como el nombre del usuario en una base de datos, el error que Darren enfrenta es solo sobre la reasignación de una variable en su código, no sobre la persistencia de los datos.
+
+Por lo tanto, cambiar de `const` a `let` es la solución correcta para permitir la actualización de la variable.
+
+
+
+
+
+¿Qué tipo de datos son los datos que pueden tener los valores de verdadero o falso? 
+
+Null 
+
+Numéricos 
+
+Booleanos 
+
+Textuales 
+
+**La respuesta correcta es:**
+
+**Booleanos**
+
+### Explicación:
+Los **datos booleanos** son un tipo de datos que pueden tener uno de dos valores posibles: `true` (verdadero) o `false` (falso). Este tipo de datos es comúnmente utilizado en condiciones y estructuras de control (como `if`, `while`, etc.) para determinar el flujo de ejecución en un programa.
+
+### Por qué las otras opciones no son correctas:
+- **Null:** `null` es un valor especial que indica la ausencia de valor o la falta de un objeto, no es un tipo de dato con valores `true` o `false`.
+- **Numéricos:** Los datos numéricos son aquellos que representan números (enteros o decimales), no tienen valores booleanos.
+- **Textuales:** Los datos textuales son cadenas de caracteres (strings), que pueden contener texto, pero no son de tipo booleano.
+
+Por lo tanto, los **booleanos** son el tipo de datos que tienen los valores de verdadero o falso.
+
+
+
+
+/////////////////////////
+
+
+
+
+
+
+
